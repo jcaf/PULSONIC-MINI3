@@ -1,0 +1,180 @@
+# depslib dependency file v1.0
+1574871287 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/fuse.c
+	<avr/io.h>
+
+1575428478 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/autoMode.c
+	"main.h"
+	"pulsonic.h"
+	"mpap.h"
+	"pump.h"
+	"autoMode.h"
+	"visMode.h"
+	"ikb/ikb.h"
+	"flushAllMode.h"
+
+1583600958 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/main.h
+	<stdint.h>
+	"system.h"
+	"types.h"
+
+1574903265 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/system.h
+	<xc.h>
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	<avr/eeprom.h>
+	<util/delay.h>
+	<stdint.h>
+	<stdlib.h>
+	<string.h>
+
+1561997771 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/types.h
+
+1569432702 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/pulsonic.h
+	"nozzle.h"
+	"display.h"
+
+1569459974 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/nozzle.h
+
+1575042978 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/display.h
+
+1583554312 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/mpap.h
+
+1565473540 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/pump.h
+
+1569432983 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/autoMode.h
+
+1601156653 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/visMode.h
+
+1563820050 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/ikb/ikb.h
+
+1563733650 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/flushAllMode.h
+
+1601577047 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/configMode.c
+	"main.h"
+	"configMode.h"
+	"pulsonic.h"
+	"ikb/ikb.h"
+	"myeeprom.h"
+	"flushAtNozzle.h"
+
+1563141940 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/configMode.h
+
+1575039295 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/myeeprom.h
+
+1563818072 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/PIC/eeprom/eeprom.h
+
+1563738177 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/flushAtNozzle.h
+
+1575044655 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/display.c
+	"main.h"
+	"display.h"
+	"pulsonic.h"
+
+1563477890 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/error.c
+	"main.h"
+	"error.h"
+	"inputs.h"
+
+1563732831 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/error.h
+
+1563496453 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/inputs.h
+
+1575405901 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/flushAllMode1.c
+	"main.h"
+	"pulsonic.h"
+	"mpap.h"
+	"pump.h"
+	"autoMode.h"
+	"flushAllMode.h"
+	"ikb/ikb.h"
+
+1575406498 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/flushAtNozzle.c
+	"main.h"
+	"pulsonic.h"
+	"mpap.h"
+	"pump.h"
+	"autoMode.h"
+	"flushAtNozzle.h"
+	"ikb/ikb.h"
+
+1583614863 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/ikb.c
+	"main.h"
+	"system.h"
+	"ikb.h"
+
+1574894959 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/ikb.h
+
+1563830425 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/inputs.c
+	"main.h"
+
+1601577061 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/myeeprom.c
+	"main.h"
+	"nozzle.h"
+	"myeeprom.h"
+
+1575428475 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/nozzle.c
+	"main.h"
+	"mpap.h"
+	"pulsonic.h"
+
+1601577067 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/pulsonic.c
+	"main.h"
+	"pulsonic.h"
+	"myeeprom.h"
+
+1583601324 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/pump.c
+	"main.h"
+	"pump.h"
+	"pulsonic.h"
+
+1574961867 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/ustepping.c
+	"main.h"
+	"ustepping.h"
+
+1579987540 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/ustepping.h
+
+1569525258 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/visMode.c
+	"main.h"
+	"visMode.h"
+	"pulsonic.h"
+	"ikb/ikb.h"
+
+1601575120 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/main.c
+	"main.h"
+	"pulsonic.h"
+	"mpap.h"
+	"inputs.h"
+	"ikb/ikb.h"
+	"pump.h"
+	"display.h"
+	"autoMode.h"
+	"visMode.h"
+	"configMode.h"
+	"flushAllMode.h"
+	"error.h"
+	"myeeprom.h"
+	"PIC/eeprom/eeprom.h"
+	"flushAtNozzle.h"
+	"ustepping.h"
+
+1583688170 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/mpap.c
+	"main.h"
+	"mpap.h"
+	"pulsonic.h"
+
+1574903265 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/system.h
+	<xc.h>
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	<avr/eeprom.h>
+	<util/delay.h>
+	<stdint.h>
+	<stdlib.h>
+	<string.h>
+
+1561997771 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/types.h
+
+1563820050 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Bipolar/atmega32PulsonicBipolar/ikb/ikb.h
+

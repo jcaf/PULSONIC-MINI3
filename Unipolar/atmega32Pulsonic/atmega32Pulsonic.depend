@@ -1,0 +1,182 @@
+# depslib dependency file v1.0
+1574871287 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/fuse.c
+	<avr/io.h>
+
+1575428478 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.c
+	"main.h"
+	"pulsonic.h"
+	"mpap.h"
+	"pump.h"
+	"autoMode.h"
+	"visMode.h"
+	"ikb/ikb.h"
+	"flushAllMode.h"
+
+1575430238 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.h
+	<stdint.h>
+	"system.h"
+	"types.h"
+
+1574903265 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/system.h
+	<xc.h>
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	<avr/eeprom.h>
+	<util/delay.h>
+	<stdint.h>
+	<stdlib.h>
+	<string.h>
+
+1561997771 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/types.h
+
+1569432702 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.h
+	"nozzle.h"
+	"display.h"
+
+1569459974 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.h
+
+1575042978 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.h
+
+1576285773 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.h
+
+1565473540 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pump.h
+
+1569432983 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.h
+
+1569542639 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.h
+
+1563820050 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/ikb/ikb.h
+
+1563733650 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode.h
+
+1575043076 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.c
+	"main.h"
+	"configMode.h"
+	"pulsonic.h"
+	"ikb/ikb.h"
+	"myeeprom.h"
+	"PIC/eeprom/eeprom.h"
+	"flushAtNozzle.h"
+
+1563141940 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.h
+
+1575039295 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/myeeprom.h
+
+1563818072 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/PIC/eeprom/eeprom.h
+
+1563738177 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.h
+
+1575044655 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.c
+	"main.h"
+	"display.h"
+	"pulsonic.h"
+
+1563477890 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/error.c
+	"main.h"
+	"error.h"
+	"inputs.h"
+
+1563732831 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/error.h
+
+1563496453 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.h
+
+1566238498 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode.c
+	"main.h"
+	"pulsonic.h"
+	"mpap.h"
+	"pump.h"
+	"autoMode.h"
+	"flushAllMode.h"
+	"ikb/ikb.h"
+
+1575406498 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.c
+	"main.h"
+	"pulsonic.h"
+	"mpap.h"
+	"pump.h"
+	"autoMode.h"
+	"flushAtNozzle.h"
+	"ikb/ikb.h"
+
+1574983344 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.c
+	"main.h"
+	"system.h"
+	"ikb.h"
+
+1574894959 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.h
+
+1563830425 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.c
+	"main.h"
+
+1576287006 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.c
+	"main.h"
+	"pulsonic.h"
+	"mpap.h"
+	"inputs.h"
+	"ikb/ikb.h"
+	"pump.h"
+	"display.h"
+	"autoMode.h"
+	"visMode.h"
+	"configMode.h"
+	"flushAllMode.h"
+	"error.h"
+	"myeeprom.h"
+	"PIC/eeprom/eeprom.h"
+	"flushAtNozzle.h"
+	"ustepping.h"
+
+1576288709 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ustepping.h
+
+1576286725 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.c
+	"main.h"
+	"mpap.h"
+	"pulsonic.h"
+
+1575038731 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/myeeprom.c
+	"main.h"
+	"nozzle.h"
+	"myeeprom.h"
+	"PIC/eeprom/eeprom.h"
+
+1575428475 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.c
+	"main.h"
+	"mpap.h"
+	"pulsonic.h"
+
+1575039847 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.c
+	"main.h"
+	"pulsonic.h"
+	"myeeprom.h"
+	"PIC/eeprom/eeprom.h"
+
+1566005183 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pump.c
+	"main.h"
+	"pump.h"
+
+1574961867 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ustepping.c
+	"main.h"
+	"ustepping.h"
+
+1569525258 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.c
+	"main.h"
+	"visMode.h"
+	"pulsonic.h"
+	"ikb/ikb.h"
+
+1574895270 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/eeprom.c
+	<stdint.h>
+	"eeprom.h"
+
+1563818072 /run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/eeprom.h
+
+1575405901 source:/run/media/jcaf/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.c
+	"main.h"
+	"pulsonic.h"
+	"mpap.h"
+	"pump.h"
+	"autoMode.h"
+	"flushAllMode.h"
+	"ikb/ikb.h"
+

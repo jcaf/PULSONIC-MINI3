@@ -1,0 +1,445 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/cgtE1ysIu.obj
+end_init CODE 0 18 18 4 1
+reset_vec CODE 0 0 0 4 1
+idloc IDLOC 0 200000 200000 8 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/production/bipolar_previous.X.production.obj
+intcode CODE 0 8 8 10 1
+text7 CODE 0 248 248 6 1
+text6 CODE 0 242 242 6 1
+text5 CODE 0 23C 23C 6 1
+text4 CODE 0 236 236 6 1
+text3 CODE 0 198 198 48 1
+intcode_body CODE 0 10C 10C 8C 1
+text1 CODE 0 1C 1C F0 1
+text0 CODE 0 20C 20C 20 1
+cstackCOMRAM COMRAM 1 1 1 14 1
+dataCOMRAM COMRAM 1 15 15 9 1
+bssCOMRAM COMRAM 1 1E 1E 1 1
+cinit CODE 0 1E0 1E0 2C 1
+idataCOMRAM CODE 0 22C 22C 9 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 000060-0000FF 1
+BANK1 000100-0001FF 1
+BANK2 000200-0002FF 1
+BANK3 000300-0003FF 1
+BANK4 000400-0004FF 1
+BANK5 000500-0005FF 1
+BANK6 000600-0006FF 1
+BANK7 000700-0007FF 1
+BIGRAM 00001F-0007FF 1
+CODE 000004-000007 1
+CODE 000235-000235 1
+CODE 00024E-007FFF 1
+COMRAM 00001F-00005F 1
+CONST 000004-000007 1
+CONST 000235-000235 1
+CONST 00024E-007FFF 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 000800-007FFF 1
+RAM 000060-0007FF 1
+SFR 000F60-000FFF 1
+SMALLCONST 000800-007FFF 1
+STACK 000060-0007FF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/bipolar_previous.X.production.obj
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":96 8 intcode CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":152 8 intcode CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":59 1C text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":62 1C text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":64 1C text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":66 34 text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":67 38 text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":69 48 text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":70 4C text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":72 5C text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":73 60 text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":75 70 text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":76 74 text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":78 84 text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":79 88 text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":81 98 text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":82 9C text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":84 AC text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":85 B0 text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":87 C0 text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":88 C4 text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":64 D4 text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":91 DA text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":93 DE text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":94 F6 text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":93 106 text1 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":152 10C intcode_body CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":159 13A intcode_body CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":163 13E intcode_body CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":166 14A intcode_body CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":167 150 intcode_body CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":170 154 intcode_body CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":171 156 intcode_body CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":172 15A intcode_body CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":175 15E intcode_body CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":39 198 text3 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":43 19A text3 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":44 1A0 text3 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":46 1AA text3 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":48 1AE text3 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":50 1B2 text3 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":52 1B6 text3 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":53 1DE text3 CODE
+"/tmp/cgtm9X9ic":580 1E0 cinit CODE
+"/tmp/cgtm9X9ic":582 1E0 cinit CODE
+"/tmp/cgtm9X9ic":585 1E0 cinit CODE
+"/tmp/cgtm9X9ic":609 1E0 cinit CODE
+"/tmp/cgtm9X9ic":614 1E2 cinit CODE
+"/tmp/cgtm9X9ic":615 1E4 cinit CODE
+"/tmp/cgtm9X9ic":616 1E6 cinit CODE
+"/tmp/cgtm9X9ic":617 1E8 cinit CODE
+"/tmp/cgtm9X9ic":618 1EA cinit CODE
+"/tmp/cgtm9X9ic":619 1EC cinit CODE
+"/tmp/cgtm9X9ic":620 1EE cinit CODE
+"/tmp/cgtm9X9ic":621 1F2 cinit CODE
+"/tmp/cgtm9X9ic":622 1F6 cinit CODE
+"/tmp/cgtm9X9ic":623 1F6 cinit CODE
+"/tmp/cgtm9X9ic":624 1F8 cinit CODE
+"/tmp/cgtm9X9ic":625 1FC cinit CODE
+"/tmp/cgtm9X9ic":626 1FE cinit CODE
+"/tmp/cgtm9X9ic":627 200 cinit CODE
+"/tmp/cgtm9X9ic":633 202 cinit CODE
+"/tmp/cgtm9X9ic":635 202 cinit CODE
+"/tmp/cgtm9X9ic":636 204 cinit CODE
+"/tmp/cgtm9X9ic":637 206 cinit CODE
+"/tmp/cgtm9X9ic":638 208 cinit CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":126 20C text0 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":128 20C text0 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":129 20E text0 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":132 210 text0 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":134 214 text0 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":137 218 text0 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":138 21C text0 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":139 220 text0 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":140 224 text0 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":142 226 text0 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":143 228 text0 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":144 22A text0 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":28 236 text4 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":30 236 text4 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":31 23A text4 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":24 23C text5 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":26 23C text5 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":27 240 text5 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":20 242 text6 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":22 242 text6 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":23 246 text6 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":32 248 text7 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":34 248 text7 CODE
+"/run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/bipolar_previous/bipolar_previous.X/bipolar1.c":35 24C text7 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+halpstep@d 11 0 COMRAM 1 cstackCOMRAM dist/default/production/bipolar_previous.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__S1 1F 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+_GIE 7F97 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production/bipolar_previous.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production/bipolar_previous.X.production.obj
+__CFG_PLLDIV$5 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+_PEIE 7F96 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+_LATD F8C 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+halpstep@i 13 0 COMRAM 1 cstackCOMRAM dist/default/production/bipolar_previous.X.production.obj
+_main 20C 0 CODE 0 text0 dist/default/production/bipolar_previous.X.production.obj
+___sp 0 0 STACK 2 stack /tmp/cgtE1ysIu.obj
+start 18 0 CODE 0 init /tmp/cgtE1ysIu.obj
+_LATC1 7C59 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+_TMR0H FD7 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+_TMR0L FD6 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+_TRISD F95 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production/bipolar_previous.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production/bipolar_previous.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+_T0CON FD5 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production/bipolar_previous.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production/bipolar_previous.X.production.obj
+__CFG_CP0$ON 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__CFG_CP1$ON 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__size_of__mpap_step1 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__size_of__mpap_step2 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__size_of__mpap_step3 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__size_of__mpap_step4 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__CFG_CP2$ON 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__CFG_CP3$ON 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production/bipolar_previous.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production/bipolar_previous.X.production.obj
+__Hrparam 0 0 ABS 0 rparam dist/default/production/bipolar_previous.X.production.obj
+__Lrparam 0 0 ABS 0 rparam dist/default/production/bipolar_previous.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production/bipolar_previous.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production/bipolar_previous.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production/bipolar_previous.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production/bipolar_previous.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production/bipolar_previous.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production/bipolar_previous.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production/bipolar_previous.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production/bipolar_previous.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production/bipolar_previous.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production/bipolar_previous.X.production.obj
+_TRISC1 7CA1 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+_halpstep 1C 0 CODE 0 text1 dist/default/production/bipolar_previous.X.production.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/bipolar_previous.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/bipolar_previous.X.production.obj
+_TMR0IE 7F95 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/bipolar_previous.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/bipolar_previous.X.production.obj
+_TMR0IF 7F92 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/bipolar_previous.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production/bipolar_previous.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production/bipolar_previous.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production/bipolar_previous.X.production.obj
+__Hramtop 800 0 RAM 0 ramtop dist/default/production/bipolar_previous.X.production.obj
+__Lramtop 800 0 RAM 0 ramtop dist/default/production/bipolar_previous.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production/bipolar_previous.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production/bipolar_previous.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production/bipolar_previous.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production/bipolar_previous.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/bipolar_previous.X.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/bipolar_previous.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production/bipolar_previous.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production/bipolar_previous.X.production.obj
+__Hintcode 18 0 CODE 0 intcode dist/default/production/bipolar_previous.X.production.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production/bipolar_previous.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production/bipolar_previous.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production/bipolar_previous.X.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production/bipolar_previous.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production/bipolar_previous.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production/bipolar_previous.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/bipolar_previous.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/bipolar_previous.X.production.obj
+__CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+_INTERRUPCION 8 0 CODE 0 intcode dist/default/production/bipolar_previous.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production/bipolar_previous.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production/bipolar_previous.X.production.obj
+stackhi 7FF 0 ABS 0 - /tmp/cgtE1ysIu.obj
+__CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/production/bipolar_previous.X.production.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/production/bipolar_previous.X.production.obj
+stacklo 60 0 ABS 0 - /tmp/cgtE1ysIu.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production/bipolar_previous.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production/bipolar_previous.X.production.obj
+__Hinit 18 0 CODE 0 init dist/default/production/bipolar_previous.X.production.obj
+__Linit 18 0 CODE 0 init dist/default/production/bipolar_previous.X.production.obj
+__Hintcodelo 18 0 CODE 0 intcodelo dist/default/production/bipolar_previous.X.production.obj
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production/bipolar_previous.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production/bipolar_previous.X.production.obj
+__end_of_main 22C 0 CODE 0 text0 dist/default/production/bipolar_previous.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production/bipolar_previous.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production/bipolar_previous.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production/bipolar_previous.X.production.obj
+end_of_initialization 202 0 CODE 0 cinit dist/default/production/bipolar_previous.X.production.obj
+INTERRUPCION@cticks 1E 0 COMRAM 1 bssCOMRAM dist/default/production/bipolar_previous.X.production.obj
+_mpap_step 15 0 COMRAM 1 dataCOMRAM dist/default/production/bipolar_previous.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production/bipolar_previous.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production/bipolar_previous.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production/bipolar_previous.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production/bipolar_previous.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production/bipolar_previous.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production/bipolar_previous.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production/bipolar_previous.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production/bipolar_previous.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production/bipolar_previous.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production/bipolar_previous.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production/bipolar_previous.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production/bipolar_previous.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production/bipolar_previous.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production/bipolar_previous.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production/bipolar_previous.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production/bipolar_previous.X.production.obj
+__Hpowerup 18 0 CODE 0 powerup dist/default/production/bipolar_previous.X.production.obj
+__Lpowerup 18 0 CODE 0 powerup dist/default/production/bipolar_previous.X.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/production/bipolar_previous.X.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/production/bipolar_previous.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/production/bipolar_previous.X.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/production/bipolar_previous.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production/bipolar_previous.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production/bipolar_previous.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production/bipolar_previous.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production/bipolar_previous.X.production.obj
+__ptext0 20C 0 CODE 0 text0 dist/default/production/bipolar_previous.X.production.obj
+__ptext1 1C 0 CODE 0 text1 dist/default/production/bipolar_previous.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production/bipolar_previous.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production/bipolar_previous.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production/bipolar_previous.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production/bipolar_previous.X.production.obj
+__ptext3 198 0 CODE 0 text3 dist/default/production/bipolar_previous.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production/bipolar_previous.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production/bipolar_previous.X.production.obj
+__ptext4 236 0 CODE 0 text4 dist/default/production/bipolar_previous.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production/bipolar_previous.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production/bipolar_previous.X.production.obj
+__ptext5 23C 0 CODE 0 text5 dist/default/production/bipolar_previous.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production/bipolar_previous.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production/bipolar_previous.X.production.obj
+__ptext6 242 0 CODE 0 text6 dist/default/production/bipolar_previous.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/bipolar_previous.X.production.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/bipolar_previous.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production/bipolar_previous.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production/bipolar_previous.X.production.obj
+__ptext7 248 0 CODE 0 text7 dist/default/production/bipolar_previous.X.production.obj
+__pbssCOMRAM 1E 0 COMRAM 1 bssCOMRAM dist/default/production/bipolar_previous.X.production.obj
+__ptext8 0 0 CODE 0 text8 dist/default/production/bipolar_previous.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production/bipolar_previous.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production/bipolar_previous.X.production.obj
+__size_of_halpstep 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__end_of__initialization 202 0 CODE 0 cinit dist/default/production/bipolar_previous.X.production.obj
+__CFG_USBDIV$2 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__size_of_mpap_do1step 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+_mpap_do1step 198 0 CODE 0 text3 dist/default/production/bipolar_previous.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production/bipolar_previous.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production/bipolar_previous.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production/bipolar_previous.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production/bipolar_previous.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production/bipolar_previous.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production/bipolar_previous.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production/bipolar_previous.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production/bipolar_previous.X.production.obj
+int_func 10C 0 CODE 0 intcode_body dist/default/production/bipolar_previous.X.production.obj
+__Hparam 0 0 ABS 0 rparam dist/default/production/bipolar_previous.X.production.obj
+__Lparam 0 0 ABS 0 rparam dist/default/production/bipolar_previous.X.production.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/bipolar_previous.X.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/bipolar_previous.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production/bipolar_previous.X.production.obj
+__Hspace_1 1F 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production/bipolar_previous.X.production.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production/bipolar_previous.X.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production/bipolar_previous.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production/bipolar_previous.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production/bipolar_previous.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production/bipolar_previous.X.production.obj
+__pcinit 1E0 0 CODE 0 cinit dist/default/production/bipolar_previous.X.production.obj
+__ramtop 800 0 RAM 0 ramtop /tmp/cgtE1ysIu.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/cgtE1ysIu.obj
+__size_of_main 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__Hconst 0 0 CODE 0 const dist/default/production/bipolar_previous.X.production.obj
+__Lconst 0 0 CODE 0 const dist/default/production/bipolar_previous.X.production.obj
+__end_of_mpap_do1step 1E0 0 CODE 0 text3 dist/default/production/bipolar_previous.X.production.obj
+__end_of__mpap_step1 248 0 CODE 0 text6 dist/default/production/bipolar_previous.X.production.obj
+__end_of__mpap_step2 242 0 CODE 0 text5 dist/default/production/bipolar_previous.X.production.obj
+__end_of__mpap_step3 23C 0 CODE 0 text4 dist/default/production/bipolar_previous.X.production.obj
+__end_of__mpap_step4 24E 0 CODE 0 text7 dist/default/production/bipolar_previous.X.production.obj
+__CFG_PWRT$ON 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__end_of_halpstep 10C 0 CODE 0 text1 dist/default/production/bipolar_previous.X.production.obj
+___inthi_sp 0 0 STACK 2 stack /tmp/cgtE1ysIu.obj
+__CFG_BORV$3 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+___intlo_sp 0 0 STACK 2 stack /tmp/cgtE1ysIu.obj
+__Hend_init 1C 0 CODE 0 end_init dist/default/production/bipolar_previous.X.production.obj
+__Lend_init 18 0 CODE 0 end_init dist/default/production/bipolar_previous.X.production.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production/bipolar_previous.X.production.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production/bipolar_previous.X.production.obj
+__pidataCOMRAM 22C 0 CODE 0 idataCOMRAM dist/default/production/bipolar_previous.X.production.obj
+mpap_do1step@KI 1 0 COMRAM 1 cstackCOMRAM dist/default/production/bipolar_previous.X.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst /tmp/cgtE1ysIu.obj
+__CFG_FOSC$HSPLL_HS 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production/bipolar_previous.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production/bipolar_previous.X.production.obj
+__mpap_step1 242 0 CODE 0 text6 dist/default/production/bipolar_previous.X.production.obj
+__accesstop 60 0 ABS 0 - /tmp/cgtE1ysIu.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production/bipolar_previous.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production/bipolar_previous.X.production.obj
+__pintcode_body 10C 0 CODE 0 intcode_body dist/default/production/bipolar_previous.X.production.obj
+mpap_do1step@i 1D 0 COMRAM 1 dataCOMRAM dist/default/production/bipolar_previous.X.production.obj
+intlevel0 0 0 CODE 0 text /tmp/cgtE1ysIu.obj
+intlevel1 0 0 CODE 0 text /tmp/cgtE1ysIu.obj
+intlevel2 0 0 CODE 0 text /tmp/cgtE1ysIu.obj
+__mpap_step2 23C 0 CODE 0 text5 dist/default/production/bipolar_previous.X.production.obj
+intlevel3 0 0 CODE 0 text /tmp/cgtE1ysIu.obj
+__size_of_INTERRUPCION 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production/bipolar_previous.X.production.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production/bipolar_previous.X.production.obj
+__pdataCOMRAM 15 0 COMRAM 1 dataCOMRAM dist/default/production/bipolar_previous.X.production.obj
+__mpap_step3 236 0 CODE 0 text4 dist/default/production/bipolar_previous.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+start_initialization 1E0 0 CODE 0 cinit dist/default/production/bipolar_previous.X.production.obj
+__end_of_INTERRUPCION 198 0 CODE 0 intcode_body dist/default/production/bipolar_previous.X.production.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__mpap_step4 248 0 CODE 0 text7 dist/default/production/bipolar_previous.X.production.obj
+__CFG_VREGEN$ON 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__initialization 1E0 0 CODE 0 cinit dist/default/production/bipolar_previous.X.production.obj
+__CFG_BOR$OFF 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production/bipolar_previous.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 4 1
+intcode 0 8 8 22D 1
+config 0 300000 300000 E 1
+idloc 0 200000 200000 8 1
+cstackCOMRAM 1 1 1 1E 1
+text4 0 236 236 18 1

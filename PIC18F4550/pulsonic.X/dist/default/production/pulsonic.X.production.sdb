@@ -1,0 +1,1768 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC LFSROK SPEEDOPT EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"108 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/main.c
+[e E4712 _JOB_CMD `uc
+JOB_RESTART 0
+JOB_STOP 1
+]
+"193
+[e E4974 _LOCK_STATE `uc
+UNLOCKED 0
+LOCKED 1
+]
+"196
+[e E4708 _DISPOWNER_MODE `uc
+DISPOWNER_AUTOMODE 0
+DISPOWNER_VISMODE 1
+DISPOWNER_CONFIGMODE 2
+]
+"197
+[e E4702 _FUNMACH `uc
+FUNCMACH_NORMAL 0
+FUNCMACH_CONFIG 1
+FUNCMACH_ERROR 2
+]
+"555
+[e E4811 MPAP_MODES `uc
+MPAP_IDLE_MODE 0
+MPAP_STALL_MODE 1
+MPAP_SEARCH_FIRSTPOINT_HOMESENSOR_MODE 2
+MPAP_CROSSING_HOMESENSOR_MODE 3
+MPAP_NORMAL_MODE 4
+]
+"416 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/ikb/ikb.c
+[e E4896 _STAGE_ `uc
+_STAGE_START_PARSING_ 0
+_STAGE_ISKEY_RELEASED_ 1
+_STAGE_ISKEY_RELEASED2_ 2
+_STAGE_ISKEY_READFROMAPP_ 3
+_STAGE_FIREATIMEEXPIRED_ 4
+_STAGE_FIREATIMEEXPIRED_2_ 5
+_STAGE_ONKEYRELEASED_ 6
+_STAGE_WHILEPRESSING_ 7
+_STAGE_REPTT_ 8
+_STAGE_REPTT_1_ 9
+_STAGE_REPTT_2_ 10
+_STAGE_END_PARSING_ 11
+]
+"78 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/mpap.c
+[e E4715 MPAP_MODES `uc
+MPAP_IDLE_MODE 0
+MPAP_STALL_MODE 1
+MPAP_SEARCH_FIRSTPOINT_HOMESENSOR_MODE 2
+MPAP_CROSSING_HOMESENSOR_MODE 3
+MPAP_NORMAL_MODE 4
+]
+"116 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/display.c
+[e E4747 _DISP7S_CHARS `uc
+OFF 0
+RAYA 1
+]
+"102 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/nozzle.c
+[e E4715 MPAP_MODES `uc
+MPAP_IDLE_MODE 0
+MPAP_STALL_MODE 1
+MPAP_SEARCH_FIRSTPOINT_HOMESENSOR_MODE 2
+MPAP_CROSSING_HOMESENSOR_MODE 3
+MPAP_NORMAL_MODE 4
+]
+"32 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/configMode.c
+[e E4708 _DISPOWNER_MODE `uc
+DISPOWNER_AUTOMODE 0
+DISPOWNER_VISMODE 1
+DISPOWNER_CONFIGMODE 2
+]
+"162
+[e E4712 _JOB_CMD `uc
+JOB_RESTART 0
+JOB_STOP 1
+]
+"14 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/visMode.c
+[e E4708 _DISPOWNER_MODE `uc
+DISPOWNER_AUTOMODE 0
+DISPOWNER_VISMODE 1
+DISPOWNER_CONFIGMODE 2
+]
+"17 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/flushAllMode.c
+[e E4712 _JOB_CMD `uc
+JOB_RESTART 0
+JOB_STOP 1
+]
+"24 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/flushAtNozzle.c
+[e E4712 _JOB_CMD `uc
+JOB_RESTART 0
+JOB_STOP 1
+]
+"91 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/autoMode.c
+[e E4708 _DISPOWNER_MODE `uc
+DISPOWNER_AUTOMODE 0
+DISPOWNER_VISMODE 1
+DISPOWNER_CONFIGMODE 2
+]
+"101
+[e E4712 _JOB_CMD `uc
+JOB_RESTART 0
+JOB_STOP 1
+]
+"301
+[e E4811 MPAP_MODES `uc
+MPAP_IDLE_MODE 0
+MPAP_STALL_MODE 1
+MPAP_SEARCH_FIRSTPOINT_HOMESENSOR_MODE 2
+MPAP_CROSSING_HOMESENSOR_MODE 3
+MPAP_NORMAL_MODE 4
+]
+"187 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/ikb/ikb.c
+[v _keyRead_pin_key0 keyRead_pin_key0 `T(uc  1 s 1 keyRead_pin_key0 ]
+"191
+[v _keyRead_pin_key1 keyRead_pin_key1 `T(uc  1 s 1 keyRead_pin_key1 ]
+"195
+[v _keyRead_pin_key2 keyRead_pin_key2 `T(uc  1 s 1 keyRead_pin_key2 ]
+"199
+[v _keyRead_pin_key3 keyRead_pin_key3 `T(uc  1 s 1 keyRead_pin_key3 ]
+"203
+[v _keyRead_pin_key4 keyRead_pin_key4 `T(uc  1 s 1 keyRead_pin_key4 ]
+"210
+[v _ikb_setKeyProp ikb_setKeyProp `(v  1 e 0 0 ]
+"214
+[v _ikb_init ikb_init `(v  1 e 0 0 ]
+"268
+[v _ikb_job ikb_job `(v  1 e 0 0 ]
+"273
+[v _ikb_flush ikb_flush `(v  1 e 0 0 ]
+"277
+[v _ikb_get_AtTimeExpired_BeforeOrAfter ikb_get_AtTimeExpired_BeforeOrAfter `(uc  1 e 1 0 ]
+"281
+[v _ikb_key_is_ready2read ikb_key_is_ready2read `(uc  1 e 1 0 ]
+"285
+[v _ikb_set_ready2read ikb_set_ready2read `(v  1 e 0 0 ]
+"289
+[v _ikb_key_was_read ikb_key_was_read `(v  1 e 0 0 ]
+"293
+[v _ikb_execfunct ikb_execfunct `(v  1 e 0 0 ]
+"305
+[v _ikey_scan ikey_scan `(v  1 e 0 0 ]
+"370
+[v _ikey_is_accessible ikey_is_accessible `(uc  1 s 1 ikey_is_accessible ]
+"410
+[v _ikey_parsing ikey_parsing `(v  1 e 0 0 ]
+"630
+[v _ikey_is_all_hw_released ikey_is_all_hw_released `(c  1 e 1 0 ]
+"643
+[v _ikey_clear_all_flag ikey_clear_all_flag `(v  1 e 0 0 ]
+"653
+[v _ikey_is_all_process_finished ikey_is_all_process_finished `(c  1 e 1 0 ]
+"5 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/PIC/eeprom/eeprom.c
+[v _eepromRead eepromRead `(uc  1 e 1 0 ]
+"20
+[v _eepromWrite eepromWrite `(v  1 e 0 0 ]
+"55
+[v _eepromWrite_double eepromWrite_double `(v  1 e 0 0 ]
+"64
+[v _eepromRead_double eepromRead_double `(d  1 e 3 0 ]
+"4 /opt/microchip/xc8/v1.33/sources/common/abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 /opt/microchip/xc8/v1.33/sources/common/abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"31 /opt/microchip/xc8/v1.33/sources/common/abtofl.c
+[v ___abtofl __abtofl `(d  1 e 3 0 ]
+"33 /opt/microchip/xc8/v1.33/sources/common/abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.33/sources/common/aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"8 /opt/microchip/xc8/v1.33/sources/common/almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"36 /opt/microchip/xc8/v1.33/sources/common/altofl.c
+[v ___altofl __altofl `(d  1 e 3 0 ]
+"42 /opt/microchip/xc8/v1.33/sources/common/altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.33/sources/common/atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.33/sources/common/atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 /opt/microchip/xc8/v1.33/sources/common/attofl.c
+[v ___attofl __attofl `(d  1 e 3 0 ]
+"37 /opt/microchip/xc8/v1.33/sources/common/attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.33/sources/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"8 /opt/microchip/xc8/v1.33/sources/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"31 /opt/microchip/xc8/v1.33/sources/common/awtofl.c
+[v ___awtofl __awtofl `(d  1 e 3 0 ]
+"32 /opt/microchip/xc8/v1.33/sources/common/awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"63 /opt/microchip/xc8/v1.33/sources/common/double.c
+[v ___flpack __flpack `(d  1 e 3 0 ]
+"88 /opt/microchip/xc8/v1.33/sources/common/fladd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"49 /opt/microchip/xc8/v1.33/sources/common/fldiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"4 /opt/microchip/xc8/v1.33/sources/common/flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"62 /opt/microchip/xc8/v1.33/sources/common/flmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 /opt/microchip/xc8/v1.33/sources/common/flneg.c
+[v ___flneg __flneg `(d  1 e 3 0 ]
+"62 /opt/microchip/xc8/v1.33/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+[v i2___ftpack __ftpack `(f  1 e 3 0 ]
+"20 /opt/microchip/xc8/v1.33/sources/common/flsub.c
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"43 /opt/microchip/xc8/v1.33/sources/common/fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"86 /opt/microchip/xc8/v1.33/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"49 /opt/microchip/xc8/v1.33/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"4 /opt/microchip/xc8/v1.33/sources/common/ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+[v i2___ftge __ftge `(b  1 e 0 0 ]
+"62 /opt/microchip/xc8/v1.33/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 /opt/microchip/xc8/v1.33/sources/common/ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"20 /opt/microchip/xc8/v1.33/sources/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 /opt/microchip/xc8/v1.33/sources/common/fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 /opt/microchip/xc8/v1.33/sources/common/itoa.c
+[v _itoa itoa `(*.30uc  1 e 2 0 ]
+"17
+[v _utoa utoa `(*.30uc  1 e 2 0 ]
+"4 /opt/microchip/xc8/v1.33/sources/common/lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 /opt/microchip/xc8/v1.33/sources/common/lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 /opt/microchip/xc8/v1.33/sources/common/lbtofl.c
+[v ___lbtofl __lbtofl `(d  1 e 3 0 ]
+"27 /opt/microchip/xc8/v1.33/sources/common/lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.33/sources/common/lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"8 /opt/microchip/xc8/v1.33/sources/common/llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"30 /opt/microchip/xc8/v1.33/sources/common/lltofl.c
+[v ___lltofl __lltofl `(d  1 e 3 0 ]
+"35 /opt/microchip/xc8/v1.33/sources/common/lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.33/sources/common/ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.33/sources/common/ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 /opt/microchip/xc8/v1.33/sources/common/lttofl.c
+[v ___lttofl __lttofl `(d  1 e 3 0 ]
+"30 /opt/microchip/xc8/v1.33/sources/common/lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.33/sources/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 /opt/microchip/xc8/v1.33/sources/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 /opt/microchip/xc8/v1.33/sources/common/lwtofl.c
+[v ___lwtofl __lwtofl `(d  1 e 3 0 ]
+"28 /opt/microchip/xc8/v1.33/sources/common/lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+[v i2___lwtoft __lwtoft `(f  1 e 3 0 ]
+"4 /opt/microchip/xc8/v1.33/sources/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 /opt/microchip/xc8/v1.33/sources/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 /opt/microchip/xc8/v1.33/sources/common/Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 /opt/microchip/xc8/v1.33/sources/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 /opt/microchip/xc8/v1.33/sources/common/Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 /opt/microchip/xc8/v1.33/sources/pic18/asfladd.c
+[v ___asfladd __asfladd `T(d  1 e 3 0 ]
+"6 /opt/microchip/xc8/v1.33/sources/pic18/asfldiv.c
+[v ___asfldiv __asfldiv `T(d  1 e 3 0 ]
+"6 /opt/microchip/xc8/v1.33/sources/pic18/asflmul.c
+[v ___asflmul __asflmul `T(d  1 e 3 0 ]
+"6 /opt/microchip/xc8/v1.33/sources/pic18/asflsub.c
+[v ___asflsub __asflsub `T(d  1 e 3 0 ]
+"6 /opt/microchip/xc8/v1.33/sources/pic18/asftadd.c
+[v ___asftadd __asftadd `T(f  1 e 3 0 ]
+"6 /opt/microchip/xc8/v1.33/sources/pic18/asftdiv.c
+[v ___asftdiv __asftdiv `T(f  1 e 3 0 ]
+"6 /opt/microchip/xc8/v1.33/sources/pic18/asftmul.c
+[v ___asftmul __asftmul `T(f  1 e 3 0 ]
+"6 /opt/microchip/xc8/v1.33/sources/pic18/asftsub.c
+[v ___asftsub __asftsub `T(f  1 e 3 0 ]
+"6 /opt/microchip/xc8/v1.33/sources/pic18/aslmul.c
+[v ___aslmul __aslmul `T(ul  1 e 4 0 ]
+"40 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/autoMode.c
+[v _autoMode_setup autoMode_setup `(v  1 e 0 0 ]
+"89
+[v _autoMode_disp7s_writeSumTotal autoMode_disp7s_writeSumTotal `(v  1 e 0 0 ]
+"99
+[v _autoMode_cmd autoMode_cmd `(v  1 e 0 0 ]
+"254
+[v _autoMode1_job autoMode1_job `(v  1 e 0 0 ]
+"390
+[v _autoMode_jobX autoMode_jobX `(v  1 e 0 0 ]
+"521
+[v _autoMode_job_temperature autoMode_job_temperature `(v  1 e 0 0 ]
+"16 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/configMode.c
+[v _configMode_init configMode_init `(v  1 e 0 0 ]
+"24
+[v _configMode_job configMode_job `(c  1 e 1 0 ]
+"41
+[v _configMode_kb configMode_kb `(c  1 s 1 configMode_kb ]
+"209
+[v _configMode_disp configMode_disp `(v  1 s 0 configMode_disp ]
+"5 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/display.c
+[v _disp7s_mux0_off disp7s_mux0_off `T(v  1 s 0 disp7s_mux0_off ]
+"9
+[v _disp7s_mux0_on disp7s_mux0_on `T(v  1 s 0 disp7s_mux0_on ]
+"14
+[v _disp7s_mux1_off disp7s_mux1_off `T(v  1 s 0 disp7s_mux1_off ]
+"18
+[v _disp7s_mux1_on disp7s_mux1_on `T(v  1 s 0 disp7s_mux1_on ]
+"23
+[v _disp7s_mux2_off disp7s_mux2_off `T(v  1 s 0 disp7s_mux2_off ]
+"27
+[v _disp7s_mux2_on disp7s_mux2_on `T(v  1 s 0 disp7s_mux2_on ]
+"32
+[v _disp7s_mux3_off disp7s_mux3_off `T(v  1 s 0 disp7s_mux3_off ]
+"36
+[v _disp7s_mux3_on disp7s_mux3_on `T(v  1 s 0 disp7s_mux3_on ]
+"41
+[v _disp7s_mux4_off disp7s_mux4_off `T(v  1 s 0 disp7s_mux4_off ]
+"45
+[v _disp7s_mux4_on disp7s_mux4_on `T(v  1 s 0 disp7s_mux4_on ]
+"83
+[v _disp7s_mux_init disp7s_mux_init `(v  1 s 0 disp7s_mux_init ]
+"97
+[v _disp7s_mux_Q disp7s_mux_Q `(v  1 s 0 disp7s_mux_Q ]
+"112
+[v _disp7s_init disp7s_init `(v  1 e 0 0 ]
+"128
+[v _disp7s_job disp7s_job `(v  1 e 0 0 ]
+"150
+[v _disp7s_off disp7s_off `(v  1 e 0 0 ]
+"156
+[v _disp7s_modeDisp_off disp7s_modeDisp_off `(v  1 e 0 0 ]
+"160
+[v _disp7s_qtyDsp_off disp7s_qtyDsp_off `(v  1 e 0 0 ]
+"164
+[v _disp7s_modeDisp_writeText_oil disp7s_modeDisp_writeText_oil `(v  1 e 0 0 ]
+"169
+[v _disp7s_qtyDisp_writeText_OFF disp7s_qtyDisp_writeText_OFF `(v  1 e 0 0 ]
+"175
+[v _disp7s_qtyDisp_writeText_FFF disp7s_qtyDisp_writeText_FFF `(v  1 e 0 0 ]
+"181
+[v _disp7s_qtyDisp_writeText_FLU disp7s_qtyDisp_writeText_FLU `(v  1 e 0 0 ]
+"188
+[v _disp7s_qtyDisp_writeText_20_3RAYAS disp7s_qtyDisp_writeText_20_3RAYAS `(v  1 e 0 0 ]
+"196
+[v _disp7s_qtyDisp_writeText_NO_OIL disp7s_qtyDisp_writeText_NO_OIL `(v  1 e 0 0 ]
+"205
+[v _disp7s_qtyDisp_writeText_NO_HOME_SENSOR disp7s_qtyDisp_writeText_NO_HOME_SENSOR `(v  1 e 0 0 ]
+"226
+[v _disp7s_write_f disp7s_write_f `(v  1 e 0 0 ]
+"281
+[v _disp7s_qtyDisp_writeFloat disp7s_qtyDisp_writeFloat `(v  1 e 0 0 ]
+"285
+[v _disp7s_modeDisp_writeFloat disp7s_modeDisp_writeFloat `(v  1 e 0 0 ]
+"290
+[v _disp7s_write_i disp7s_write_i `(v  1 e 0 0 ]
+"320
+[v _disp7s_qtyDisp_writeInt disp7s_qtyDisp_writeInt `(v  1 e 0 0 ]
+"324
+[v _disp7s_modeDisp_writeInt disp7s_modeDisp_writeInt `(v  1 e 0 0 ]
+"15 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/flushAllMode.c
+[v _flushAllMode_cmd flushAllMode_cmd `(v  1 e 0 0 ]
+"36
+[v _flushAllMode_job flushAllMode_job `(v  1 e 0 0 ]
+"15 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/flushAtNozzle.c
+[v _flushAtNozzle_setNozzle flushAtNozzle_setNozzle `(v  1 e 0 0 ]
+"22
+[v _flushAtNozzle_cmd flushAtNozzle_cmd `(v  1 e 0 0 ]
+"78
+[v _flushAtNozzle_job flushAtNozzle_job `(v  1 e 0 0 ]
+"12 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/inputs.c
+[v _startSignal_init startSignal_init `(v  1 e 0 0 ]
+"17
+[v _is_startSignal is_startSignal `(c  1 e 1 0 ]
+"56
+[v _oilLevel_init oilLevel_init `(v  1 e 0 0 ]
+"62
+[v _is_oilLevel is_oilLevel `(c  1 e 1 0 ]
+"94
+[v _is_homeSensor is_homeSensor `(c  1 e 1 0 ]
+"98
+[v _is_unblocked_nozzle is_unblocked_nozzle `(c  1 e 1 0 ]
+"103
+[v _is_inductiveSensorRPM is_inductiveSensorRPM `(c  1 e 1 0 ]
+"81 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/main.c
+[v _mykb_layout0 mykb_layout0 `(v  1 e 0 0 ]
+"106
+[v _loop_test_motor_mosfet loop_test_motor_mosfet `(v  1 e 0 0 ]
+"129
+[v _main main `(v  1 e 0 0 ]
+"542
+[v _INTERRUPCION INTERRUPCION `II(v  1 e 0 0 ]
+"623
+[v _error_job error_job `(v  1 e 0 0 ]
+"691
+[v _check_homeSensor_reset check_homeSensor_reset `(v  1 s 0 check_homeSensor_reset ]
+"697
+[v _check_homeSensor check_homeSensor `(v  1 s 0 check_homeSensor ]
+"741
+[v _check_oilLevel_reset check_oilLevel_reset `(v  1 s 0 check_oilLevel_reset ]
+"747
+[v _check_oilLevel check_oilLevel `(v  1 s 0 check_oilLevel ]
+"786
+[v _errorHandler_queue errorHandler_queue `(v  1 s 0 errorHandler_queue ]
+"5 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/mpap.c
+[v __mpap_step1 _mpap_step1 `(v  1 s 0 _mpap_step1 ]
+"14
+[v __mpap_step2 _mpap_step2 `(v  1 s 0 _mpap_step2 ]
+"23
+[v __mpap_step3 _mpap_step3 `(v  1 s 0 _mpap_step3 ]
+"32
+[v __mpap_step4 _mpap_step4 `(v  1 s 0 _mpap_step4 ]
+"71
+[v _mpap_getMode mpap_getMode `(c  1 e 1 0 ]
+"76
+[v _mpap_stall mpap_stall `(v  1 e 0 0 ]
+"84
+[v _mpap_setup_movement mpap_setup_movement `(v  1 s 0 mpap_setup_movement ]
+"95
+[v _mpap_doMovement mpap_doMovement `(v  1 e 0 0 ]
+"115
+[v _mpap_get_numSteps_current mpap_get_numSteps_current `(i  1 e 2 0 ]
+"120
+[v _mpap_setup_searchFirstPointHomeSensor mpap_setup_searchFirstPointHomeSensor `(v  1 e 0 0 ]
+"128
+[v _mpap_do1step mpap_do1step `(v  1 e 0 0 ]
+"154
+[v _mpap_normal_mode mpap_normal_mode `(c  1 s 1 mpap_normal_mode ]
+"177
+[v _mpap_searchFirstPointHomeSensor mpap_searchFirstPointHomeSensor `(c  1 s 1 mpap_searchFirstPointHomeSensor ]
+"201
+[v _mpap_crossingHomeSensor mpap_crossingHomeSensor `(c  1 s 1 mpap_crossingHomeSensor ]
+"230
+[v _mpap_job mpap_job `(v  1 e 0 0 ]
+"284
+[v _mpap_movetoNozzle mpap_movetoNozzle `(v  1 e 0 0 ]
+"290
+[v _mpap_isIdle mpap_isIdle `(c  1 e 1 0 ]
+"312
+[v _mpap_homming_job_reset mpap_homming_job_reset `(v  1 e 0 0 ]
+"316
+[v _mpap_homming_job mpap_homming_job `(c  1 e 1 0 ]
+"6 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/myeeprom.c
+[v _myeeprom_init myeeprom_init `(v  1 e 0 0 ]
+"7 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/nozzle.c
+[v _nozzle_isEnabled nozzle_isEnabled `(c  1 e 1 0 ]
+"15
+[v _nozzle_getPosition nozzle_getPosition `(c  1 e 1 0 ]
+"22
+[v _nozzle_setPosition_reset nozzle_setPosition_reset `(v  1 e 0 0 ]
+"27
+[v _nozzle_setPosition nozzle_setPosition `(c  1 e 1 0 ]
+"10 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/pulsonic.c
+[v _pulsonic_init pulsonic_init `(v  1 e 0 0 ]
+"81
+[v _pulsonic_getTotalSum_mlh pulsonic_getTotalSum_mlh `(d  1 e 3 0 ]
+"93
+[v _pulsonic_getNumNozzleAvailable pulsonic_getNumNozzleAvailable `(c  1 e 1 0 ]
+"6 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/pump.c
+[v _pump_setTick pump_setTick `(v  1 e 0 0 ]
+"10
+[v _pump_getTick pump_getTick `(ui  1 e 2 0 ]
+"14
+[v _pump_stop pump_stop `(v  1 e 0 0 ]
+"20
+[v _pump_job pump_job `(c  1 e 1 0 ]
+"64
+[v _pump_isIdle pump_isIdle `(c  1 e 1 0 ]
+"4 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/ustepping.c
+[v _setdc setdc `(v  1 e 0 0 ]
+[v i2_setdc setdc `(v  1 e 0 0 ]
+"10 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/visMode.c
+[v _visMode_job visMode_job `(v  1 e 0 0 ]
+"22
+[v _visMode_disp visMode_disp `(v  1 s 0 visMode_disp ]
+[s S45 _key_prop_uFlag_f 1 `uc 1 onKeyPressed 1 0 :1:0 
+`uc 1 reptt 1 0 :1:1 
+`uc 1 onKeyReleased 1 0 :1:2 
+`uc 1 whilePressing 1 0 :1:3 
+`uc 1 atTimeExpired 1 0 :1:4 
+`uc 1 atTimeExpired2 1 0 :1:5 
+`uc 1 __a 1 0 :2:6 
+]
+"27 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/ikb/ikb.c
+[u S53 _key_prop_uFlag 1 `S45 1 f 1 0 `uc 1 packed 1 0 ]
+[s S56 _repttTh 4 `ui 1 breakTime 2 0 `ui 1 period 2 2 ]
+[s S59 _key_prop 6 `S53 1 uFlag 1 0 `S56 1 repttTh 4 1 `uc 1 numGroup 1 5 ]
+[s S578 _key_statusFlag 1 `uc 1 state 1 0 :1:0 
+`uc 1 readyToRead 1 0 :1:1 
+`uc 1 atTimeExpired_beforeOrAfter 1 0 :1:2 
+`uc 1 ownerOfGroup 1 0 :1:3 
+`uc 1 inProcessing 1 0 :1:4 
+`uc 1 __a 1 0 :3:5 
+]
+[s S585 _key 16 `*.37(uc 1 keyRead 2 0 `*.37(v 1 keyDo 2 2 `uc 1 sm0 1 4 `uc 1 counter0 1 5 `uc 1 sm1 1 6 `ui 1 counter1 2 7 `S59 1 prop 6 9 `S578 1 statusFlag 1 15 ]
+[v _key key `VE[5]S585  1 s 80 key ]
+[s S45 _key_prop_uFlag_f 1 `uc 1 onKeyPressed 1 0 :1:0 
+`uc 1 reptt 1 0 :1:1 
+`uc 1 onKeyReleased 1 0 :1:2 
+`uc 1 whilePressing 1 0 :1:3 
+`uc 1 atTimeExpired 1 0 :1:4 
+`uc 1 atTimeExpired2 1 0 :1:5 
+`uc 1 __a 1 0 :2:6 
+]
+"28
+[u S53 _key_prop_uFlag 1 `S45 1 f 1 0 `uc 1 packed 1 0 ]
+[s S56 _repttTh 4 `ui 1 breakTime 2 0 `ui 1 period 2 2 ]
+[s S59 _key_prop 6 `S53 1 uFlag 1 0 `S56 1 repttTh 4 1 `uc 1 numGroup 1 5 ]
+[v _propEmpty propEmpty `CS59  1 e 6 0 ]
+"368
+[v _group_x group_x `[5]uc  1 e 5 0 ]
+"631 /opt/microchip/xc8/v1.33/include/pic18f4550.h
+[v _UCON UCON `VEuc  1 e 1 @3949 ]
+"744
+[v _UCFG UCFG `VEuc  1 e 1 @3951 ]
+"2834
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"2987
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"3107
+[v _PORTE PORTE `VEuc  1 e 1 @3972 ]
+"3358
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"3493
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"3625
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"3740
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3872
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"3974
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"4171
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"4392
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"4563
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4784
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+[s S1489 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"5438
+[s S1498 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 EEFS 1 0 :1:6 
+]
+[u S1501 . 1 `S1489 1 . 1 0 `S1498 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES1501  1 e 1 @4006 ]
+"5482
+[v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
+"5488
+[v _EEDATA EEDATA `VEuc  1 e 1 @4008 ]
+"5494
+[v _EEADR EEADR `VEuc  1 e 1 @4009 ]
+"6185
+[v _CMCON CMCON `VEuc  1 e 1 @4020 ]
+"6841
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @4026 ]
+"6910
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @4027 ]
+"7171
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"7809
+[v _T2CON T2CON `VEuc  1 e 1 @4042 ]
+"7906
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+"10045
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"10423
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"10815
+[v _TMR2IE TMR2IE `VEb  1 e 0 @31977 ]
+"10817
+[v _TMR2IF TMR2IF `VEb  1 e 0 @31985 ]
+[s S1705 _autoMode 1 `c 1 sm0 1 0 ]
+"87 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/autoMode.c
+[v _autoMode autoMode `S1705  1 s 1 autoMode ]
+[s S1257 _configMode 2 `c 1 disp7s_accessReq 1 0 `c 1 numRegistro 1 1 ]
+"12 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/configMode.c
+[v _configMode configMode `S1257  1 s 2 configMode ]
+[s S997 _disp7s_mux 4 `[2]*.2(v 1 Qonoff 4 0 ]
+"55 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/display.c
+[v _disp7s_mux disp7s_mux `[5]S997  1 e 20 0 ]
+"64
+[v _DISP7S_NUMS DISP7S_NUMS `C[10]uc  1 e 10 0 ]
+"77
+[v _DISP7S_CHARS DISP7S_CHARS `C[2]uc  1 e 2 0 ]
+[s S1548 _flushAllMode 2 `c 1 numNozzle 1 0 `c 1 sm0 1 1 ]
+"13 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/flushAllMode.c
+[v _flushAllMode flushAllMode `S1548  1 s 2 flushAllMode ]
+[s S1620 _flushAtNozzle 2 `c 1 numNozzle 1 0 `c 1 sm0 1 1 ]
+"13 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/flushAtNozzle.c
+[v _flushAtNozzle flushAtNozzle `S1620  1 s 2 flushAtNozzle ]
+"20
+[v _counterTicks_debug counterTicks_debug `VEui  1 e 2 0 ]
+[s S1217 _startSignal 2 `c 1 S 1 0 `c 1 sVar 1 1 ]
+"7 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/inputs.c
+[v _startSignal startSignal `S1217  1 s 2 startSignal ]
+[s S1231 _oilLevel 2 `c 1 level 1 0 `c 1 levelVar 1 1 ]
+"54
+[v _oilLevel oilLevel `S1231  1 s 2 oilLevel ]
+[s S27 _isr_flag 1 `uc 1 f1ms 1 0 :1:0 
+`uc 1 __a 1 0 :7:1 
+]
+"60 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/main.c
+[v _isr_flag isr_flag `VES27  1 s 1 isr_flag ]
+[s S30 _main_flag 1 `uc 1 f1ms 1 0 :1:0 
+`uc 1 __a 1 0 :7:1 
+]
+"62
+[s S33 _main_focus 2 `c 1 kb 1 0 `c 1 disp 1 1 ]
+[s S36 _smain 3 `S30 1 f 1 0 `S33 1 focus 2 1 ]
+[v _smain smain `VES36  1 e 3 0 ]
+[s S39 _psFlag 1 `uc 1 checkNewStart 1 0 :1:0 
+`uc 1 checkNoStart 1 0 :1:1 
+`uc 1 autoMode_lock 1 0 :1:2 
+`uc 1 autoMode_toreturn_disp7s 1 0 :1:3 
+`uc 1 __a 1 0 :4:4 
+]
+"77
+[v _psFlag psFlag `S39  1 s 1 psFlag ]
+"78
+[v _funcMach funcMach `c  1 e 1 0 ]
+"79
+[v _disp_owner disp_owner `c  1 e 1 0 ]
+"127
+[v _startSig_last startSig_last `c  1 e 1 0 ]
+[s S239 _errorFlag_flags 1 `uc 1 oilLevel 1 0 :1:0 
+`uc 1 homeSensor 1 0 :1:1 
+`uc 1 unblockedNozzle 1 0 :1:2 
+`uc 1 inductiveSensorRPM 1 0 :1:3 
+`uc 1 __a 1 0 :4:4 
+]
+"618
+[u S245 _errorFlag 1 `S239 1 f 1 0 `c 1 packed 1 0 ]
+[v _error_grantedToWriteDisp error_grantedToWriteDisp `S245  1 s 1 error_grantedToWriteDisp ]
+[s S350 _chek_homeSensor_data 2 `c 1 sm0 1 0 `c 1 sm1 1 1 ]
+"689
+[v _chek_homeSensor_data chek_homeSensor_data `S350  1 e 2 0 ]
+[s S357 _check_oilLevel_data 2 `c 1 sm0 1 0 `c 1 sm1 1 1 ]
+"739
+[v _check_oilLevel_data check_oilLevel_data `S357  1 e 2 0 ]
+"42 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/mpap.c
+[v _mpap_step mpap_step `[4]*.2(v  1 e 8 0 ]
+[s S860 _mpap 8 `i 1 numSteps_current 2 0 `i 1 counter_steps 2 2 `i 1 numSteps_tomove 2 4 `c 1 KI 1 6 `c 1 mode 1 7 ]
+"53
+[v _mpap mpap `VES860  1 e 8 0 ]
+"81
+[v _counterZeros counterZeros `ui  1 s 2 counterZeros ]
+[s S917 _homming 1 `c 1 sm0 1 0 ]
+"310
+[v _homming homming `S917  1 e 1 0 ]
+"20 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/nozzle.c
+[v _sm0 sm0 `c  1 s 1 sm0 ]
+[s S239 _errorFlag_flags 1 `uc 1 oilLevel 1 0 :1:0 
+`uc 1 homeSensor 1 0 :1:1 
+`uc 1 unblockedNozzle 1 0 :1:2 
+`uc 1 inductiveSensorRPM 1 0 :1:3 
+`uc 1 __a 1 0 :4:4 
+]
+"6 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/pulsonic.c
+[u S245 _errorFlag 1 `S239 1 f 1 0 `c 1 packed 1 0 ]
+[s S248 _pulsonic_nozzle 16 `d 1 Q_mlh 3 0 `d 1 nticks_xtimeslice_min 3 3 `d 1 kmax_ticks_xtimeslice 3 6 `d 1 accError 3 9 `i 1 counterTicks_xTotalTime 2 12 `ui 1 nticks_delivered_inThisTimeSlice 2 14 ]
+[s S255 _pulsonic_oil 2 `c 1 i 1 0 `c 1 viscosity 1 1 ]
+[s S100 _pulsonic_display 5 `[3]uc 1 qty 3 0 `[2]uc 1 mode 2 3 ]
+[s S258 _pulsonic_flags 1 `uc 1 homed 1 0 :1:0 
+`uc 1 __a 1 0 :7:1 
+]
+[s S261 _pulsonic 329 `S245 1 error 1 0 `d 1 ml_x1tick 3 1 `d 1 distTotalTime_min 3 4 `d 1 distAccessTime_min 3 7 `ul 1 distAccessTime_ms 4 10 `d 1 timeslice_min 3 14 `[18]S248 1 nozzle 288 17 `S255 1 oil 2 305 `d 1 sum_all_mlh 3 307 `c 1 numNozzleAvailable 1 310 `ul 1 kTimeBetweenNozzleAvailable 4 311 `ul 1 countTimeBetweenNozzleAvailable 4 315 `i 1 num_timeslice 2 319 `c 1 countNozzleAvailable 1 321 `S100 1 disp7s 5 322 `S258 1 flags 1 327 `c 1 numNozzle 1 328 ]
+[v _pulsonic pulsonic `VES261  1 e 329 0 ]
+"8
+[v _OIL_VISCOSITY OIL_VISCOSITY `C[4]c  1 e 4 0 ]
+[s S970 _pump 3 `ui 1 ticks 2 0 `c 1 sm0 1 2 ]
+"4 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/pump.c
+[v _pump pump `S970  1 s 3 pump ]
+"11 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/ustepping.c
+[v _ustep_lockup ustep_lockup `C[5]ui  1 e 10 0 ]
+[s S21 _visMode 8 `c 1 numVista 1 0 `c 1 disp7s_accessReq 1 1 `c 1 timerRun 1 2 `ul 1 timer 4 3 `c 1 lockTimming 1 7 ]
+"27 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/visMode.h
+[v _visMode visMode `S21  1 e 8 0 ]
+"129 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/main.c
+[v _main main `(v  1 e 0 0 ]
+{
+[s S45 _key_prop_uFlag_f 1 `uc 1 onKeyPressed 1 0 :1:0 
+`uc 1 reptt 1 0 :1:1 
+`uc 1 onKeyReleased 1 0 :1:2 
+`uc 1 whilePressing 1 0 :1:3 
+`uc 1 atTimeExpired 1 0 :1:4 
+`uc 1 atTimeExpired2 1 0 :1:5 
+`uc 1 __a 1 0 :2:6 
+]
+"138
+[u S53 _key_prop_uFlag 1 `S45 1 f 1 0 `uc 1 packed 1 0 ]
+[s S56 _repttTh 4 `ui 1 breakTime 2 0 `ui 1 period 2 2 ]
+[s S59 _key_prop 6 `S53 1 uFlag 1 0 `S56 1 repttTh 4 1 `uc 1 numGroup 1 5 ]
+[v main@prop prop `S59  1 a 6 7 ]
+"134
+[v main@startSig startSig `c  1 a 1 17 ]
+"136
+[v main@flushKb flushKb `c  1 a 1 16 ]
+"133
+[v main@c_access_disp c_access_disp `c  1 a 1 15 ]
+"132
+[v main@c_access_kb c_access_kb `c  1 a 1 14 ]
+"131
+[v main@sm0 sm0 `c  1 a 1 13 ]
+"137
+[v main@flushKb_last flushKb_last `c  1 s 1 flushKb_last ]
+"138
+[v main@F5007 F5007 `S59  1 s 6 F5007 ]
+"535
+} 0
+"10 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/visMode.c
+[v _visMode_job visMode_job `(v  1 e 0 0 ]
+{
+"20
+} 0
+"22
+[v _visMode_disp visMode_disp `(v  1 s 0 visMode_disp ]
+{
+[v visMode_disp@numVista numVista `c  1 a 1 wreg ]
+"24
+[v visMode_disp@qty qty `d  1 a 3 1 ]
+"22
+[v visMode_disp@numVista numVista `c  1 a 1 wreg ]
+"26
+[v visMode_disp@numVista numVista `c  1 a 1 4 ]
+"46
+} 0
+"12 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/inputs.c
+[v _startSignal_init startSignal_init `(v  1 e 0 0 ]
+{
+"16
+} 0
+"4 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/ustepping.c
+[v _setdc setdc `(v  1 e 0 0 ]
+{
+[v setdc@dc dc `ui  1 p 2 0 ]
+"8
+} 0
+"20 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/pump.c
+[v _pump_job pump_job `(c  1 e 1 0 ]
+{
+"23
+[v pump_job@c c `ui  1 s 2 c ]
+"63
+} 0
+"10 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/pulsonic.c
+[v _pulsonic_init pulsonic_init `(v  1 e 0 0 ]
+{
+"14
+[v pulsonic_init@i i `c  1 a 1 63 ]
+"67
+[v pulsonic_init@reg reg `uc  1 a 1 62 ]
+"12
+[v pulsonic_init@eeprom_corr eeprom_corr `c  1 a 1 61 ]
+"79
+} 0
+"64 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/PIC/eeprom/eeprom.c
+[v _eepromRead_double eepromRead_double `(d  1 e 3 0 ]
+{
+"67
+[v eepromRead_double@buff buff `[3]uc  1 a 3 4 ]
+"66
+[v eepromRead_double@i i `c  1 a 1 7 ]
+"64
+[v eepromRead_double@pEaddr pEaddr `*.39uc  1 p 2 1 ]
+"71
+} 0
+"5
+[v _eepromRead eepromRead `(uc  1 e 1 0 ]
+{
+[v eepromRead@addr addr `uc  1 a 1 wreg ]
+[v eepromRead@addr addr `uc  1 a 1 wreg ]
+[v eepromRead@addr addr `uc  1 a 1 0 ]
+"19
+} 0
+"56 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/inputs.c
+[v _oilLevel_init oilLevel_init `(v  1 e 0 0 ]
+{
+"60
+} 0
+"17
+[v _is_startSignal is_startSignal `(c  1 e 1 0 ]
+{
+"21
+[v is_startSignal@signal signal `c  1 a 1 1 ]
+"19
+[v is_startSignal@c c `c  1 s 1 c ]
+"20
+[v is_startSignal@sm0 sm0 `c  1 s 1 sm0 ]
+"47
+} 0
+"268 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/ikb/ikb.c
+[v _ikb_job ikb_job `(v  1 e 0 0 ]
+{
+"272
+} 0
+"305
+[v _ikey_scan ikey_scan `(v  1 e 0 0 ]
+{
+"307
+[v ikey_scan@k k `c  1 a 1 1 ]
+"360
+} 0
+"199
+[v _keyRead_pin_key3 keyRead_pin_key3 `T(uc  1 s 1 keyRead_pin_key3 ]
+{
+"202
+} 0
+"195
+[v _keyRead_pin_key2 keyRead_pin_key2 `T(uc  1 s 1 keyRead_pin_key2 ]
+{
+"198
+} 0
+"191
+[v _keyRead_pin_key1 keyRead_pin_key1 `T(uc  1 s 1 keyRead_pin_key1 ]
+{
+"194
+} 0
+"187
+[v _keyRead_pin_key0 keyRead_pin_key0 `T(uc  1 s 1 keyRead_pin_key0 ]
+{
+"190
+} 0
+"203
+[v _keyRead_pin_key4 keyRead_pin_key4 `T(uc  1 s 1 keyRead_pin_key4 ]
+{
+"206
+} 0
+"410
+[v _ikey_parsing ikey_parsing `(v  1 e 0 0 ]
+{
+"412
+[v ikey_parsing@k k `uc  1 a 1 50 ]
+"629
+} 0
+"370
+[v _ikey_is_accessible ikey_is_accessible `(uc  1 s 1 ikey_is_accessible ]
+{
+[v ikey_is_accessible@k k `uc  1 a 1 wreg ]
+[v ikey_is_accessible@k k `uc  1 a 1 wreg ]
+"372
+[v ikey_is_accessible@k k `uc  1 a 1 1 ]
+"385
+} 0
+"214
+[v _ikb_init ikb_init `(v  1 e 0 0 ]
+{
+[s S45 _key_prop_uFlag_f 1 `uc 1 onKeyPressed 1 0 :1:0 
+`uc 1 reptt 1 0 :1:1 
+`uc 1 onKeyReleased 1 0 :1:2 
+`uc 1 whilePressing 1 0 :1:3 
+`uc 1 atTimeExpired 1 0 :1:4 
+`uc 1 atTimeExpired2 1 0 :1:5 
+`uc 1 __a 1 0 :2:6 
+]
+"261
+[u S53 _key_prop_uFlag 1 `S45 1 f 1 0 `uc 1 packed 1 0 ]
+[s S56 _repttTh 4 `ui 1 breakTime 2 0 `ui 1 period 2 2 ]
+[s S59 _key_prop 6 `S53 1 uFlag 1 0 `S56 1 repttTh 4 1 `uc 1 numGroup 1 5 ]
+[v ikb_init@prop prop `S59  1 a 6 9 ]
+"216
+[v ikb_init@i i `uc  1 a 1 15 ]
+"261
+[v ikb_init@F4877 F4877 `S59  1 s 6 F4877 ]
+"266
+} 0
+"78 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/flushAtNozzle.c
+[v _flushAtNozzle_job flushAtNozzle_job `(v  1 e 0 0 ]
+{
+"118
+} 0
+"36 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/flushAllMode.c
+[v _flushAllMode_job flushAllMode_job `(v  1 e 0 0 ]
+{
+"91
+} 0
+"27 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/nozzle.c
+[v _nozzle_setPosition nozzle_setPosition `(c  1 e 1 0 ]
+{
+[v nozzle_setPosition@n n `c  1 a 1 wreg ]
+"30
+[v nozzle_setPosition@numSteps_current numSteps_current `i  1 a 2 21 ]
+"29
+[v nozzle_setPosition@cod_ret cod_ret `c  1 a 1 23 ]
+"27
+[v nozzle_setPosition@n n `c  1 a 1 wreg ]
+"29
+[v nozzle_setPosition@n n `c  1 a 1 20 ]
+"121
+} 0
+"623 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/main.c
+[v _error_job error_job `(v  1 e 0 0 ]
+{
+[s S45 _key_prop_uFlag_f 1 `uc 1 onKeyPressed 1 0 :1:0 
+`uc 1 reptt 1 0 :1:1 
+`uc 1 onKeyReleased 1 0 :1:2 
+`uc 1 whilePressing 1 0 :1:3 
+`uc 1 atTimeExpired 1 0 :1:4 
+`uc 1 atTimeExpired2 1 0 :1:5 
+`uc 1 __a 1 0 :2:6 
+]
+"625
+[u S53 _key_prop_uFlag 1 `S45 1 f 1 0 `uc 1 packed 1 0 ]
+[s S56 _repttTh 4 `ui 1 breakTime 2 0 `ui 1 period 2 2 ]
+[s S59 _key_prop 6 `S53 1 uFlag 1 0 `S56 1 repttTh 4 1 `uc 1 numGroup 1 5 ]
+[v error_job@prop prop `S59  1 a 6 48 ]
+[v error_job@F5023 F5023 `S59  1 s 6 F5023 ]
+"627
+[v error_job@errorPacked_last errorPacked_last `c  1 s 1 errorPacked_last ]
+"681
+} 0
+"81
+[v _mykb_layout0 mykb_layout0 `(v  1 e 0 0 ]
+{
+[s S45 _key_prop_uFlag_f 1 `uc 1 onKeyPressed 1 0 :1:0 
+`uc 1 reptt 1 0 :1:1 
+`uc 1 onKeyReleased 1 0 :1:2 
+`uc 1 whilePressing 1 0 :1:3 
+`uc 1 atTimeExpired 1 0 :1:4 
+`uc 1 atTimeExpired2 1 0 :1:5 
+`uc 1 __a 1 0 :2:6 
+]
+"83
+[u S53 _key_prop_uFlag 1 `S45 1 f 1 0 `uc 1 packed 1 0 ]
+[s S56 _repttTh 4 `ui 1 breakTime 2 0 `ui 1 period 2 2 ]
+[s S59 _key_prop 6 `S53 1 uFlag 1 0 `S56 1 repttTh 4 1 `uc 1 numGroup 1 5 ]
+[v mykb_layout0@prop prop `S59  1 a 6 9 ]
+[v mykb_layout0@F4987 F4987 `S59  1 s 6 F4987 ]
+"103
+} 0
+"273 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/ikb/ikb.c
+[v _ikb_flush ikb_flush `(v  1 e 0 0 ]
+{
+"276
+} 0
+"643
+[v _ikey_clear_all_flag ikey_clear_all_flag `(v  1 e 0 0 ]
+{
+"645
+[v ikey_clear_all_flag@i i `uc  1 a 1 0 ]
+"651
+} 0
+"15 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/flushAllMode.c
+[v _flushAllMode_cmd flushAllMode_cmd `(v  1 e 0 0 ]
+{
+[v flushAllMode_cmd@cmd cmd `c  1 a 1 wreg ]
+[v flushAllMode_cmd@cmd cmd `c  1 a 1 wreg ]
+"17
+[v flushAllMode_cmd@cmd cmd `c  1 a 1 11 ]
+"34
+} 0
+"156 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/display.c
+[v _disp7s_modeDisp_off disp7s_modeDisp_off `(v  1 e 0 0 ]
+{
+"159
+} 0
+"786 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/main.c
+[v _errorHandler_queue errorHandler_queue `(v  1 s 0 errorHandler_queue ]
+{
+"793
+[v errorHandler_queue@is_granted is_granted `c  1 a 1 5 ]
+"790
+[v errorHandler_queue@i i `c  1 s 1 i ]
+"791
+[v errorHandler_queue@sm0 sm0 `c  1 s 1 sm0 ]
+"792
+[v errorHandler_queue@c c `ui  1 s 2 c ]
+"829
+} 0
+"741
+[v _check_oilLevel_reset check_oilLevel_reset `(v  1 s 0 check_oilLevel_reset ]
+{
+"745
+} 0
+"747
+[v _check_oilLevel check_oilLevel `(v  1 s 0 check_oilLevel ]
+{
+"749
+[v check_oilLevel@oilLevel oilLevel `c  1 a 1 1 ]
+"784
+} 0
+"62 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/inputs.c
+[v _is_oilLevel is_oilLevel `(c  1 e 1 0 ]
+{
+"66
+[v is_oilLevel@signal signal `c  1 a 1 0 ]
+"64
+[v is_oilLevel@c c `c  1 s 1 c ]
+"65
+[v is_oilLevel@sm0 sm0 `c  1 s 1 sm0 ]
+"92
+} 0
+"196 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/display.c
+[v _disp7s_qtyDisp_writeText_NO_OIL disp7s_qtyDisp_writeText_NO_OIL `(v  1 e 0 0 ]
+{
+"204
+} 0
+"691 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/main.c
+[v _check_homeSensor_reset check_homeSensor_reset `(v  1 s 0 check_homeSensor_reset ]
+{
+"695
+} 0
+"697
+[v _check_homeSensor check_homeSensor `(v  1 s 0 check_homeSensor ]
+{
+"733
+} 0
+"205 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/display.c
+[v _disp7s_qtyDisp_writeText_NO_HOME_SENSOR disp7s_qtyDisp_writeText_NO_HOME_SENSOR `(v  1 e 0 0 ]
+{
+"212
+} 0
+"188
+[v _disp7s_qtyDisp_writeText_20_3RAYAS disp7s_qtyDisp_writeText_20_3RAYAS `(v  1 e 0 0 ]
+{
+"195
+} 0
+"128
+[v _disp7s_job disp7s_job `(v  1 e 0 0 ]
+{
+"133
+[v disp7s_job@pq pq `c  1 a 1 10 ]
+"130
+[v disp7s_job@q q `c  1 s 1 q ]
+"148
+} 0
+"97
+[v _disp7s_mux_Q disp7s_mux_Q `(v  1 s 0 disp7s_mux_Q ]
+{
+[v disp7s_mux_Q@q q `c  1 a 1 wreg ]
+"99
+[v disp7s_mux_Q@i i `c  1 a 1 7 ]
+"97
+[v disp7s_mux_Q@q q `c  1 a 1 wreg ]
+"100
+[v disp7s_mux_Q@q q `c  1 a 1 6 ]
+"107
+} 0
+"112
+[v _disp7s_init disp7s_init `(v  1 e 0 0 ]
+{
+"114
+[v disp7s_init@i i `c  1 a 1 1 ]
+"123
+} 0
+"83
+[v _disp7s_mux_init disp7s_mux_init `(v  1 s 0 disp7s_mux_init ]
+{
+"85
+[v disp7s_mux_init@i i `c  1 a 1 0 ]
+"95
+} 0
+"41
+[v _disp7s_mux4_off disp7s_mux4_off `T(v  1 s 0 disp7s_mux4_off ]
+{
+"44
+} 0
+"36
+[v _disp7s_mux3_on disp7s_mux3_on `T(v  1 s 0 disp7s_mux3_on ]
+{
+"39
+} 0
+"32
+[v _disp7s_mux3_off disp7s_mux3_off `T(v  1 s 0 disp7s_mux3_off ]
+{
+"35
+} 0
+"27
+[v _disp7s_mux2_on disp7s_mux2_on `T(v  1 s 0 disp7s_mux2_on ]
+{
+"30
+} 0
+"23
+[v _disp7s_mux2_off disp7s_mux2_off `T(v  1 s 0 disp7s_mux2_off ]
+{
+"26
+} 0
+"18
+[v _disp7s_mux1_on disp7s_mux1_on `T(v  1 s 0 disp7s_mux1_on ]
+{
+"21
+} 0
+"14
+[v _disp7s_mux1_off disp7s_mux1_off `T(v  1 s 0 disp7s_mux1_off ]
+{
+"17
+} 0
+"9
+[v _disp7s_mux0_on disp7s_mux0_on `T(v  1 s 0 disp7s_mux0_on ]
+{
+"12
+} 0
+"5
+[v _disp7s_mux0_off disp7s_mux0_off `T(v  1 s 0 disp7s_mux0_off ]
+{
+"8
+} 0
+"45
+[v _disp7s_mux4_on disp7s_mux4_on `T(v  1 s 0 disp7s_mux4_on ]
+{
+"48
+} 0
+"24 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/configMode.c
+[v _configMode_job configMode_job `(c  1 e 1 0 ]
+{
+"26
+[v configMode_job@cod_ret cod_ret `c  1 a 1 5 ]
+"40
+} 0
+"41
+[v _configMode_kb configMode_kb `(c  1 s 1 configMode_kb ]
+{
+"184
+[v configMode_kb@reg reg `uc  1 a 1 65 ]
+[s S45 _key_prop_uFlag_f 1 `uc 1 onKeyPressed 1 0 :1:0 
+`uc 1 reptt 1 0 :1:1 
+`uc 1 onKeyReleased 1 0 :1:2 
+`uc 1 whilePressing 1 0 :1:3 
+`uc 1 atTimeExpired 1 0 :1:4 
+`uc 1 atTimeExpired2 1 0 :1:5 
+`uc 1 __a 1 0 :2:6 
+]
+"45
+[u S53 _key_prop_uFlag 1 `S45 1 f 1 0 `uc 1 packed 1 0 ]
+[s S56 _repttTh 4 `ui 1 breakTime 2 0 `ui 1 period 2 2 ]
+[s S59 _key_prop 6 `S53 1 uFlag 1 0 `S56 1 repttTh 4 1 `uc 1 numGroup 1 5 ]
+[v configMode_kb@prop prop `S59  1 a 6 58 ]
+"43
+[v configMode_kb@cod_ret cod_ret `c  1 a 1 64 ]
+"44
+[v configMode_kb@flushAtNozzle_active flushAtNozzle_active `c  1 s 1 flushAtNozzle_active ]
+"45
+[v configMode_kb@F4886 F4886 `S59  1 s 6 F4886 ]
+"208
+} 0
+"93 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/pulsonic.c
+[v _pulsonic_getNumNozzleAvailable pulsonic_getNumNozzleAvailable `(c  1 e 1 0 ]
+{
+"95
+[v pulsonic_getNumNozzleAvailable@i i `c  1 a 1 54 ]
+"96
+[v pulsonic_getNumNozzleAvailable@numNozzleAvailable numNozzleAvailable `c  1 a 1 53 ]
+"103
+} 0
+"210 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/ikb/ikb.c
+[v _ikb_setKeyProp ikb_setKeyProp `(v  1 e 0 0 ]
+{
+[v ikb_setKeyProp@i i `uc  1 a 1 wreg ]
+[v ikb_setKeyProp@i i `uc  1 a 1 wreg ]
+[s S45 _key_prop_uFlag_f 1 `uc 1 onKeyPressed 1 0 :1:0 
+`uc 1 reptt 1 0 :1:1 
+`uc 1 onKeyReleased 1 0 :1:2 
+`uc 1 whilePressing 1 0 :1:3 
+`uc 1 atTimeExpired 1 0 :1:4 
+`uc 1 atTimeExpired2 1 0 :1:5 
+`uc 1 __a 1 0 :2:6 
+]
+[u S53 _key_prop_uFlag 1 `S45 1 f 1 0 `uc 1 packed 1 0 ]
+[s S56 _repttTh 4 `ui 1 breakTime 2 0 `ui 1 period 2 2 ]
+[s S59 _key_prop 6 `S53 1 uFlag 1 0 `S56 1 repttTh 4 1 `uc 1 numGroup 1 5 ]
+[v ikb_setKeyProp@prop prop `S59  1 p 6 0 ]
+"212
+[v ikb_setKeyProp@i i `uc  1 a 1 8 ]
+"213
+} 0
+"289
+[v _ikb_key_was_read ikb_key_was_read `(v  1 e 0 0 ]
+{
+[v ikb_key_was_read@k k `uc  1 a 1 wreg ]
+[v ikb_key_was_read@k k `uc  1 a 1 wreg ]
+"291
+[v ikb_key_was_read@k k `uc  1 a 1 0 ]
+"292
+} 0
+"281
+[v _ikb_key_is_ready2read ikb_key_is_ready2read `(uc  1 e 1 0 ]
+{
+[v ikb_key_is_ready2read@k k `uc  1 a 1 wreg ]
+[v ikb_key_is_ready2read@k k `uc  1 a 1 wreg ]
+"283
+[v ikb_key_is_ready2read@k k `uc  1 a 1 0 ]
+"284
+} 0
+"277
+[v _ikb_get_AtTimeExpired_BeforeOrAfter ikb_get_AtTimeExpired_BeforeOrAfter `(uc  1 e 1 0 ]
+{
+[v ikb_get_AtTimeExpired_BeforeOrAfter@k k `uc  1 a 1 wreg ]
+[v ikb_get_AtTimeExpired_BeforeOrAfter@k k `uc  1 a 1 wreg ]
+"279
+[v ikb_get_AtTimeExpired_BeforeOrAfter@k k `uc  1 a 1 0 ]
+"280
+} 0
+"15 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/flushAtNozzle.c
+[v _flushAtNozzle_setNozzle flushAtNozzle_setNozzle `(v  1 e 0 0 ]
+{
+[v flushAtNozzle_setNozzle@nozzle nozzle `c  1 a 1 wreg ]
+[v flushAtNozzle_setNozzle@nozzle nozzle `c  1 a 1 wreg ]
+"17
+[v flushAtNozzle_setNozzle@nozzle nozzle `c  1 a 1 0 ]
+"18
+} 0
+"22
+[v _flushAtNozzle_cmd flushAtNozzle_cmd `(v  1 e 0 0 ]
+{
+[v flushAtNozzle_cmd@cmd cmd `c  1 a 1 wreg ]
+[v flushAtNozzle_cmd@cmd cmd `c  1 a 1 wreg ]
+"24
+[v flushAtNozzle_cmd@cmd cmd `c  1 a 1 0 ]
+"40
+} 0
+"22 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/nozzle.c
+[v _nozzle_setPosition_reset nozzle_setPosition_reset `(v  1 e 0 0 ]
+{
+"25
+} 0
+"181 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/display.c
+[v _disp7s_qtyDisp_writeText_FLU disp7s_qtyDisp_writeText_FLU `(v  1 e 0 0 ]
+{
+"186
+} 0
+"55 /run/media/jcaf/pleasure/PROYECTOS/FIRWAR/eslibrary/PIC/eeprom/eeprom.c
+[v _eepromWrite_double eepromWrite_double `(v  1 e 0 0 ]
+{
+"57
+[v eepromWrite_double@i i `c  1 a 1 9 ]
+"58
+[v eepromWrite_double@pfDATA pfDATA `*.30uc  1 a 1 8 ]
+"55
+[v eepromWrite_double@pEaddr pEaddr `*.39uc  1 p 2 3 ]
+[v eepromWrite_double@data data `d  1 p 3 5 ]
+"62
+} 0
+"20
+[v _eepromWrite eepromWrite `(v  1 e 0 0 ]
+{
+[v eepromWrite@addr addr `uc  1 a 1 wreg ]
+"22
+[v eepromWrite@GIE_temp GIE_temp `uc  1 a 1 2 ]
+"20
+[v eepromWrite@addr addr `uc  1 a 1 wreg ]
+[v eepromWrite@data data `uc  1 p 1 0 ]
+[v eepromWrite@addr addr `uc  1 a 1 1 ]
+"51
+} 0
+"6 /opt/microchip/xc8/v1.33/sources/pic18/asftsub.c
+[v ___asftsub __asftsub `T(f  1 e 3 0 ]
+{
+[v ___asftsub@f1p f1p `*.39f  1 p 2 26 ]
+[v ___asftsub@f2 f2 `f  1 p 3 28 ]
+"9
+} 0
+"209 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/configMode.c
+[v _configMode_disp configMode_disp `(v  1 s 0 configMode_disp ]
+{
+[v configMode_disp@numRegistro numRegistro `c  1 a 1 wreg ]
+"211
+[v configMode_disp@qty qty `d  1 a 3 1 ]
+"209
+[v configMode_disp@numRegistro numRegistro `c  1 a 1 wreg ]
+"213
+[v configMode_disp@numRegistro numRegistro `c  1 a 1 4 ]
+"232
+} 0
+"169 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/display.c
+[v _disp7s_qtyDisp_writeText_OFF disp7s_qtyDisp_writeText_OFF `(v  1 e 0 0 ]
+{
+"174
+} 0
+"320
+[v _disp7s_qtyDisp_writeInt disp7s_qtyDisp_writeInt `(v  1 e 0 0 ]
+{
+[v disp7s_qtyDisp_writeInt@num num `i  1 p 2 45 ]
+"323
+} 0
+"164
+[v _disp7s_modeDisp_writeText_oil disp7s_modeDisp_writeText_oil `(v  1 e 0 0 ]
+{
+"168
+} 0
+"16 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/configMode.c
+[v _configMode_init configMode_init `(v  1 e 0 0 ]
+{
+[v configMode_init@numRegistro numRegistro `c  1 a 1 wreg ]
+[v configMode_init@numRegistro numRegistro `c  1 a 1 wreg ]
+"18
+[v configMode_init@numRegistro numRegistro `c  1 a 1 0 ]
+"20
+} 0
+"89 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/autoMode.c
+[v _autoMode_disp7s_writeSumTotal autoMode_disp7s_writeSumTotal `(v  1 e 0 0 ]
+{
+"97
+} 0
+"81 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/pulsonic.c
+[v _pulsonic_getTotalSum_mlh pulsonic_getTotalSum_mlh `(d  1 e 3 0 ]
+{
+"84
+[v pulsonic_getTotalSum_mlh@acc acc `d  1 a 3 25 ]
+"83
+[v pulsonic_getTotalSum_mlh@i i `i  1 a 2 28 ]
+"91
+} 0
+"281 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/display.c
+[v _disp7s_qtyDisp_writeFloat disp7s_qtyDisp_writeFloat `(v  1 e 0 0 ]
+{
+[v disp7s_qtyDisp_writeFloat@num num `f  1 p 3 77 ]
+"284
+} 0
+"226
+[v _disp7s_write_f disp7s_write_f `(v  1 e 0 0 ]
+{
+"230
+[v disp7s_write_f@buff buff `[10]uc  1 a 10 60 ]
+"228
+[v disp7s_write_f@K10MULT K10MULT `d  1 a 3 73 ]
+"229
+[v disp7s_write_f@I I `i  1 a 2 70 ]
+"231
+[v disp7s_write_f@i i `c  1 a 1 76 ]
+"232
+[v disp7s_write_f@pi pi `c  1 a 1 72 ]
+"226
+[v disp7s_write_f@pDisp pDisp `*.39uc  1 p 2 49 ]
+[v disp7s_write_f@NUM_OF_DISP NUM_OF_DISP `c  1 p 1 51 ]
+[v disp7s_write_f@num num `d  1 p 3 52 ]
+"279
+} 0
+"150
+[v _disp7s_off disp7s_off `(v  1 e 0 0 ]
+{
+"152
+[v disp7s_off@i i `c  1 a 1 5 ]
+"150
+[v disp7s_off@pDisp pDisp `*.39uc  1 p 2 0 ]
+[v disp7s_off@NUM_OF_DISP NUM_OF_DISP `c  1 p 1 2 ]
+"155
+} 0
+"324
+[v _disp7s_modeDisp_writeInt disp7s_modeDisp_writeInt `(v  1 e 0 0 ]
+{
+[v disp7s_modeDisp_writeInt@num num `i  1 p 2 45 ]
+"327
+} 0
+"290
+[v _disp7s_write_i disp7s_write_i `(v  1 e 0 0 ]
+{
+"293
+[v disp7s_write_i@buff buff `[10]uc  1 a 10 31 ]
+"292
+[v disp7s_write_i@K10MULT K10MULT `i  1 a 2 42 ]
+"294
+[v disp7s_write_i@i i `c  1 a 1 44 ]
+"295
+[v disp7s_write_i@pi pi `c  1 a 1 41 ]
+"290
+[v disp7s_write_i@pDisp pDisp `*.39uc  1 p 2 21 ]
+[v disp7s_write_i@NUM_OF_DISP NUM_OF_DISP `c  1 p 1 23 ]
+[v disp7s_write_i@num num `i  1 p 2 24 ]
+"319
+} 0
+"4 /opt/microchip/xc8/v1.33/sources/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+[v strlen@s s `*.30Cuc  1 a 1 wreg ]
+"6
+[v strlen@cp cp `*.30Cuc  1 a 1 3 ]
+"4
+[v strlen@s s `*.30Cuc  1 a 1 wreg ]
+"8
+[v strlen@s s `*.30Cuc  1 a 1 2 ]
+"13
+} 0
+"4 /opt/microchip/xc8/v1.33/sources/common/itoa.c
+[v _itoa itoa `(*.30uc  1 e 2 0 ]
+{
+[v itoa@buf buf `*.30uc  1 a 1 wreg ]
+[v itoa@buf buf `*.30uc  1 a 1 wreg ]
+[v itoa@val val `i  1 p 2 15 ]
+[v itoa@base base `i  1 p 2 17 ]
+[v itoa@buf buf `*.30uc  1 a 1 20 ]
+"14
+} 0
+"17
+[v _utoa utoa `(*.30uc  1 e 2 0 ]
+{
+[v utoa@buf buf `*.30uc  1 a 1 wreg ]
+"19
+[v utoa@v v `ui  1 a 2 11 ]
+"20
+[v utoa@c c `uc  1 a 1 13 ]
+"17
+[v utoa@buf buf `*.30uc  1 a 1 wreg ]
+[v utoa@val val `ui  1 p 2 7 ]
+[v utoa@base base `i  1 p 2 9 ]
+"22
+[v utoa@buf buf `*.30uc  1 a 1 14 ]
+"37
+} 0
+"8 /opt/microchip/xc8/v1.33/sources/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"8
+[v ___lwmod@dividend dividend `ui  1 p 2 0 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 2 ]
+"26
+} 0
+"8 /opt/microchip/xc8/v1.33/sources/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 4 ]
+"8
+[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"31
+} 0
+"15 /opt/microchip/xc8/v1.33/sources/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"99 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/autoMode.c
+[v _autoMode_cmd autoMode_cmd `(v  1 e 0 0 ]
+{
+[v autoMode_cmd@cmd cmd `c  1 a 1 wreg ]
+[v autoMode_cmd@cmd cmd `c  1 a 1 wreg ]
+"101
+[v autoMode_cmd@cmd cmd `c  1 a 1 66 ]
+"115
+} 0
+"14 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/pump.c
+[v _pump_stop pump_stop `(v  1 e 0 0 ]
+{
+"19
+} 0
+"76 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/mpap.c
+[v _mpap_stall mpap_stall `(v  1 e 0 0 ]
+{
+"79
+} 0
+"312
+[v _mpap_homming_job_reset mpap_homming_job_reset `(v  1 e 0 0 ]
+{
+"315
+} 0
+"40 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/autoMode.c
+[v _autoMode_setup autoMode_setup `(v  1 e 0 0 ]
+{
+"43
+[v autoMode_setup@nticksReq_xTotalTimeInMin nticksReq_xTotalTimeInMin `d  1 a 3 61 ]
+"42
+[v autoMode_setup@i i `i  1 a 2 64 ]
+"82
+} 0
+"28 /opt/microchip/xc8/v1.33/sources/common/lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v ___lwtoft@c c `ui  1 p 2 37 ]
+"31
+} 0
+"62 /opt/microchip/xc8/v1.33/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 19 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 18 ]
+[v ___ftmul@exp exp `uc  1 a 1 17 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 8 ]
+[v ___ftmul@f2 f2 `f  1 p 3 11 ]
+"157
+} 0
+"49 /opt/microchip/xc8/v1.33/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"52
+[v ___ftdiv@f3 f3 `f  1 a 3 18 ]
+"51
+[v ___ftdiv@sign sign `uc  1 a 1 22 ]
+[v ___ftdiv@exp exp `uc  1 a 1 21 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 17 ]
+"49
+[v ___ftdiv@f1 f1 `f  1 p 3 8 ]
+[v ___ftdiv@f2 f2 `f  1 p 3 11 ]
+"78
+} 0
+"254 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/autoMode.c
+[v _autoMode1_job autoMode1_job `(v  1 e 0 0 ]
+{
+"258
+[v autoMode1_job@e e `d  1 a 3 61 ]
+"256
+[v autoMode1_job@timeEllapsed timeEllapsed `ul  1 s 4 timeEllapsed ]
+"386
+} 0
+"6 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/pump.c
+[v _pump_setTick pump_setTick `(v  1 e 0 0 ]
+{
+[v pump_setTick@ticks ticks `ui  1 p 2 0 ]
+"9
+} 0
+"64
+[v _pump_isIdle pump_isIdle `(c  1 e 1 0 ]
+{
+"69
+} 0
+"7 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/nozzle.c
+[v _nozzle_isEnabled nozzle_isEnabled `(c  1 e 1 0 ]
+{
+[v nozzle_isEnabled@n n `i  1 p 2 49 ]
+"12
+} 0
+"4 /opt/microchip/xc8/v1.33/sources/common/ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 40 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 43 ]
+"13
+} 0
+"15 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/nozzle.c
+[v _nozzle_getPosition nozzle_getPosition `(c  1 e 1 0 ]
+{
+"18
+} 0
+"115 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/mpap.c
+[v _mpap_get_numSteps_current mpap_get_numSteps_current `(i  1 e 2 0 ]
+{
+"118
+} 0
+"8 /opt/microchip/xc8/v1.33/sources/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 8 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 7 ]
+[v ___awdiv@counter counter `uc  1 a 1 6 ]
+"8
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+[v ___awdiv@divisor divisor `i  1 p 2 4 ]
+"42
+} 0
+"284 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/mpap.c
+[v _mpap_movetoNozzle mpap_movetoNozzle `(v  1 e 0 0 ]
+{
+[v mpap_movetoNozzle@numNozzle numNozzle `c  1 a 1 wreg ]
+"286
+[v mpap_movetoNozzle@numSteps_tomove numSteps_tomove `i  1 a 2 14 ]
+"284
+[v mpap_movetoNozzle@numNozzle numNozzle `c  1 a 1 wreg ]
+"286
+[v mpap_movetoNozzle@numNozzle numNozzle `c  1 a 1 13 ]
+"288
+} 0
+"316
+[v _mpap_homming_job mpap_homming_job `(c  1 e 1 0 ]
+{
+"318
+[v mpap_homming_job@cod_ret cod_ret `c  1 a 1 8 ]
+"386
+} 0
+"120
+[v _mpap_setup_searchFirstPointHomeSensor mpap_setup_searchFirstPointHomeSensor `(v  1 e 0 0 ]
+{
+"123
+} 0
+"95
+[v _mpap_doMovement mpap_doMovement `(v  1 e 0 0 ]
+{
+[v mpap_doMovement@numSteps_tomove numSteps_tomove `i  1 p 2 4 ]
+[v mpap_doMovement@mode mode `c  1 p 1 6 ]
+"113
+} 0
+"84
+[v _mpap_setup_movement mpap_setup_movement `(v  1 s 0 mpap_setup_movement ]
+{
+[v mpap_setup_movement@numSteps_tomove numSteps_tomove `i  1 p 2 0 ]
+"93
+} 0
+"290
+[v _mpap_isIdle mpap_isIdle `(c  1 e 1 0 ]
+{
+"297
+} 0
+"44 /opt/microchip/xc8/v1.33/sources/common/fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 32 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 36 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 31 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 22 ]
+"73
+} 0
+"20 /opt/microchip/xc8/v1.33/sources/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f1 f1 `f  1 p 3 20 ]
+[v ___ftsub@f2 f2 `f  1 p 3 23 ]
+"25
+} 0
+"6 /opt/microchip/xc8/v1.33/sources/pic18/asftadd.c
+[v ___asftadd __asftadd `T(f  1 e 3 0 ]
+{
+[v ___asftadd@f1p f1p `*.39f  1 p 2 20 ]
+[v ___asftadd@f2 f2 `f  1 p 3 22 ]
+"9
+} 0
+"86 /opt/microchip/xc8/v1.33/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 19 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 18 ]
+[v ___ftadd@sign sign `uc  1 a 1 17 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 8 ]
+[v ___ftadd@f2 f2 `f  1 p 3 11 ]
+"148
+} 0
+"62 /opt/microchip/xc8/v1.33/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"542 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/main.c
+[v _INTERRUPCION INTERRUPCION `II(v  1 e 0 0 ]
+{
+"544
+[v INTERRUPCION@ustep_sm0 ustep_sm0 `uc  1 s 1 ustep_sm0 ]
+"545
+[v INTERRUPCION@ustep_c ustep_c `c  1 s 1 ustep_c ]
+"547
+[v INTERRUPCION@cticks cticks `c  1 s 1 cticks ]
+"616
+} 0
+"4 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/ustepping.c
+[v i2_setdc setdc `(v  1 e 0 0 ]
+{
+[v i2setdc@dc dc `ui  1 p 2 0 ]
+"8
+} 0
+"230 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/mpap.c
+[v _mpap_job mpap_job `(v  1 e 0 0 ]
+{
+"232
+[v mpap_job@cod_ret cod_ret `c  1 a 1 20 ]
+"282
+} 0
+"28 /opt/microchip/xc8/v1.33/sources/common/lwtoft.c
+[v i2___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v i2___lwtoft@c c `ui  1 p 2 8 ]
+"31
+} 0
+"62 /opt/microchip/xc8/v1.33/sources/common/float.c
+[v i2___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v i2___ftpack@arg arg `um  1 p 3 0 ]
+[v i2___ftpack@exp exp `uc  1 p 1 3 ]
+[v i2___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"4 /opt/microchip/xc8/v1.33/sources/common/ftge.c
+[v i2___ftge __ftge `(b  1 e 0 0 ]
+{
+[v i2___ftge@ff1 ff1 `f  1 p 3 11 ]
+[v i2___ftge@ff2 ff2 `f  1 p 3 14 ]
+"13
+} 0
+"177 /run/media/jcaf/pleasure/PROYECTOS/MICROCHIP/C/PULSONIC/firmware/PIC18F4550/pulsonic.X/mpap.c
+[v _mpap_searchFirstPointHomeSensor mpap_searchFirstPointHomeSensor `(c  1 s 1 mpap_searchFirstPointHomeSensor ]
+{
+"179
+[v mpap_searchFirstPointHomeSensor@cod_ret cod_ret `c  1 a 1 2 ]
+"200
+} 0
+"154
+[v _mpap_normal_mode mpap_normal_mode `(c  1 s 1 mpap_normal_mode ]
+{
+"156
+[v mpap_normal_mode@cod_ret cod_ret `c  1 a 1 1 ]
+"176
+} 0
+"201
+[v _mpap_crossingHomeSensor mpap_crossingHomeSensor `(c  1 s 1 mpap_crossingHomeSensor ]
+{
+"203
+[v mpap_crossingHomeSensor@cod_ret cod_ret `c  1 a 1 2 ]
+"227
+} 0
+"128
+[v _mpap_do1step mpap_do1step `(v  1 e 0 0 ]
+{
+[v mpap_do1step@KI KI `c  1 a 1 wreg ]
+[v mpap_do1step@KI KI `c  1 a 1 wreg ]
+"130
+[v mpap_do1step@i i `c  1 s 1 i ]
+"132
+[v mpap_do1step@KI KI `c  1 a 1 0 ]
+"142
+} 0
+"23
+[v __mpap_step3 _mpap_step3 `(v  1 s 0 _mpap_step3 ]
+{
+"31
+} 0
+"14
+[v __mpap_step2 _mpap_step2 `(v  1 s 0 _mpap_step2 ]
+{
+"22
+} 0
+"5
+[v __mpap_step1 _mpap_step1 `(v  1 s 0 _mpap_step1 ]
+{
+"13
+} 0
+"32
+[v __mpap_step4 _mpap_step4 `(v  1 s 0 _mpap_step4 ]
+{
+"40
+} 0
+"71
+[v _mpap_getMode mpap_getMode `(c  1 e 1 0 ]
+{
+"74
+} 0

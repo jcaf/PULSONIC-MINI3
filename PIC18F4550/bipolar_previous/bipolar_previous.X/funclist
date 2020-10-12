@@ -1,0 +1,10 @@
+_main: CODE, 524 0 32
+__initialization: CODE, 480 0 34
+_mpap_do1step: CODE, 408 0 72
+__mpap_step1: CODE, 578 0 6
+__mpap_step2: CODE, 572 0 6
+__mpap_step3: CODE, 566 0 6
+__mpap_step4: CODE, 584 0 6
+_halpstep: CODE, 28 0 240
+_INTERRUPCION: CODE, 8 0 400
+Total: 802

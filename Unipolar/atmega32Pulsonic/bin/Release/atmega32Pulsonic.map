@@ -1,0 +1,1327 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_divmodhi4.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o (__divmodhi4)
+/usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o (exit)
+/usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o (__do_copy_data)
+/usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_clear_bss.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o (__do_clear_bss)
+/usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_udivmodhi4.o)
+                              /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_divmodhi4.o) (__udivmodhi4)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o (__subsf3)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+                              /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o) (__addsf3x)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o (__eqsf2)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o (__divsf3)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                              /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3.o) (__divsf3x)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o (__fixsfsi)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o (__fixunssfsi)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o (__floatunsisf)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+                              /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o) (__fp_cmp)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                              /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_inf)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                              /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_nan)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                              /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_pscA)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                              /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_pscB)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                              /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o) (__fp_round)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                              /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_split3)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                              /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_zero)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(gesf2.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o (__gesf2)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o (__mulsf3)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                              /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3.o) (__mulsf3x)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(itoa_ncheck.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o (__itoa_ncheck)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(utoa_ncheck.o)
+                              /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(itoa_ncheck.o) (__utoa_common)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(strrev.o)
+                              /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(utoa_ncheck.o) (strrev)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_byte.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o (eeprom_read_byte)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_dword.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o (eeprom_read_float)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_byte.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o (eeprom_update_byte)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_dword.o)
+                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o (eeprom_update_float)
+/usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_block.o)
+                              /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_dword.o) (eeprom_read_blraw)
+
+Allocating common symbols
+Common symbol       size              file
+
+disp_owner          0x1               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+homming             0x1               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+mpap                0x8               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+smain               0x3               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+disp7s_bk           0x5               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+chek_homeSensor_data
+                    0x2               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+funcMach            0x1               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+check_oilLevel_data
+                    0x2               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+group_x             0x5               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+pulsonic            0x196             obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/error.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/fuse.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/myeeprom.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pump.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ustepping.o
+LOAD obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+LOAD /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a
+START GROUP
+LOAD /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a
+LOAD /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a
+LOAD /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a
+END GROUP
+                0x0000000000020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x000000000000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x0000000000010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                0x0000000000000400                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000     0x3168
+ *(.vectors)
+ .vectors       0x0000000000000000       0x54 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x0000000000000054                . = ALIGN (0x2)
+                0x0000000000000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000000000000054        0x0 linker stubs
+ *(.trampolines*)
+                0x0000000000000054                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem.*)
+                0x0000000000000054                . = ALIGN (0x2)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000000000000054                __ctors_start = .
+ *(.ctors)
+                0x0000000000000054                __ctors_end = .
+                0x0000000000000054                __dtors_start = .
+ *(.dtors)
+                0x0000000000000054                __dtors_end = .
+ SORT_BY_NAME(*)(.ctors)
+ SORT_BY_NAME(*)(.dtors)
+ *(.init0)
+ .init0         0x0000000000000054        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+                0x0000000000000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000000000000054        0xc /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000060       0x16 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+                0x0000000000000060                __do_copy_data
+ .init4         0x0000000000000076       0x10 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_clear_bss.o)
+                0x0000000000000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000000000000086        0x8 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+ *(.init9)
+ *(.text)
+ .text          0x000000000000008e        0x4 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+                0x000000000000008e                __vector_1
+                0x000000000000008e                __vector_12
+                0x000000000000008e                __bad_interrupt
+                0x000000000000008e                __vector_6
+                0x000000000000008e                __vector_3
+                0x000000000000008e                __vector_11
+                0x000000000000008e                __vector_13
+                0x000000000000008e                __vector_17
+                0x000000000000008e                __vector_19
+                0x000000000000008e                __vector_7
+                0x000000000000008e                __vector_5
+                0x000000000000008e                __vector_4
+                0x000000000000008e                __vector_2
+                0x000000000000008e                __vector_15
+                0x000000000000008e                __vector_8
+                0x000000000000008e                __vector_14
+                0x000000000000008e                __vector_10
+                0x000000000000008e                __vector_16
+                0x000000000000008e                __vector_18
+                0x000000000000008e                __vector_20
+ .text          0x0000000000000092      0x6fa obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+                0x0000000000000092                autoMode_setup
+                0x000000000000031a                autoMode_disp7s_writeSumTotal
+                0x0000000000000368                autoMode_cmd
+                0x000000000000038c                autoMode1_job
+ .text          0x000000000000078c      0x480 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+                0x000000000000078c                configMode_init
+                0x0000000000000798                configMode_job
+ .text          0x0000000000000c0c      0x512 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                0x0000000000000c34                disp7s_init
+                0x0000000000000c74                disp7s_setBlink_qty
+                0x0000000000000c86                disp7s_job
+                0x0000000000000d76                disp7s_off
+                0x0000000000000d88                disp7s_modeDisp_off
+                0x0000000000000d92                disp7s_qtyDsp_off
+                0x0000000000000d9c                disp7s_modeDisp_writeText_oil
+                0x0000000000000daa                disp7s_qtyDisp_writeText_OFF
+                0x0000000000000dbc                disp7s_qtyDisp_writeText_FFF
+                0x0000000000000dcc                disp7s_qtyDisp_writeText_FLU
+                0x0000000000000de0                disp7s_qtyDisp_writeText_NO_OIL
+                0x0000000000000e00                disp7s_write_f
+                0x0000000000000ff0                disp7s_qtyDisp_writeFloat
+                0x0000000000000ffe                disp7s_modeDisp_writeFloat
+                0x000000000000100c                disp7s_write_i
+                0x00000000000010d4                disp7s_qtyDisp_writeInt
+                0x00000000000010e0                disp7s_modeDisp_writeInt
+                0x00000000000010ec                disp7s_qtyDisp_writeText_20_3RAYAS
+                0x0000000000001104                disp7s_qtyDisp_writeText_NO_HOME_SENSOR
+ .text          0x000000000000111e        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/error.o
+ .text          0x000000000000111e       0xfe obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+                0x000000000000111e                flushAllMode_cmd
+                0x000000000000117c                flushAllMode_job
+ .text          0x000000000000121c       0xb8 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+                0x000000000000121c                flushAtNozzle_setNozzle
+                0x0000000000001222                flushAtNozzle_cmd
+                0x000000000000124e                flushAtNozzle_job
+ .text          0x00000000000012d4        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/fuse.o
+ .text          0x00000000000012d4      0x658 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+                0x0000000000001304                ikb_setKeyProp
+                0x000000000000134a                ikb_init
+                0x00000000000013ec                ikb_get_AtTimeExpired_BeforeOrAfter
+                0x0000000000001402                ikb_key_is_ready2read
+                0x0000000000001416                ikb_set_ready2read
+                0x000000000000142a                ikb_key_was_read
+                0x000000000000143e                ikb_execfunct
+                0x0000000000001452                ikey_scan
+                0x0000000000001518                ikey_parsing
+                0x0000000000001898                ikb_job
+                0x00000000000018a0                ikey_is_all_hw_released
+                0x00000000000018ca                ikey_clear_all_flag
+                0x00000000000018fe                ikb_flush
+                0x0000000000001902                ikey_is_all_process_finished
+ .text          0x000000000000192c      0x10a obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.o
+                0x000000000000192c                startSignal_init
+                0x0000000000001940                is_startSignal
+                0x00000000000019a6                oilLevel_init
+                0x00000000000019bc                is_oilLevel
+                0x0000000000001a24                is_homeSensor
+                0x0000000000001a2e                is_unblocked_nozzle
+                0x0000000000001a32                is_inductiveSensorRPM
+ .text          0x0000000000001a36      0x3fe obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                0x0000000000001a36                mykb_layout0
+                0x0000000000001afe                __vector_9
+                0x0000000000001c0c                error_job
+ .text          0x0000000000001e34      0x406 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                0x0000000000001e5c                mpap_getMode
+                0x0000000000001e62                mpap_stall
+                0x0000000000001e6a                mpap_doMovement
+                0x0000000000001ea2                mpap_get_numSteps_current
+                0x0000000000001eac                mpap_setup_searchFirstPointHomeSensor
+                0x0000000000001ec6                mpap_do1step
+                0x0000000000001ef6                mpap_job
+                0x00000000000020de                mpap_movetoNozzle
+                0x00000000000020fa                mpap_isIdle
+                0x0000000000002106                mpap_homming_job_reset
+                0x000000000000210c                mpap_homming_job
+                0x00000000000021c6                motortest
+                0x0000000000002210                mpap_interrupt
+ .text          0x000000000000223a        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/myeeprom.o
+ .text          0x000000000000223a      0x118 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                0x000000000000223a                nozzle_isEnabled
+                0x000000000000229c                nozzle_getPosition
+                0x00000000000022ac                nozzle_setPosition_reset
+                0x00000000000022b2                nozzle_setPosition
+ .text          0x0000000000002352      0x2bc obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                0x0000000000002352                pulsonic_getTotalSum_mlh
+                0x00000000000023d4                pulsonic_getNumNozzleAvailable
+                0x00000000000023fc                pulsonic_init
+ .text          0x000000000000260e       0xea obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pump.o
+                0x000000000000260e                pump_setTick
+                0x0000000000002618                pump_getTick
+                0x0000000000002622                pump_stop
+                0x0000000000002630                pump_job
+                0x00000000000026e6                pump_isIdle
+ .text          0x00000000000026f8        0x6 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ustepping.o
+                0x00000000000026f8                setdc
+ .text          0x00000000000026fe       0xa6 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+                0x00000000000026fe                visMode_job
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_exit.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(gesf2.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(itoa_ncheck.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(utoa_ncheck.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(strrev.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_byte.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_dword.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_byte.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_dword.o)
+ .text          0x00000000000027a4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_block.o)
+                0x00000000000027a4                . = ALIGN (0x2)
+ *(.text.*)
+ .text.startup  0x00000000000027a4      0x414 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                0x00000000000027a4                main
+ .text.libgcc.mul
+                0x0000000000002bb8        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.div
+                0x0000000000002bb8       0x28 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_divmodhi4.o)
+                0x0000000000002bb8                __divmodhi4
+                0x0000000000002bb8                _div
+ .text.libgcc   0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.prologue
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.builtins
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.fmul
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.fixed
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .text.libgcc.mul
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000000000002be0        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.div
+                0x0000000000002be0       0x28 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000000000002be0                __udivmodhi4
+ .text.libgcc   0x0000000000002c08        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x0000000000002c08        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x0000000000002c08        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x0000000000002c08        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x0000000000002c08        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.avr-libc.fplib
+                0x0000000000002c08        0xe /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                0x0000000000002c08                __subsf3
+                0x0000000000002c0a                __addsf3
+ .text.avr-libc.fplib
+                0x0000000000002c16       0xcc /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+                0x0000000000002c38                __addsf3x
+ .text.avr-libc.fplib
+                0x0000000000002ce2        0xa /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+                0x0000000000002ce2                __lesf2
+                0x0000000000002ce2                __nesf2
+                0x0000000000002ce2                __eqsf2
+                0x0000000000002ce2                __cmpsf2
+                0x0000000000002ce2                __ltsf2
+ .text.avr-libc.fplib
+                0x0000000000002cec        0x8 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+                0x0000000000002cec                __divsf3
+ .text.avr-libc.fplib
+                0x0000000000002cf4       0xdc /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                0x0000000000002d14                __divsf3x
+                0x0000000000002d1a                __divsf3_pse
+ .text.avr-libc.fplib
+                0x0000000000002dd0        0xe /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                0x0000000000002dd0                __fixsfsi
+ .text.avr-libc.fplib
+                0x0000000000002dde       0x5e /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                0x0000000000002dde                __fixunssfsi
+ .text.avr-libc.fplib
+                0x0000000000002e3c       0x7a /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                0x0000000000002e3c                __floatunsisf
+                0x0000000000002e40                __floatsisf
+ .text.avr-libc.fplib
+                0x0000000000002eb6       0x48 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+                0x0000000000002eb6                __fp_cmp
+ .text.avr-libc.fplib
+                0x0000000000002efe        0xc /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                0x0000000000002efe                __fp_inf
+ .text.avr-libc.fplib
+                0x0000000000002f0a        0x6 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                0x0000000000002f0a                __fp_nan
+ .text.avr-libc.fplib
+                0x0000000000002f10        0xe /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                0x0000000000002f10                __fp_pscA
+ .text.avr-libc.fplib
+                0x0000000000002f1e        0xe /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                0x0000000000002f1e                __fp_pscB
+ .text.avr-libc.fplib
+                0x0000000000002f2c       0x22 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                0x0000000000002f2c                __fp_round
+ .text.avr-libc.fplib
+                0x0000000000002f4e       0x44 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                0x0000000000002f4e                __fp_split3
+                0x0000000000002f5e                __fp_splitA
+ .text.avr-libc.fplib
+                0x0000000000002f92        0xe /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                0x0000000000002f92                __fp_zero
+                0x0000000000002f94                __fp_szero
+ .text.avr-libc.fplib
+                0x0000000000002fa0        0xa /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(gesf2.o)
+                0x0000000000002fa0                __gtsf2
+                0x0000000000002fa0                __gesf2
+ .text.avr-libc.fplib
+                0x0000000000002faa        0x8 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                0x0000000000002faa                __mulsf3
+ .text.avr-libc.fplib
+                0x0000000000002fb2       0xd2 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                0x0000000000002fd0                __mulsf3x
+                0x0000000000002fd6                __mulsf3_pse
+ .text.avr-libc
+                0x0000000000003084       0x16 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(itoa_ncheck.o)
+                0x0000000000003084                __itoa_ncheck
+ .text.avr-libc
+                0x000000000000309a       0x34 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(utoa_ncheck.o)
+                0x000000000000309a                __utoa_ncheck
+                0x000000000000309c                __utoa_common
+ .text.avr-libc
+                0x00000000000030ce       0x20 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(strrev.o)
+                0x00000000000030ce                strrev
+ .text.avr-libc
+                0x00000000000030ee       0x10 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_byte.o)
+                0x00000000000030ee                eeprom_read_byte
+ .text.avr-libc
+                0x00000000000030fe        0xc /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_dword.o)
+                0x00000000000030fe                eeprom_read_dword
+                0x00000000000030fe                eeprom_read_float
+ .text.avr-libc
+                0x000000000000310a       0x22 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_byte.o)
+                0x000000000000310a                eeprom_update_byte
+                0x000000000000310c                eeprom_update_r18
+ .text.avr-libc
+                0x000000000000312c       0x18 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_dword.o)
+                0x000000000000312c                eeprom_update_dword
+                0x000000000000312c                eeprom_update_float
+ .text.avr-libc
+                0x0000000000003144       0x20 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_block.o)
+                0x0000000000003144                eeprom_read_block
+                0x0000000000003148                eeprom_read_blraw
+                0x0000000000003164                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000003164        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_exit.o)
+                0x0000000000003164                exit
+                0x0000000000003164                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000003164        0x4 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+ *(.hightext)
+ *(.hightext*)
+ *(.progmemx.*)
+                0x0000000000003168                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+                0x0000000000003168                _etext = .
+
+.data           0x0000000000800060       0x54 load address 0x0000000000003168
+                0x0000000000800060                PROVIDE (__data_start = .)
+ *(.data)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+ .data          0x0000000000800060        0x8 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+                0x0000000000800060                nTicks_measured
+                0x0000000000800064                Qmhl_measured
+ .data          0x0000000000800068        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+ .data          0x0000000000800068       0x14 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                0x0000000000800068                disp7s_mux
+ .data          0x000000000080007c        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/error.o
+ .data          0x000000000080007c        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+ .data          0x000000000080007c        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+ .data          0x000000000080007c        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/fuse.o
+ .data          0x000000000080007c        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+ .data          0x000000000080007c        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.o
+ .data          0x000000000080007c        0x3 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+ .data          0x000000000080007f        0x9 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                0x0000000000800080                mpap_step
+ .data          0x0000000000800088        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/myeeprom.o
+ .data          0x0000000000800088        0x4 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                0x0000000000800088                NOZZLE_QTY_DIFF
+ .data          0x000000000080008c        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+ .data          0x000000000080008c        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pump.o
+ .data          0x000000000080008c        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ustepping.o
+ .data          0x000000000080008c        0x8 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+                0x000000000080008c                visMode
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_exit.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_clear_bss.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(gesf2.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(itoa_ncheck.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(utoa_ncheck.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(strrev.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_byte.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_dword.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_byte.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_dword.o)
+ .data          0x0000000000800094        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_block.o)
+ *(.data*)
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ .rodata        0x0000000000800094        0xc obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                0x0000000000800094                DISP7S_CHARS
+                0x0000000000800096                DISP7S_NUMS
+ .rodata        0x00000000008000a0        0x6 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+                0x00000000008000a0                propEmpty
+ .rodata        0x00000000008000a6        0x4 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                0x00000000008000a6                OIL_VISCOSITY
+ .rodata        0x00000000008000aa        0xa obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ustepping.o
+                0x00000000008000aa                ustep_lockup
+ *(.rodata*)
+ *(.gnu.linkonce.r*)
+                0x00000000008000b4                . = ALIGN (0x2)
+                0x00000000008000b4                _edata = .
+                0x00000000008000b4                PROVIDE (__data_end = .)
+
+.bss            0x00000000008000b4      0x230
+                0x00000000008000b4                PROVIDE (__bss_start = .)
+ *(.bss)
+ .bss           0x00000000008000b4        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+ .bss           0x00000000008000b4        0x6 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+ .bss           0x00000000008000ba        0x3 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+ .bss           0x00000000008000bd        0x5 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+ .bss           0x00000000008000c2        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/error.o
+ .bss           0x00000000008000c2        0x2 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+ .bss           0x00000000008000c4        0x4 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+                0x00000000008000c4                counterTicks_debug
+ .bss           0x00000000008000c8        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/fuse.o
+ .bss           0x00000000008000c8       0x50 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+ .bss           0x0000000000800118        0x8 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.o
+ .bss           0x0000000000800120        0xa obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                0x0000000000800120                startSig_last
+ .bss           0x000000000080012a        0x2 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+ .bss           0x000000000080012c        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/myeeprom.o
+ .bss           0x000000000080012c        0x1 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+ .bss           0x000000000080012d        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+ .bss           0x000000000080012d        0x5 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pump.o
+ .bss           0x0000000000800132        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ustepping.o
+ .bss           0x0000000000800132        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_divmodhi4.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_exit.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(gesf2.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(itoa_ncheck.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(utoa_ncheck.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(strrev.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_byte.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_dword.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_byte.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_dword.o)
+ .bss           0x0000000000800132        0x0 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_block.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0000000000800132        0x0 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+ COMMON         0x0000000000800132        0x5 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+                0x0000000000800132                group_x
+ COMMON         0x0000000000800137        0xe obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                0x0000000000800137                disp_owner
+                0x0000000000800138                smain
+                0x000000000080013b                disp7s_bk
+                0x0000000000800140                chek_homeSensor_data
+                0x0000000000800142                funcMach
+                0x0000000000800143                check_oilLevel_data
+ COMMON         0x0000000000800145        0x9 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                0x0000000000800145                homming
+                0x0000000000800146                mpap
+ COMMON         0x000000000080014e      0x196 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                0x000000000080014e                pulsonic
+                0x00000000008002e4                PROVIDE (__bss_end = .)
+                0x0000000000003168                __data_load_start = LOADADDR (.data)
+                0x00000000000031bc                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00000000008002e4        0x0
+                [!provide]                        PROVIDE (__noinit_start = .)
+ *(.noinit*)
+                [!provide]                        PROVIDE (__noinit_end = .)
+                0x00000000008002e4                _end = .
+                [!provide]                        PROVIDE (__heap_start = .)
+
+.eeprom         0x0000000000810000       0x49
+ *(.eeprom*)
+ .eeprom        0x0000000000810000       0x49 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/myeeprom.o
+                0x0000000000810000                oilViscosityIdx_EEP
+                0x0000000000810001                Q_mlh_EEP
+                0x0000000000810049                __eeprom_end = .
+
+.fuse           0x0000000000820000        0x2
+ *(.fuse)
+ .fuse          0x0000000000820000        0x2 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/fuse.o
+                0x0000000000820000                __fuse
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x11
+ *(.comment)
+ .comment       0x0000000000000000       0x11 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/error.o
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/fuse.o
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.o
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/myeeprom.o
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pump.o
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ustepping.o
+ .comment       0x0000000000000011       0x12 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000      0x4e6
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x4e6 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+
+.debug_abbrev   0x0000000000000000      0x4a3
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x4a3 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+
+.debug_line     0x0000000000000000       0x1d
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0x1d /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000      0x196
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x196 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_addr
+ *(.debug_addr)
+OUTPUT(bin/Release/atmega32Pulsonic.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+DISP7S_CHARS                                      obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+DISP7S_NUMS                                       obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+NOZZLE_QTY_DIFF                                   obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+OIL_VISCOSITY                                     obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+Q_mlh_EEP                                         obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/myeeprom.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+Qmhl_measured                                     obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+__addsf3                                          /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+__addsf3x                                         /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+__bad_interrupt                                   /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__bss_end                                         /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_clear_bss.o)
+__cmpsf2                                          /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+__data_end                                        /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+__divmodhi4                                       /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_divmodhi4.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+__divsf3                                          /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+__divsf3_pse                                      /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+__divsf3x                                         /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+__do_clear_bss                                    /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_clear_bss.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pump.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+__do_copy_data                                    /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_copy_data.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ustepping.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+__eqsf2                                           /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+__fixsfsi                                         /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+__fixunssfsi                                      /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+__floatsisf                                       /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+__floatunsisf                                     /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+__fp_cmp                                          /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(gesf2.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+__fp_inf                                          /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+__fp_nan                                          /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+__fp_pscA                                         /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+__fp_pscB                                         /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+__fp_round                                        /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+__fp_split3                                       /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+__fp_splitA                                       /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+__fp_szero                                        /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+__fp_zero                                         /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+__fuse                                            obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/fuse.o
+__gesf2                                           /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(gesf2.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+__gtsf2                                           /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(gesf2.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+__heap_end                                        /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__init                                            /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__itoa_ncheck                                     /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(itoa_ncheck.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+__lesf2                                           /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+__ltsf2                                           /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+__mulsf3                                          /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+__mulsf3_pse                                      /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+__mulsf3x                                         /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+__nesf2                                           /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+__stack                                           /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__subsf3                                          /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+__udivmodhi4                                      /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_udivmodhi4.o)
+                                                  /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_divmodhi4.o)
+__utoa_common                                     /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(utoa_ncheck.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(itoa_ncheck.o)
+__utoa_ncheck                                     /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(utoa_ncheck.o)
+__vector_1                                        /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_10                                       /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_11                                       /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_12                                       /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_13                                       /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_14                                       /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_15                                       /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_16                                       /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_17                                       /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_18                                       /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_19                                       /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_2                                        /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_20                                       /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_3                                        /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_4                                        /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_5                                        /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_6                                        /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_7                                        /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_8                                        /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_9                                        obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vector_default                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+__vectors                                         /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+_div                                              /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_divmodhi4.o)
+_exit                                             /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_exit.o)
+autoMode1_job                                     obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+autoMode_cmd                                      obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+autoMode_disp7s_writeSumTotal                     obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+autoMode_setup                                    obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+check_oilLevel_data                               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+chek_homeSensor_data                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+configMode_init                                   obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+configMode_job                                    obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+counterTicks_debug                                obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+disp7s_bk                                         obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+disp7s_init                                       obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+disp7s_job                                        obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+disp7s_modeDisp_off                               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+disp7s_modeDisp_writeFloat                        obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+disp7s_modeDisp_writeInt                          obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+disp7s_modeDisp_writeText_oil                     obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+disp7s_mux                                        obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+disp7s_off                                        obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+disp7s_qtyDisp_writeFloat                         obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+disp7s_qtyDisp_writeInt                           obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+disp7s_qtyDisp_writeText_20_3RAYAS                obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+disp7s_qtyDisp_writeText_FFF                      obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+disp7s_qtyDisp_writeText_FLU                      obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+disp7s_qtyDisp_writeText_NO_HOME_SENSOR           obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+disp7s_qtyDisp_writeText_NO_OIL                   obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+disp7s_qtyDisp_writeText_OFF                      obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+disp7s_qtyDsp_off                                 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+disp7s_setBlink_qty                               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+disp7s_write_f                                    obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+disp7s_write_i                                    obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+disp_owner                                        obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+eeprom_read_block                                 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_block.o)
+eeprom_read_blraw                                 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_block.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_dword.o)
+eeprom_read_byte                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_byte.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+eeprom_read_dword                                 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_dword.o)
+eeprom_read_float                                 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eerd_dword.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+eeprom_update_byte                                /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_byte.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_dword.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+eeprom_update_dword                               /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_dword.o)
+eeprom_update_float                               /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_dword.o)
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+eeprom_update_r18                                 /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_byte.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libatmega32.a(eeupd_dword.o)
+error_job                                         obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+exit                                              /usr/lib/gcc/avr/9.2.0/avr5/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+flushAllMode_cmd                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+flushAllMode_job                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+flushAtNozzle_cmd                                 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+flushAtNozzle_job                                 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+flushAtNozzle_setNozzle                           obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+funcMach                                          obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+group_x                                           obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+homming                                           obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+ikb_execfunct                                     obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+ikb_flush                                         obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+ikb_get_AtTimeExpired_BeforeOrAfter               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+ikb_init                                          obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+ikb_job                                           obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+ikb_key_is_ready2read                             obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+ikb_key_was_read                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+ikb_setKeyProp                                    obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+ikb_set_ready2read                                obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+ikey_clear_all_flag                               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+ikey_is_all_hw_released                           obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+ikey_is_all_process_finished                      obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+ikey_parsing                                      obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+ikey_scan                                         obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+is_homeSensor                                     obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.o
+is_inductiveSensorRPM                             obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.o
+is_oilLevel                                       obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+is_startSignal                                    obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+is_unblocked_nozzle                               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.o
+main                                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/crtatmega32.o
+motortest                                         obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+mpap                                              obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+mpap_do1step                                      obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+mpap_doMovement                                   obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+mpap_getMode                                      obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+mpap_get_numSteps_current                         obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+mpap_homming_job                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+mpap_homming_job_reset                            obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+mpap_interrupt                                    obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+mpap_isIdle                                       obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+mpap_job                                          obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+mpap_movetoNozzle                                 obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+mpap_setup_searchFirstPointHomeSensor             obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+mpap_stall                                        obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+mpap_step                                         obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+mykb_layout0                                      obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+nTicks_measured                                   obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+nozzle_getPosition                                obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+nozzle_isEnabled                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+nozzle_setPosition                                obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+nozzle_setPosition_reset                          obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+oilLevel_init                                     obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+oilViscosityIdx_EEP                               obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/myeeprom.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+propEmpty                                         obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ikb.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+pulsonic                                          obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/nozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/mpap.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/display.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+pulsonic_getNumNozzleAvailable                    obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/configMode.o
+pulsonic_getTotalSum_mlh                          obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+pulsonic_init                                     obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pulsonic.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+pump_getTick                                      obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pump.o
+pump_isIdle                                       obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pump.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+pump_job                                          obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pump.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+pump_setTick                                      obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pump.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+pump_stop                                         obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pump.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAtNozzle.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/flushAllMode1.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+setdc                                             obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ustepping.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+smain                                             obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/pump.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+startSig_last                                     obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+startSignal_init                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/inputs.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+strrev                                            /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(strrev.o)
+                                                  /usr/lib/gcc/avr/9.2.0/../../../../avr/lib/avr5/libc.a(utoa_ncheck.o)
+ustep_lockup                                      obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/ustepping.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+visMode                                           obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/autoMode.o
+visMode_job                                       obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/visMode.o
+                                                  obj/Release/ATMEL/C/Pulsonic/firmware/atmega32Pulsonic/main.o
