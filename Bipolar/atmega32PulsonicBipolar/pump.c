@@ -33,6 +33,7 @@ int8_t pump_job(void)
             //
             //Added 7 marzo 2020
             pulsonic.disp7s.mode[0] |= 0x80;//DP= 1
+            pulsonic.disp7s.mode[1] |= 0x80;//DP= 1
         }
         else if (pump.sm0 == 1)
         {
@@ -46,6 +47,7 @@ int8_t pump_job(void)
                     //
                     //Added 7 marzo 2020
                     pulsonic.disp7s.mode[0] &= 0x7F;//DP= 0
+                    pulsonic.disp7s.mode[1] &= 0x7F;//DP= 0
                 }
             }
         }

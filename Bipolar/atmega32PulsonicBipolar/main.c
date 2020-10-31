@@ -35,11 +35,8 @@
 Conversion del firmware a Atmega32
 ----------------------------------------
 1)    http://www.engbedded.com/fusecalc/
-
 lock bits:
 http://eleccelerator.com/fusecalc/fusecalc.php?chip=atmega328p
-
-
 2) verificar que responda el atmega (ONLY A RESET)
 [jcaf@jcafpc ~]$ avrdude -c usbasp -B5 -p m32
 
@@ -49,7 +46,7 @@ http://eleccelerator.com/fusecalc/fusecalc.php?chip=atmega328p
 
 4) GRABAR EL CODIGO FUENTE CON EL COMANDO ACOSTUMBRADO
     [root@JCAFPC Release]# avrdude -c usbasp -B5 -p m32 -U flash:w:atmega32Pulsonic.hex
-    [root@JCAFPC Release]# avrdude -c usbasp -B5 -p m32 -V -U flash:w:atmega32Pulsonic.hex (SIN VERIFICAR)
+    [root@JCAFPC Release]# avrdude -c usbasp -B1 -p m32 -V -U flash:w:atmega32Pulsonic.hex (SIN VERIFICAR)
     [jcaf@JCAFPC Release]$ avrdude -c usbasp -B5 -p m32 (ONLY A RESET)
 
     NUEVO
@@ -57,11 +54,13 @@ http://eleccelerator.com/fusecalc/fusecalc.php?chip=atmega328p
     Tambien puede ser sin -BX.. cuando ya esta bien configurado los fuses:
     [root@JCAFPC Release]# avrdude -c usbasp -p m32 -U flash:w:atmega328p.hex
 
-5) GRABAR LA EEPROM
+5)￼￼￼
+8:50 a. m.
+ GRABAR LA EEPROM
 [jcaf@jcafpc Release]$ avrdude -c usbasp -B4 -p m32 -V -U eeprom:w:atmega32Pulsonic.eep
 
 6) programar fuse (PRESERVANDO EEPROM)
-            -U lfuse:w:0xbf:m -U hfuse:w:0xc7:m
+
     avrdude -c usbasp -B5 -p m32 -U lfuse:w:0xbf:m -U hfuse:w:0xc7:m
 
 7) Verificar los fuses
@@ -167,74 +166,39 @@ void main(void)
 
     PORTA = 0x00;
     PORTB= 0x00;
-    PORTC = 0x00;
     PORTD = 0x00;
 
-    RELAY_DISABLE();
+    #if MOTOR_TYPE == UNIPOLAR_MOTOR
+    PORTC = 0x00;
+    #elif MOTOR_TYPE == BIPOLAR_MOTOR
+    PORTC = 0x06;//valor pre cargado, invertido por las fases
+    #endif // MOTOR_TYPE
+
+    /*ConfigOutputPin(CONFIGIOxSTEPPER_A, PINxSTEPPER_A);
+    ConfigOutputPin(CONFIGIOxSTEPPER_B, PINxSTEPPER_B);
+    ConfigOutputPin(CONFIGIOxSTEPPER_C, PINxSTEPPER_C);
+    ConfigOutputPin(CONFIGIOxSTEPPER_D, PINxSTEPPER_D);
+
+    */
+    DDRC = 0x0F;
+    #if MOTOR_TYPE == UNIPOLAR_MOTOR
+    ConfigOutputPin(CONFIGIOxSTEPPER_ENABLE, PINxSTEPPER_ENABLE);
+    #endif
+
+    RELAY_ENABLE();
     ConfigOutputPin(CONFIGIOxRELAY, PINxRELAY);
 
     PUMP_DISABLE();
     ConfigOutputPin(CONFIGIOxPUMP, PINxPUMP);
-
-    ConfigOutputPin(CONFIGIOxSTEPPER_A, PINxSTEPPER_A);
-    ConfigOutputPin(CONFIGIOxSTEPPER_B, PINxSTEPPER_B);
-    ConfigOutputPin(CONFIGIOxSTEPPER_C, PINxSTEPPER_C);
-    ConfigOutputPin(CONFIGIOxSTEPPER_D, PINxSTEPPER_D);
-    //ConfigOutputPin(CONFIGIOxSTEPPER_ENABLE, PINxSTEPPER_ENABLE);
     //
     ConfigInputPin(CONFIGIOxSTEPPER_SENSOR_HOME, PINxSTEPPER_SENSOR_HOME);
     ConfigInputPin(CONFIGIOxOILLEVEL, PINxOILLEVEL); //ext. pullup
     ConfigInputPin(CONFIGIOxSTARTSIGNAL, PINxSTARTSIGNAL); //ext. pullup
     //
     //Activate internall pull-up
-    NOP();
-    NOP();
     PinTo1(PORTWxSTEPPER_SENSOR_HOME, PINxSTEPPER_SENSOR_HOME);
-    NOP();
-    NOP();
     PinTo1(PORTWxOILLEVEL, PINxOILLEVEL);
-    NOP();
-    NOP();
     PinTo1(PORTWxSTARTSIGNAL, PINxSTARTSIGNAL);
-
-//while (1) {;}
-//DDRD=0110 1000
-
-
-/*
-NOP();
-NOP();
-DDRD=0x68;
-NOP();
-NOP();
-NOP();
-NOP();
-NOP();
-NOP();
-NOP();
-NOP();
-NOP();
-NOP();
-PORTD = 0x90;
-NOP();
-NOP();
-NOP();
-NOP();
-
-
-while (1);
-    */
-/*
-DDRD = 0x7F;
-while (1)
-{
-PORTD = 0x80;
-_delay_ms(500);
-PORTD = 0x00;
-_delay_ms(500);
-}
-*/
-//while (1) {;}
 
     ikb_init();
     mykb_layout0();
@@ -265,31 +229,26 @@ _delay_ms(500);
     //TIMSK |= (1 << OCIE1A); //TIMSK1 = (1<<OCIE1A);
     //sei();
 
-    //config to PWM as Fast PWM
-    //Mode 14 = Fast PWM ICR1 as TOP: WGM13-WGM12-WGM11-WGM10 = 0xE
-    //PWM freq = 20KHz
-    //N PRESCALER = 8
+
+    /*
+    TCNT1 se configura como Fast PWM  y a la vez se aprovecha el OV1 causado cuando
+    se soprepasa el limite impuesto por ICR1... Con esto estoy gando PWM + interrupcion
+    por OV1
+    Mode 14 = Fast PWM ICR1 as TOP: WGM13-WGM12-WGM11-WGM10 = 0xE
+    PWM freq = 20KHz -> 50uS
+    N PRESCALER = 8
+    */
+    //Set TCNT1 for overflow
     TCNT1 = 0x0000;
-    ICR1 = 99;//TOP for 20Khz
+    ICR1 = 99;//TOP for 20Khz -> 50us
     setdc(DC_MIN);
     TCCR1B = (1 << WGM13)  | (1 << WGM12) | (0 << CS12) | (1 << CS11) | (0 << CS10);
     TCCR1A = (1 << COM1A1) | (1<<COM1A0) |  (1<<WGM11) | (0<<WGM10);
+    TIMSK |= (1 << TOIE1);//TIMER1 aprovecho el Overflow at TOP=ICR1
 
-    //mpap_interrupt();
-    //OCR1A = 0.35*DC_TOP;
-    //motortest();
-    //
-//ConfigOutputPin(CONFIGIOxTXD, PINxTXD);
-//bipolar_test();
-//bipolar_test2();//OK no pierde paso a 900 us
-//bipolar_test2();//OK no pierde paso a 900 us
-
-    TIMSK |= (1 << TOIE1);//Overflow at TOP
     sei();
 
-//mpap_homming_job_test_interrupt();
-
-    // loop_test_motor_mosfet();//for debug temperature of mosfet + motor
+    uint16_t kt=0;
     while (1)
     {
         if (isr_flag.f1ms)
@@ -298,10 +257,54 @@ _delay_ms(500);
             smain.f.f1ms = 1;
         }
         //
+        if (smain.f.f1ms)
+        {
+            if (++c_access_disp == 3)
+            {
+                c_access_disp = 0;
+                disp7s_job();
+            }
+        }
+
         if (sm0 == 0)
         {
-            //autoMode_jobX();
-            //pump_job();
+            pulsonic.disp7s.mode[1] =0xFF;
+            pulsonic.disp7s.mode[0] =0xFF;
+            pulsonic.disp7s.qty[2] =0xFF;
+            pulsonic.disp7s.qty[1] =0xFF;
+            pulsonic.disp7s.qty[0] =0xFF;
+
+            if (smain.f.f1ms)
+            {
+                if (++kt == 2000)
+                {
+                    kt = 0x00;
+                    sm0++;
+                }
+            }
+        }
+        else if (sm0 == 1)
+        {
+            disp7s_modeDisp_writeFloat(5.2);
+            pulsonic.disp7s.qty[2] =0x00;
+            pulsonic.disp7s.qty[1] =0x00;
+            pulsonic.disp7s.qty[0] =0x00;
+
+            if (smain.f.f1ms)
+            {
+                if (++kt == 2000)
+                {
+                    kt = 0x00;
+                    sm0++;
+                    //+-
+                    disp7s_modeDisp_writeInt(20);
+                    disp7s_qtyDisp_writeFloat(pulsonic_getTotalSum_mlh());
+                    //-+
+                }
+            }
+        }
+        else if (sm0 == 2)
+        {
             if (mpap_homming_job())
             {
                 sm0++;
@@ -309,6 +312,7 @@ _delay_ms(500);
         }
         else
         {
+            /*
             if (smain.f.f1ms)
             {
                 if (++c_access_kb == KB_PERIODIC_ACCESS)
@@ -320,6 +324,15 @@ _delay_ms(500);
                 {
                     c_access_disp = 0;
                     disp7s_job();
+                }
+            }
+            */
+            if (smain.f.f1ms)
+            {
+                if (++c_access_kb == KB_PERIODIC_ACCESS)
+                {
+                    c_access_kb = 0;
+                    ikb_job();
                 }
             }
 
@@ -561,7 +574,7 @@ _delay_ms(500);
                     ikb_setKeyProp(KB_LYOUT_KEY_FLUSHENTER, prop);
 
                     //added blink
-                    disp7s_setBlink_qty(1);
+                    disp7s_setBlink_qty(1);//1=ON
                 }
                 visMode_job();
                 flushAllMode_job();
@@ -710,29 +723,49 @@ ISR(TIMER1_OVF_vect)
         }
     }
 #elif MOTOR_TYPE == BIPOLAR_MOTOR
-    static int8_t cticks_mpap;
+    /*
+    50*20 = 1ms
+    de 20 a 8
+    min = 8
 
-    if (++cticks_mpap == 12)//50us*18 = 900us
+    cada 12 ms un cambio
+    */
+
+    static int8_t cticks_mpap = 0;
+    /*
+    static uint8_t cticks_t = 0;
+    static int8_t  k_cticks_maps = 20;
+    //50us * 200 = 10ms
+    #define KTMIN 6
+    if (k_cticks_maps > KTMIN)
+    {
+        //if (++cticks_t == 200)//c 10 ms
+        if (++cticks_t == 80)//c 10 ms //OK funciona a partir de 80 pulsos
+        {
+            cticks_t = 0;
+            k_cticks_maps--;
+        }
+    }
+
+    if (++cticks_mpap == k_cticks_maps)
+    */
+    if (++cticks_mpap == 15)//k_cticks_maps)//50us*18 = 900us //ok 21 oct
     {
         cticks_mpap = 0x00;
-        //mpap_job();
-        mpap_do1step(+1);
-
-        //PinToggle(PORTWxTXD, PINxTXD);
-        //mpap_do1step(-1);
+        mpap_job();
+        //mpap_do1step(+1);
     }
 
     #endif // MOTOR_TYPE
     //
+
     if (++cticks_1ms == 20)//50us*20 = 1ms
         //if (++cticks == 40)//25us*40 = 1ms
     {
         isr_flag.f1ms = 1;
         cticks_1ms = 0x00;
     }
-
 }
-
 
 static union _errorFlag error_grantedToWriteDisp; //Always in the same bit position like error
 static void errorHandler_queue(void);
@@ -772,6 +805,10 @@ void error_job(void)
             prop = propEmpty;
             prop.uFlag.f.onKeyPressed = 1;
             ikb_setKeyProp(KB_LYOUT_KEY_FLUSHENTER, prop);
+
+            //+-
+            disp7s_setBlink_qty(1);//1=ON
+            //-+
         }
         else
         {
@@ -795,6 +832,10 @@ void error_job(void)
             check_oilLevel_reset();
             check_homeSensor_reset();
             mykb_layout0();
+
+            //+-
+            disp7s_setBlink_qty(0);//1=OFF
+            //-+
         }
     }
 }
@@ -879,7 +920,8 @@ static void check_oilLevel(void)
     }
     else if (check_oilLevel_data.sm0 == 1)/*2 parts: the process and the display*/
     {
-        if (0)//(oilLevel)   /*1)the process*/
+        //if (0)
+        if (oilLevel)   /*1)the process*/
         {
             pulsonic.error.f.oilLevel = 0;
             check_oilLevel_data.sm0 = 0x00;

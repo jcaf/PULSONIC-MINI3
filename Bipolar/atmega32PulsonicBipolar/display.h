@@ -69,6 +69,7 @@
     void disp7s_job(void);
     void disp7s_setBlink_qty(int8_t blink);
 
+
     extern const uint8_t DISP7S_NUMS[10];
     extern const uint8_t DISP7S_CHARS[2];
 

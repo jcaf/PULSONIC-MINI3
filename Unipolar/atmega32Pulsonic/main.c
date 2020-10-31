@@ -218,12 +218,14 @@ void main(void)
     //TIMSK |= (1 << OCIE1A); //TIMSK1 = (1<<OCIE1A);
     //sei();
 
+
+    TCNT1 = 0x0000;
+    ICR1 = 99;//TOP for 20Khz
+    //
     //config to PWM as Fast PWM
     //Mode 14 = Fast PWM ICR1 as TOP: WGM13-WGM12-WGM11-WGM10 = 0xE
     //PWM freq = 20KHz
     //N PRESCALER = 8
-    TCNT1 = 0x0000;
-    ICR1 = 99;//TOP for 20Khz
     setdc(DC_MIN);
     TCCR1B = (1 << WGM13)  | (1 << WGM12) | (0 << CS12) | (1 << CS11) | (0 << CS10);
     TCCR1A = (1 << COM1A1) | (1<<COM1A0) |  (1<<WGM11) | (0<<WGM10);

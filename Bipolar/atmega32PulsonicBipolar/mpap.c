@@ -6,186 +6,106 @@
 
     static void _mpap_step1(void)
     {
-        /*UNIPOLAR 1 winding*/
-        //    PinTo0(PORTWxSTEPPER_A, PINxSTEPPER_A);
-        //    PinTo1(PORTWxSTEPPER_B, PINxSTEPPER_B);
-        //    PinTo0(PORTWxSTEPPER_C, PINxSTEPPER_C);
-        //    PinTo0(PORTWxSTEPPER_D, PINxSTEPPER_D);
-
         PORTC = 0xF0 | STEP_WAVE_2B;
-        //PORTC = (PORTC&0xF0)| STEP_WAVE_2B;
     }
     static void _mpap_step2(void)
     {
-        /*UNIPOLAR 1 winding*/
-        //    PinTo0(PORTWxSTEPPER_A, PINxSTEPPER_A);
-        //    PinTo0(PORTWxSTEPPER_B, PINxSTEPPER_B);
-        //    PinTo1(PORTWxSTEPPER_C, PINxSTEPPER_C);
-        //    PinTo0(PORTWxSTEPPER_D, PINxSTEPPER_D);
-
         PORTC = 0xF0 | STEP_WAVE_1B;
-        //PORTC = (PORTC&0xF0)| STEP_WAVE_1B;
     }
     static void _mpap_step3(void)
     {
-        /*UNIPOLAR 1 winding*/
-        //    PinTo1(PORTWxSTEPPER_A, PINxSTEPPER_A);
-        //    PinTo0(PORTWxSTEPPER_B, PINxSTEPPER_B);
-        //    PinTo0(PORTWxSTEPPER_C, PINxSTEPPER_C);
-        //    PinTo0(PORTWxSTEPPER_D, PINxSTEPPER_D);
-
         PORTC = 0xF0 | STEP_WAVE_2A;
-        //PORTC = (PORTC&0xF0)| STEP_WAVE_2A;
     }
     static void _mpap_step4(void)
     {
-        /*UNIPOLAR 1 winding*/
-        //    PinTo0(PORTWxSTEPPER_A, PINxSTEPPER_A);
-        //    PinTo0(PORTWxSTEPPER_B, PINxSTEPPER_B);
-        //    PinTo0(PORTWxSTEPPER_C, PINxSTEPPER_C);
-        //    PinTo1(PORTWxSTEPPER_D, PINxSTEPPER_D);
-
         PORTC = 0xF0 | STEP_WAVE_1A;
-        //PORTC = (PORTC&0xF0)| STEP_WAVE_1A;
     }
 
     PTRFX_retVOID mpap_step[MPAP_NUMSTEPS] = {_mpap_step1, _mpap_step2, _mpap_step3, _mpap_step4};
 
 #elif MOTOR_TYPE == BIPOLAR_MOTOR
 
-//0xF0 | para no deshabilitar el pull-up el nibble alto y no tener que leer y enmascarar el nibble alto
+    #define SLOW_CURRENT_DECAY 0
+    #define FAST_CURRENT_DECAY 1
+
+    #define CURRENT_DECAY SLOW_CURRENT_DECAY
+    //#define CURRENT_DECAY FAST_CURRENT_DECAY
+
+    //0xF0 | para no deshabilitar el pull-up el nibble alto y no tener que leer y enmascarar el nibble alto
     static void _mpap_step8(void)
     {
-        //PORTC = (PINC & 0xF0)| 0x06;// 0B00000110;//f
-        PORTC = 0xF0 | 0x06;// 0B00000110;//f
+        #if CURRENT_DECAY == FAST_CURRENT_DECAY
+        PORTC = 0xF0 | 0x0B;//FAST CURRENT DECAY
+        #else
+        //PORTC = 0xF0 | 0x09;//SLOW CURRENT DECAY
+        PORTC = 0xF0 | 0x06;//SLOW CURRENT DECAY //TUVE QUE INVERTIR LAS "FASES" POR SOFTWARES PARA NO HACERLO POR HARDWARE
+        #endif // CURRENT_DECAY
     }
     static void _mpap_step7(void)
     {
-        //PORTC = (PINC & 0xF0)| 0x05;// 0B00000101;//h
-        PORTC = 0xF0 | 0x05;// 0B00000101;//h
+        #if CURRENT_DECAY == FAST_CURRENT_DECAY
+        PORTC = 0xF0 | 0x08;//FAST CURRENT DECAY
+        #else
+        //PORTC = 0xF0 | 0x08;//SLOW CURRENT DECAY
+        PORTC = 0xF0 | 0x02;//SLOW CURRENT DECAY//TUVE QUE INVERTIR LAS "FASES" POR SOFTWARES PARA NO HACERLO POR HARDWARE
+        #endif
     }
     static void _mpap_step6(void)
     {
-        //PORTC = (PINC & 0xF0)| 0x04;// 0B00000100;//f
-        PORTC = 0xF0 | 0x04;// 0B00000100;//f
+        #if CURRENT_DECAY == FAST_CURRENT_DECAY
+        PORTC = 0xF0 | 0x0C;//FAST CURRENT DECAY
+        #else
+        //PORTC = 0xF0 | 0x04;//SLOW CURRENT DECAY
+        PORTC = 0xF0 | 0x01;//SLOW CURRENT DECAY//TUVE QUE INVERTIR LAS "FASES" POR SOFTWARES PARA NO HACERLO POR HARDWARE
+        #endif // CURRENT_DECAY
     }
     static void _mpap_step5(void)
     {
-        //PORTC = (PINC & 0xF0)| 0x08; //0B00001000;//h
-        PORTC = 0xF0 | 0x08; //0B00001000;//h
+        #if CURRENT_DECAY == FAST_CURRENT_DECAY
+        PORTC = 0xF0 | 0x00;//FAST CURRENT DECAY
+        #else
+        //PORTC = 0xF0 | 0x00;//SLOW CURRENT DECAY
+        PORTC = 0xF0 | 0x00;//SLOW CURRENT DECAY//TUVE QUE INVERTIR LAS "FASES" POR SOFTWARES PARA NO HACERLO POR HARDWARE
+        #endif // CURRENT_DECAY
     }
     static void _mpap_step4(void)
     {
-        //PORTC = (PINC & 0xF0)| 0x00; //0B00000000;//f
-        PORTC = 0xF0 | 0x00; //0B00000000;//f
+        #if CURRENT_DECAY == FAST_CURRENT_DECAY
+        PORTC = 0xF0 | 0x01;//FAST CURRENT DECAY
+        #else
+        //PORTC = 0xF0 | 0x03;//SLOW CURRENT DECAY
+        PORTC = 0xF0 | 0x0C;//SLOW CURRENT DECAY//TUVE QUE INVERTIR LAS "FASES" POR SOFTWARES PARA NO HACERLO POR HARDWARE
+        #endif // CURRENT_DECAY
     }
     static void _mpap_step3(void)
     {
-        //PORTC = (PINC & 0xF0)| 0x03; //0B00000011;//h
-        PORTC = 0xF0 | 0x03; //0B00000011;//h
+        #if CURRENT_DECAY == FAST_CURRENT_DECAY
+        PORTC = 0xF0 | 0x02;//FAST CURRENT DECAY
+        #else // CURRENT_DECAY
+        //PORTC = 0xF0 | 0x02;//SLOW CURRENT DECAY
+        PORTC = 0xF0 | 0x08;//SLOW CURRENT DECAY//TUVE QUE INVERTIR LAS "FASES" POR SOFTWARES PARA NO HACERLO POR HARDWARE
+        #endif // MOTOR_TYPE
     }
     static void _mpap_step2(void)
     {
-        //PORTC = (PINC & 0xF0)| 0x02; //0B00000010;//f
-        PORTC = 0xF0 | 0x02; //0B00000010;//f
+        #if CURRENT_DECAY == FAST_CURRENT_DECAY
+        PORTC = 0xF0 | 0x06;//FAST CURRENT DECAY
+        #else
+        //PORTC = 0xF0 | 0x0E;//SLOW CURRENT DECAY
+        PORTC = 0xF0 | 0x0B;//SLOW CURRENT DECAY//TUVE QUE INVERTIR LAS "FASES" POR SOFTWARES PARA NO HACERLO POR HARDWARE
+        #endif // CURRENT_DECAY
+
     }
     static void _mpap_step1(void)
     {
-        //PORTC = (PINC & 0xF0)| 0x0E; //0B00001110;//h
-        PORTC = 0xF0 | 0x0E; //0B00001110;//h
+        #if CURRENT_DECAY == FAST_CURRENT_DECAY
+        PORTC = 0xF0 | 0x0A;//FAST CURRENT DECAY
+        #else
+        //PORTC = 0xF0 | 0x0A;//SLOW CURRENT DECAY
+        PORTC = 0xF0 | 0x0A;//SLOW CURRENT DECAY//TUVE QUE INVERTIR LAS "FASES" POR SOFTWARES PARA NO HACERLO POR HARDWARE
+        #endif // CURRENT_DECAY
     }
-    #define Tt 900
-    void bipolar_test(void)
-    {
-        while (1)
-       {
-        _mpap_step1();
-            _delay_us(Tt);
-            PinToggle(PORTWxTXD, PINxTXD);
-        _mpap_step2();
-            _delay_us(Tt);
-            PinToggle(PORTWxTXD, PINxTXD);
-        _mpap_step3();
-            _delay_us(Tt);
-            PinToggle(PORTWxTXD, PINxTXD);
-        _mpap_step4();
-            _delay_us(Tt);
-            PinToggle(PORTWxTXD, PINxTXD);
-        _mpap_step5();
-            _delay_us(Tt);
-            PinToggle(PORTWxTXD, PINxTXD);
-        _mpap_step6();
-            _delay_us(Tt);
-            PinToggle(PORTWxTXD, PINxTXD);
-        _mpap_step7();
-            _delay_us(Tt);
-            PinToggle(PORTWxTXD, PINxTXD);
-        _mpap_step8();
-            _delay_us(Tt);
-            PinToggle(PORTWxTXD, PINxTXD);
-        }
-
-    }
-    //
-    void bipolar_test2(void)
-    {
-        while (1)
-       {
-           for (int i=0; i<50; i++)
-           {
-               _mpap_step1();
-                    _delay_us(Tt);
-                _mpap_step2();
-                    _delay_us(Tt);
-                _mpap_step3();
-                    _delay_us(Tt);
-                _mpap_step4();
-                    _delay_us(Tt);
-                _mpap_step5();
-                    _delay_us(Tt);
-                _mpap_step6();
-                    _delay_us(Tt);
-                _mpap_step7();
-                    _delay_us(Tt);
-                _mpap_step8();
-                    _delay_us(Tt);
-
-           }
-           NOP();
-           PORTC = (PORTC & 0xFA) | 0xF5;//| 0B00000101;//f 1 //Solo bajar la corriente a 0
-           _delay_ms(1000);
-        }
-    }
-    //
-    void bipolar_test2b(void)
-    {
-        while (1)
-       {
-           for (int i=0; i<50; i++)
-           {
-               _mpap_step8();
-                    _delay_us(Tt);
-                _mpap_step7();
-                    _delay_us(Tt);
-                _mpap_step6();
-                    _delay_us(Tt);
-                _mpap_step5();
-                    _delay_us(Tt);
-                _mpap_step4();
-                    _delay_us(Tt);
-                _mpap_step3();
-                    _delay_us(Tt);
-                _mpap_step2();
-                    _delay_us(Tt);
-                _mpap_step1();
-                    _delay_us(Tt);
-
-           }
-           NOP();
-           PORTC = (PORTC & 0xFA) | 0xF5;//| 0B00000101;//f 1 //Solo bajar la corriente a 0
-           _delay_ms(1000);
-        }
-    }
+    PTRFX_retVOID mpap_step[MPAP_NUMSTEPS] = {_mpap_step1, _mpap_step2, _mpap_step3, _mpap_step4, _mpap_step5, _mpap_step6, _mpap_step7, _mpap_step8};
 
     ////////////////
     int8_t mpap_homming_job_test_interrupt(void)
@@ -215,18 +135,9 @@
     ////////////////
 
 
-    //PTRFX_retVOID mpap_step[MPAP_NUMSTEPS] = {_mpap_step1, _mpap_step2, _mpap_step3, _mpap_step4, _mpap_step5, _mpap_step6, _mpap_step7, _mpap_step8};
-    PTRFX_retVOID mpap_step[MPAP_NUMSTEPS] = {_mpap_step8, _mpap_step7, _mpap_step6, _mpap_step5, _mpap_step4, _mpap_step3, _mpap_step2, _mpap_step1};
+
 #endif // MOTOR_TYPE
 
-//static void _mpap_off(void)
-//{
-//    PinTo0(PORTWxSTEPPER_A, PINxSTEPPER_A);
-//    PinTo0(PORTWxSTEPPER_B, PINxSTEPPER_B);
-//    PinTo0(PORTWxSTEPPER_C, PINxSTEPPER_C);
-//    PinTo0(PORTWxSTEPPER_D, PINxSTEPPER_D);
-//}
-//PTRFX_retVOID mpap_off= {_mpap_off};
 
 volatile struct _mpap mpap;
 
@@ -380,6 +291,53 @@ static int8_t mpap_searchFirstPointHomeSensor(void)
 static int8_t mpap_crossingHomeSensor(void)
 {
     int8_t cod_ret = 0;
+    int8_t home;
+    static int s=0;
+    static int32_t countMaxStep =0;
+
+    if (mpap.numSteps_tomove != 0)
+    {
+        mpap_do1step(mpap.KI);
+        mpap.counter_steps += mpap.KI; //inc/dec +-1
+
+        home = PinRead(PORTRxSTEPPER_SENSOR_HOME, PINxSTEPPER_SENSOR_HOME);
+
+        if (s == 0)
+        {
+            if (home == 0)
+            {
+                s++;
+            }
+        }
+        else //if (s == 1)
+        {
+            if (home == 1)
+            {
+                cod_ret = 1;
+                mpap.numSteps_current = 0x0000;
+            }
+        }
+
+        if (++countMaxStep > (MPAP_NUMSTEP_1NOZZLE* NOZZLE_NUMMAX * 2) )
+        {
+            cod_ret = 2;
+        }
+    }
+
+    if (cod_ret >0)
+    {
+        mpap.numSteps_tomove = 0x0000;
+        countMaxStep = 0x00;
+        s = 0;
+    }
+
+    return cod_ret;
+}
+
+/*
+static int8_t mpap_crossingHomeSensor(void)
+{
+    int8_t cod_ret = 0;
 
     if (mpap.numSteps_tomove != 0)
     {
@@ -391,7 +349,7 @@ static int8_t mpap_crossingHomeSensor(void)
 
         if (mpap.counter_steps == mpap.numSteps_tomove)//max. num. vueltas
         {
-            /*whatever reset to the Origin = 0*/
+            //whatever reset to the Origin = 0
             mpap.numSteps_current = 0x0000;
             mpap.numSteps_tomove = 0x0000;
 
@@ -404,27 +362,29 @@ static int8_t mpap_crossingHomeSensor(void)
     }
     return cod_ret;
 }
+*/
 
 /* la parada debe ser sincronizada en la rutina de interrupcion */
 void mpap_job(void)//ISR
 {
     int8_t cod_ret;
+    int8_t xhome;
 
     if (mpap.mode == MPAP_CROSSING_HOMESENSOR_MODE)
     {
-        if (mpap_crossingHomeSensor())
+        xhome = mpap_crossingHomeSensor();
+        if (xhome>0)
         {
-            if (counterZeros >= (MPAP_NUMSTEP_1NOZZLE*0.1))//(1)
+            if (xhome == 1)
             {
-               pulsonic.error.f.homeSensor = 0;
-               pulsonic.flags.homed = 1;
+                pulsonic.error.f.homeSensor = 0;
+                pulsonic.flags.homed = 1;
             }
-            else
+            else if (xhome == 2)
             {
                pulsonic.error.f.homeSensor = 1;
                pulsonic.flags.homed = 0;
             }
-            //counterZeros = 0x000;//Can be aborted externally, is better place at the setup
             mpap.mode = MPAP_STALL_MODE;
         }
     }
@@ -455,19 +415,6 @@ void mpap_job(void)//ISR
     //
     if (mpap.mode == MPAP_STALL_MODE)
     {
-
-        #if MOTOR_TYPE == UNIPOLAR_MOTOR
-        #elif MOTOR_TYPE == BIPOLAR_MOTOR
-            //RC0 = RC2 = Controlan la corriente
-            //Zero current 0% H H (high)
-
-            //NOP();
-            //PORTC = 0xF0 | (PINC & 0xFA) | 0x05;//| 0B00000101;//f 1 //Solo bajar la corriente a 0
-            //PORTC =  (PINC & 0xFA) | 0x05;//| 0B00000101;//f 1 //Solo bajar la corriente a 0
-            PORTC = (PORTC & 0xFA) | 0xF5;//| 0B00000101;//f 1 //Solo bajar la corriente a 0
-
-        #endif // MOTOR_TYPE
-
         mpap.numSteps_tomove = 0x00;
         mpap.mode = MPAP_IDLE_MODE;
     }
@@ -609,6 +556,5 @@ void mpap_interrupt(void)
     TIMSK |= (1 << TOIE1);//Overflow at TOP
     sei();
     while (1)
-    {;    }
-
+    {;}
 }

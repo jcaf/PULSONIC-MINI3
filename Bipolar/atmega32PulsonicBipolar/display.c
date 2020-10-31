@@ -135,6 +135,8 @@ void disp7s_setBlink_qty(int8_t blink)
     count_ms = 0;
     togg = 0;
 }
+
+
 void disp7s_job(void)
 {
     static int8_t q;//q=transistor #
@@ -155,7 +157,7 @@ void disp7s_job(void)
         else
         {
             //cada 3 ms se llama a la rutina
-            if (++count_ms >= 100)
+            if (++count_ms >= 50)
             {
                 count_ms = 0x00;
                 togg = !togg;
@@ -171,13 +173,21 @@ void disp7s_job(void)
         }
     }
     else
-        {PORTWxDISPLAY = pulsonic.disp7s.mode[q-DISP7S_QTY_NUMMAX];}
+    {
+        PORTWxDISPLAY = pulsonic.disp7s.mode[q-DISP7S_QTY_NUMMAX];
+
+
+    }
 
     disp7s_mux_Q(q);
     //
     if (++q == DISP7S_TOTAL_NUMMAX)
         {q=0x0;}
 }
+
+
+
+
 /*
 void disp7s_job(void)
 {

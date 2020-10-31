@@ -17,8 +17,9 @@ void mpap_interrupt(void);
 
     #define BIPOLAR_MOTOR 0
     #define UNIPOLAR_MOTOR 1
-    #define MOTOR_TYPE BIPOLAR_MOTOR
-    //#define MOTOR_TYPE UNIPOLAR_MOTOR
+
+    //#define MOTOR_TYPE BIPOLAR_MOTOR
+    #define MOTOR_TYPE UNIPOLAR_MOTOR
 
 
     #if MOTOR_TYPE == UNIPOLAR_MOTOR

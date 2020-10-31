@@ -15,6 +15,8 @@ static struct _flushAllMode
 
 void flushAllMode_cmd(int8_t cmd)
 {
+    int16_t numSteps_current;
+
     if (cmd == JOB_RESTART)
     {
         disp7s_modeDisp_off();
@@ -24,9 +26,11 @@ void flushAllMode_cmd(int8_t cmd)
         //numNozzle = nozzle_getPosition();
 
         //++++++++++++++++++++++++++++------------------
-        uint8_t pos = mpap_get_numSteps_current() / MPAP_NUMSTEP_1NOZZLE;
+        numSteps_current = mpap_get_numSteps_current() ;
 
-        if (mpap_get_numSteps_current() % MPAP_NUMSTEP_1NOZZLE == 0)
+        uint8_t pos = numSteps_current / MPAP_NUMSTEP_1NOZZLE;
+
+        if ( (numSteps_current % MPAP_NUMSTEP_1NOZZLE) == 0)
         {
             //aqui se deberia de analizar directamente si esta habilitado el numero
             numNozzle = pos;
@@ -41,7 +45,7 @@ void flushAllMode_cmd(int8_t cmd)
             }
         }
         //++++++++++++++++++++++++++++------------------
-        //
+
         flushAllMode.sm0 = 2;//0x1;
     }
     if (cmd == JOB_STOP)
@@ -91,7 +95,8 @@ void flushAllMode_job(void)
         {
             if (mpap_isIdle())
             {
-                pump_setTick(6);//buen bombeo segun Bryan
+                //pump_setTick(6);//buen bombeo segun Bryan
+                pump_setTick(1);//buen bombeo segun Bryan
                 flushAllMode.sm0++;
             }
         }

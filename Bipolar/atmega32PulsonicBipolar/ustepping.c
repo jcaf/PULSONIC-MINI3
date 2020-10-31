@@ -7,7 +7,7 @@ void setdc(uint16_t dc)
     CCP2CON = (uint8_t)  ( ((dc&0x03)<<4)| (CCP2CON & 0xCF));
     CCPR2L = (uint8_t)(dc>>2);
     */
-    OCR1A = dc;
+    OCR1A = dc;//PD5
 }
 
 /*DC_TOP - (x) is for complement to inverted Enable chip */

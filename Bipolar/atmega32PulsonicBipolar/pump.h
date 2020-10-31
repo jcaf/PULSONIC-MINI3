@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   pump.h
  * Author: jcaf
  *
@@ -8,9 +8,11 @@
 #ifndef PUMP_H
 #define	PUMP_H
 
-    #define PUMP_TICK_TIME_ON   50//in ms
-    #define PUMP_TICK_TIME_OFF  75//in ms
-    
+    //#define PUMP_TICK_TIME_ON   50//in ms
+    //#define PUMP_TICK_TIME_OFF  75//in ms
+
+    #define PUMP_TICK_TIME_ON   20//in ms
+    #define PUMP_TICK_TIME_OFF  60//in ms
     struct _pump
     {
         uint16_t ticks;
