@@ -9,10 +9,13 @@
 #define	PUMP_H
 
     //#define PUMP_TICK_TIME_ON   50//in ms
-    //#define PUMP_TICK_TIME_OFF  75//in ms
+    //#define PUMP_TICK_TIME_OFF  60//in ms
+
+    //#define PUMP_TICK_TIME_ON   20//in ms//ANTES 20... ahora 60
+    //#define PUMP_TICK_TIME_OFF  60//in ms
 
     #define PUMP_TICK_TIME_ON   20//in ms
-    #define PUMP_TICK_TIME_OFF  60//in ms
+    #define PUMP_TICK_TIME_OFF  120//in ms de 60 a 120 21/07/2021
     struct _pump
     {
         uint16_t ticks;

@@ -17,6 +17,31 @@
  * Microchip MPLAB XC8 C Compiler V2.05
  * * Microchip MPLAB XC8 C Compiler V1.33 [PRO]+ Speed Option
  * PIC18F4550 @ 48MHz Code protected + EEprom extern read/write protected
+
+ Programmer USBasp, fix permissions:
+
+https://andreasrohner.at/posts/Electronics/How-to-fix-device-permissions-for-the-USBasp-programmer/
+
+Permanent Solution
+
+The more sensible solution is to add a udev rule for the device. A udev rule simply matches certain properties of a device after it is connected and performs certain actions on it, like changing the file permissions.
+
+The firmware package already contains a template for a udev rule in the directory bin/linux-nonroot/99-USBasp.rules and a small script to install it. The installation is trivial, because you just have to copy the 99-USBasp.rules file to /etc/udev/rules.d/.
+
+$ sudo cp 99-USBasp.rules /etc/udev/rules.d/
+
+Customizing the udev rule
+
+The rule from the firmware package just sets the file permissions to 666, which is a bit crude. I wrote my own version of it for Arch Linux. In Arch Linux the group uucp is used for "Serial and USB devices such as modems, handhelds, RS-232/serial ports", so it makes sense to use it for the USBasp device.
+
+# Set Group for USBasp
+SUBSYSTEM=="usb", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="05dc", GROUP="uucp"
+
+You also have to add your user to that group. For this to take effect you have to log out and then log in again.
+
+gpasswd -a youruser uucp
+
+Please note that the group is called uucp only in Arch Linux. Other distributions use a different group for the same thing. Ubuntu for example uses the group dialout.
  *
  * Project: Pulsonic (aceitera)
  *
