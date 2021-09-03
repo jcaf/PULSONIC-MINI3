@@ -1,0 +1,162 @@
+# depslib dependency file v1.0
+1575428478 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/autoMode.c
+	"main.h"
+	"pulsonic.h"
+	"mpap.h"
+	"pump.h"
+	"autoMode.h"
+	"visMode.h"
+	"ikb/ikb.h"
+	"flushAllMode.h"
+
+1583600958 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/main.h
+	<stdint.h>
+	"system.h"
+	"types.h"
+
+1574903265 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/system.h
+	<xc.h>
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	<avr/eeprom.h>
+	<util/delay.h>
+	<stdint.h>
+	<stdlib.h>
+	<string.h>
+
+1561997771 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/types.h
+
+1569432702 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/pulsonic.h
+	"nozzle.h"
+	"display.h"
+
+1569459974 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/nozzle.h
+
+1603844889 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/display.h
+
+1604159825 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/mpap.h
+
+1626881089 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/pump.h
+
+1569432983 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/autoMode.h
+
+1601156653 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/visMode.h
+
+1563820050 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/ikb/ikb.h
+
+1563733650 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/flushAllMode.h
+
+1601577047 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/configMode.c
+	"main.h"
+	"configMode.h"
+	"pulsonic.h"
+	"ikb/ikb.h"
+	"myeeprom.h"
+	"flushAtNozzle.h"
+
+1563141940 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/configMode.h
+
+1575039295 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/myeeprom.h
+
+1563738177 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/flushAtNozzle.h
+
+1603845667 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/display.c
+	"main.h"
+	"display.h"
+	"pulsonic.h"
+
+1563477890 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/error.c
+	"main.h"
+	"error.h"
+	"inputs.h"
+
+1563732831 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/error.h
+
+1563496453 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/inputs.h
+
+1603146235 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/flushAllMode1.c
+	"main.h"
+	"pulsonic.h"
+	"mpap.h"
+	"pump.h"
+	"autoMode.h"
+	"flushAllMode.h"
+	"ikb/ikb.h"
+
+1575406498 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/flushAtNozzle.c
+	"main.h"
+	"pulsonic.h"
+	"mpap.h"
+	"pump.h"
+	"autoMode.h"
+	"flushAtNozzle.h"
+	"ikb/ikb.h"
+
+1574871287 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/fuse.c
+	<avr/io.h>
+
+1583614863 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/ikb.c
+	"main.h"
+	"system.h"
+	"ikb.h"
+
+1574894959 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/ikb.h
+
+1563830425 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/inputs.c
+	"main.h"
+
+1603902461 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/mpap.c
+	"main.h"
+	"mpap.h"
+	"pulsonic.h"
+
+1601577061 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/myeeprom.c
+	"main.h"
+	"nozzle.h"
+	"myeeprom.h"
+
+1575428475 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/nozzle.c
+	"main.h"
+	"mpap.h"
+	"pulsonic.h"
+
+1601577067 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/pulsonic.c
+	"main.h"
+	"pulsonic.h"
+	"myeeprom.h"
+
+1603841982 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/pump.c
+	"main.h"
+	"pump.h"
+	"pulsonic.h"
+
+1603902586 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/ustepping.c
+	"main.h"
+	"ustepping.h"
+
+1579987540 /run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/ustepping.h
+
+1569525258 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/visMode.c
+	"main.h"
+	"visMode.h"
+	"pulsonic.h"
+	"ikb/ikb.h"
+
+1606289638 source:/run/media/jcaf/mydata/pleasure/PROYECTOS/ATMEL/C/Pulsonic/firmware/Unificado/main.c
+	"main.h"
+	"pulsonic.h"
+	"mpap.h"
+	"inputs.h"
+	"ikb/ikb.h"
+	"pump.h"
+	"display.h"
+	"autoMode.h"
+	"visMode.h"
+	"configMode.h"
+	"flushAllMode.h"
+	"error.h"
+	"myeeprom.h"
+	"flushAtNozzle.h"
+	"ustepping.h"
+
