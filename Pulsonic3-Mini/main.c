@@ -263,7 +263,7 @@ void rsw_getSwPositions(struct _rsw *rsw)
 		}
 		rsw_setRSWx[sw](0);								//Put to 0 sw-line
 		//
-		__delay_ms(1);
+		__delay_us(10);
 		//
 		for (int8_t A=0; A<RSW_NUM_ROTARYSW_IN_PCB; A++)
 		{
@@ -404,6 +404,8 @@ int main(void)
 				else
 				{
 					rsw[A].sm0++;
+					//arrancar de una vez
+					rsw[A].pumpStart(1);//1 tick
 				}
 			}
 			else if (rsw[A].sm0 == 1)
