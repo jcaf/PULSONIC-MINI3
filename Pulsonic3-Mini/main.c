@@ -4,10 +4,10 @@
  *  Created on: Aug 31, 2021
  *      Author: jcaf
  */
-#include <stdint.h>
-#include "main.h"
 #include "system.h"
 #include "types.h"
+
+#include "main.h"
 #include "pump.h"
 
 volatile struct _isr_flag
@@ -16,11 +16,6 @@ volatile struct _isr_flag
 	unsigned __a :7;
 } isr_flag = { 0 };
 struct _mainflag mainflag;
-
-//Rotary Switch
-#define RSW_NUM_ROTARYSW_IN_PCB 3
-#define RSW_INTERNAL_SWITCHES_NUMAX 12//12 SWITCHS + PIN CENTRAL DE LECTURA
-
 
 /*
  * El footprint del hardware original esta OK, el actual estaba corrido por 1 switch
@@ -212,56 +207,45 @@ void setPUMPpairA3(uint8_t level)
 		PinTo0(PORTWxPUMP6, PINx_PUMP6);
 	}
 }
-
-void pump_stop_A1(void)
+void pumpStart_A1(uint8_t tick)
 {
-	rsw[A].pump.ticks = 0;
-	rsw[A].pump.sm0 = 0;
-	rsw[A].setPUMPpairAx(0);
-	//
-	rsw[A].setLEDx(0);
+	rsw[RSW13_A1].pump.ticks = tick;
 }
-void pump_stop_A2(void)
+void pumpStart_A2(uint8_t tick)
 {
-	rsw[A].pump.ticks = 0;
-	rsw[A].pump.sm0 = 0;
-	rsw[A].setPUMPpairAx(0);
-	//
-	rsw[A].setLEDx(0);
+	rsw[RSW13_A2].pump.ticks = tick;
 }
-void pump_stop_A3(void)
+void pumpStart_A3(uint8_t tick)
 {
-	rsw[A].pump.ticks = 0;
-	rsw[A].pump.sm0 = 0;
-	rsw[A].setPUMPpairAx(0);
-	//
-	rsw[A].setLEDx(0);
+	rsw[RSW13_A3].pump.ticks = tick;
 }
 
-void pump_start(int8_t ticks)
+//////////////////////////////////////////////
+void pumpStop_A1(void)
 {
-	rsw[A].pump.ticks = ticks;
-}
-rsw[A].pump_stop();
-
-struct _rsw
-{
-	PTRFX_retUINT8_T readRSW13_Ax;
-	int8_t swposition, swposition_old;
+	rsw[RSW13_A1].pump.ticks = 0;
+	rsw[RSW13_A1].pump.sm0 = 0;
+	rsw[RSW13_A1].setPUMPpairAx(0);
 	//
-	uint16_t counter_sec;
-	int8_t sm0;
-	PTRFX_retVOID_arg1_UINT8_T setLEDx;
-	PTRFX_retVOID_arg1_UINT8_T setPUMPpairAx;
+	rsw[RSW13_A1].setLEDx(0);
+}
+void pumpStop_A2(void)
+{
+	rsw[RSW13_A2].pump.ticks = 0;
+	rsw[RSW13_A2].pump.sm0 = 0;
+	rsw[RSW13_A2].setPUMPpairAx(0);
+	//
+	rsw[RSW13_A2].setLEDx(0);
+}
+void pumpStop_A3(void)
+{
+	rsw[RSW13_A3].pump.ticks = 0;
+	rsw[RSW13_A3].pump.sm0 = 0;
+	rsw[RSW13_A3].setPUMPpairAx(0);
+	//
+	rsw[RSW13_A3].setLEDx(0);
+}
 
-	struct _rsw_pump
-	{
-		uint16_t ticks;
-		int8_t sm0;
-		uint16_t counter0;
-	}pump;
-
-};
 struct _rsw rsw[RSW_NUM_ROTARYSW_IN_PCB];
 
 void rsw_getSwPositions(struct _rsw *rsw)
@@ -309,6 +293,14 @@ void rsw_mux_init(void)
 	rsw[RSW13_A2].setPUMPpairAx = setPUMPpairA2;
 	rsw[RSW13_A3].setPUMPpairAx = setPUMPpairA3;
 
+	rsw[RSW13_A1].pumpStart = pumpStart_A1;
+	rsw[RSW13_A2].pumpStart = pumpStart_A2;
+	rsw[RSW13_A3].pumpStart = pumpStart_A3;
+
+	rsw[RSW13_A1].pumpStop = pumpStop_A1;
+	rsw[RSW13_A2].pumpStop = pumpStop_A2;
+	rsw[RSW13_A3].pumpStop = pumpStop_A3;
+
 	for (int8_t i=0; i<RSW_INTERNAL_SWITCHES_NUMAX; i++)
 	{
 		rsw_setRSWx[i](1);				//all sw-lines to 1
@@ -320,7 +312,6 @@ void rsw_mux_init(void)
 		rsw[i].swposition_old = rsw[i].swposition;
 	}
 	//
-
 }
 
 int main(void)
@@ -377,10 +368,18 @@ int main(void)
 	TCNT0 = 0x00;
 	TCCR0 = (1 << WGM01) | (1 << CS02) | (0 << CS01) | (1 << CS00); //CTC, PRES=1024
 	OCR0 = CTC_SET_OCR_BYTIME(10e-3, 1024); //TMR8-BIT @16MHz @PRES=1024-> BYTIME maximum = 16ms
+	TIMSK |= (1 << OCIE0);
 	//
+	sei();
 
 	while (1)
 	{
+		if (isr_flag.sysTickMs)
+		{
+			isr_flag.sysTickMs = 0;
+			mainflag.sysTickMs = 1;
+		}
+		//----------------------------------
 		rsw_getSwPositions(rsw);
 
 		for (int A=0; A<RSW_NUM_ROTARYSW_IN_PCB; A++)
@@ -389,8 +388,7 @@ int main(void)
 			{
 				rsw[A].swposition_old = rsw[A].swposition;
 				//
-
-				rsw[A].sm0 = 0x00;
+				rsw[A].sm0 = 0x00;								//ante cualquier cambio, reiniciar el contador
 			}
 			//
 			if (rsw[A].sm0 == 0)
@@ -401,6 +399,7 @@ int main(void)
 				if (rsw[A].swposition ==  RSW_POS0)
 				{
 					//off all
+					rsw[A].pumpStop();
 				}
 				else
 				{
@@ -411,34 +410,25 @@ int main(void)
 			{
 				if (mainflag.sysTickMs)
 				{
-					if (++rsw[A].counter_sec >= (KTIME_SEC[A]*1000.0/SYSTICK_MS) )
+					if (++rsw[A].counter_sec >= (KTIME_SEC[rsw[A].swposition]*1000.0/SYSTICK_MS) )
 					{
-						//1TICK
-						rsw[A].pump.ticks = 1;
-						tick(on);
+						rsw[A].counter_sec = 0;
+						//
+						rsw[A].pumpStart(1);//1 tick
 					}
 				}
 			}
 		}
-		//el daemon de pump()
-		pump();
+
+		pump_job();
 
 		mainflag.sysTickMs = 0;
+
 	}//End while
 	return 0;
 }
 
-
-/*
- * //Posiciones = 0..11
-		if (rsw[RSW13_A3].swposition == 11)
-		{
-			PinToggle(PORTWxRELAY, PINx_RELAY);
-		}
-		__delay_ms(1000);
- */
 ISR(TIMER0_COMP_vect)
 {
 	isr_flag.sysTickMs = 1;
-	//PinToggle(PORTC,0);
 }

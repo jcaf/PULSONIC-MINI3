@@ -17,6 +17,59 @@ extern struct _mainflag mainflag;
 
 #define SYSTICK_MS 10//10ms
 
+//Rotary Switch
+#define RSW_NUM_ROTARYSW_IN_PCB 3
+#define RSW_INTERNAL_SWITCHES_NUMAX 12//12 SWITCHS + PIN CENTRAL DE LECTURA
+
+
+//////////////////////////////
+enum _RSW13
+{
+	RSW13_A1=0,
+	RSW13_A2=1,
+	RSW13_A3=2,
+};
+
+/*
+ * Posiciones = 0..11
+ */
+enum _RSW_POS
+{
+	RSW_POS0 = 0,
+	RSW_POS1,
+	RSW_POS2,
+	RSW_POS3,
+	RSW_POS4,
+	RSW_POS5,
+	RSW_POS6,
+	RSW_POS7,
+	RSW_POS8,
+	RSW_POS9,
+	RSW_POS10,
+	RSW_POS11,
+};
+#include "types.h"
+struct _rsw
+{
+	PTRFX_retUINT8_T readRSW13_Ax;
+	int8_t swposition, swposition_old;
+	//
+	uint16_t counter_sec;
+	int8_t sm0;
+	PTRFX_retVOID_arg1_UINT8_T setLEDx;
+	PTRFX_retVOID_arg1_UINT8_T setPUMPpairAx;
+	PTRFX_retVOID_arg1_UINT8_T pumpStart;
+	PTRFX_retVOID pumpStop;
+
+	struct _rsw_pump
+	{
+		uint16_t ticks;
+		int8_t sm0;
+		uint16_t counter0;
+	}pump;
+
+};
+extern struct _rsw rsw[RSW_NUM_ROTARYSW_IN_PCB];
 //////////////////////////////
 #define PORTWxRSW0 		PORTD
 #define PORTRxRSW0 		PIND
@@ -172,29 +225,5 @@ extern struct _mainflag mainflag;
 #define CONFIGIOxPUMP6 	DDRA
 #define PINx_PUMP6		2
 
-enum _RSW13
-{
-	RSW13_A1=0,
-	RSW13_A2=1,
-	RSW13_A3=2,
-};
-/*
- * Posiciones = 0..11
- */
-enum _RSW_POS
-{
-	RSW_POS0 = 0,
-	RSW_POS1,
-	RSW_POS2,
-	RSW_POS3,
-	RSW_POS4,
-	RSW_POS5,
-	RSW_POS6,
-	RSW_POS7,
-	RSW_POS8,
-	RSW_POS9,
-	RSW_POS10,
-	RSW_POS11,
-};
 
 #endif

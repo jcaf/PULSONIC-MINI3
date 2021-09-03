@@ -5,12 +5,14 @@
  *      Author: jcaf
  */
 
+#include "system.h"
+#include "types.h"
 
 #include "main.h"
 #include "pump.h"
 
 
-void pump(void)
+void pump_job(void)
 {
 	for (int A=0; A<RSW_NUM_ROTARYSW_IN_PCB; A++)
 	{
