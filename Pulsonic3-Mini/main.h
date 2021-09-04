@@ -23,11 +23,11 @@ extern struct _mainflag mainflag;
 
 
 //////////////////////////////
-enum _RSW13
+enum _ROTARY_SWITCH_IN_PCB
 {
-	RSW13_A1=0,
-	RSW13_A2=1,
-	RSW13_A3=2,
+	RSW0=0,
+	RSW1,
+	RSW2,
 };
 
 /*
@@ -51,13 +51,13 @@ enum _RSW_POS
 #include "types.h"
 struct _rsw
 {
-	PTRFX_retUINT8_T readRSW13_Ax;
+	PTRFX_retUINT8_T readSwPosition;
 	int8_t swposition, swposition_old;
 	//
 	uint16_t counter_sec;
 	int8_t sm0;
-	PTRFX_retVOID_arg1_UINT8_T setLEDx;
-	PTRFX_retVOID_arg1_UINT8_T setPUMPpairAx;
+	PTRFX_retVOID_arg1_UINT8_T setLED;
+	PTRFX_retVOID_arg1_UINT8_T setPumpPair;
 	PTRFX_retVOID_arg1_UINT8_T pumpStart;
 	PTRFX_retVOID pumpStop;
 

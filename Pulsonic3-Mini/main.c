@@ -9,6 +9,7 @@
 
 #include "main.h"
 #include "pump.h"
+#include "pinGetLevel/pinGetLevel.h"
 
 volatile struct _isr_flag
 {
@@ -22,84 +23,84 @@ struct _mainflag mainflag;
  * FootprintOK(SW_Rotary12_ORIGINAL)
  * Footprint NO ACORDE (SW_Rotary12)
  */
-void rsw_setRSW0(uint8_t level)
+void rsw_setInternalSwitch0(uint8_t level)
 {
 	if (level)
 		PinTo1(PORTWxRSW6,PINx_RSW6);
 	else
 		PinTo0(PORTWxRSW6,PINx_RSW6);
 }
-void rsw_setRSW1(uint8_t level)
+void rsw_setInternalSwitch1(uint8_t level)
 {
 	if (level)
 		PinTo1(PORTWxRSW7,PINx_RSW7);
 	else
 		PinTo0(PORTWxRSW7,PINx_RSW7);
 }
-void rsw_setRSW2(uint8_t level)
+void rsw_setInternalSwitch2(uint8_t level)
 {
 	if (level)
 		PinTo1(PORTWxRSW8,PINx_RSW8);
 	else
 		PinTo0(PORTWxRSW8,PINx_RSW8);
 }
-void rsw_setRSW3(uint8_t level)
+void rsw_setInternalSwitch3(uint8_t level)
 {
 	if (level)
 		PinTo1(PORTWxRSW9,PINx_RSW9);
 	else
 		PinTo0(PORTWxRSW9,PINx_RSW9);
 }
-void rsw_setRSW4(uint8_t level)
+void rsw_setInternalSwitch4(uint8_t level)
 {
 	if (level)
 		PinTo1(PORTWxRSW10,PINx_RSW10);
 	else
 		PinTo0(PORTWxRSW10,PINx_RSW10);
 }
-void rsw_setRSW5(uint8_t level)
+void rsw_setInternalSwitch5(uint8_t level)
 {
 	if (level)
 		PinTo1(PORTWxRSW11,PINx_RSW11);
 	else
 		PinTo0(PORTWxRSW11,PINx_RSW11);
 }
-void rsw_setRSW6(uint8_t level)
+void rsw_setInternalSwitch6(uint8_t level)
 {
 	if (level)
 		PinTo1(PORTWxRSW0,PINx_RSW0);
 	else
 		PinTo0(PORTWxRSW0,PINx_RSW0);
 }
-void rsw_setRSW7(uint8_t level)
+void rsw_setInternalSwitch7(uint8_t level)
 {
 	if (level)
 		PinTo1(PORTWxRSW1,PINx_RSW1);
 	else
 		PinTo0(PORTWxRSW1,PINx_RSW1);
 }
-void rsw_setRSW8(uint8_t level)
+void rsw_setInternalSwitch8(uint8_t level)
 {
 	if (level)
 		PinTo1(PORTWxRSW2,PINx_RSW2);
 	else
 		PinTo0(PORTWxRSW2,PINx_RSW2);
 }
-void rsw_setRSW9(uint8_t level)
+void rsw_setInternalSwitch9(uint8_t level)
 {
 	if (level)
 		PinTo1(PORTWxRSW3,PINx_RSW3);
 	else
 		PinTo0(PORTWxRSW3,PINx_RSW3);
 }
-void rsw_setRSW10(uint8_t level)
+void rsw_setInternalSwitch10(uint8_t level)
 {
 	if (level)
 		PinTo1(PORTWxRSW4,PINx_RSW4);
 	else
 		PinTo0(PORTWxRSW4,PINx_RSW4);
 }
-void rsw_setRSW11(uint8_t level)
+void rsw_setInternalSwitch11(uint8_t level)
 {
 	if (level)
 		PinTo1(PORTWxRSW5,PINx_RSW5);
@@ -109,32 +110,32 @@ void rsw_setRSW11(uint8_t level)
 
 /////////////////////////////////////////////////
 
-uint8_t rsw_readRSW13_A1(void)
+uint8_t rsw_readSwPositionRSW0(void)
 {
 	return PinRead(PORTRxRSW13_A1,PINx_RSW13_A1);
 }
-uint8_t rsw_readRSW13_A2(void)
+uint8_t rsw_readSwPositionRSW1(void)
 {
 	return PinRead(PORTRxRSW13_A2,PINx_RSW13_A2);
 }
-uint8_t rsw_readRSW13_A3(void)
+uint8_t rsw_readSwPositionRSW2(void)
 {
 	return PinRead(PORTRxRSW13_A3,PINx_RSW13_A3);
 }
 /////////////////////////////////////////////////
-PTRFX_retVOID_arg1_UINT8_T rsw_setRSWx[RSW_INTERNAL_SWITCHES_NUMAX]=
-{	rsw_setRSW0,
-	rsw_setRSW1,
-	rsw_setRSW2,
-	rsw_setRSW3,
-	rsw_setRSW4,
-	rsw_setRSW5,
-	rsw_setRSW6,
-	rsw_setRSW7,
-	rsw_setRSW8,
-	rsw_setRSW9,
-	rsw_setRSW10,
-	rsw_setRSW11
+PTRFX_retVOID_arg1_UINT8_T rsw_setInternalSwitchRSWx[RSW_INTERNAL_SWITCHES_NUMAX]=
+{	rsw_setInternalSwitch0,
+	rsw_setInternalSwitch1,
+	rsw_setInternalSwitch2,
+	rsw_setInternalSwitch3,
+	rsw_setInternalSwitch4,
+	rsw_setInternalSwitch5,
+	rsw_setInternalSwitch6,
+	rsw_setInternalSwitch7,
+	rsw_setInternalSwitch8,
+	rsw_setInternalSwitch9,
+	rsw_setInternalSwitch10,
+	rsw_setInternalSwitch11
 };
 const int8_t KTIME_SEC[RSW_INTERNAL_SWITCHES_NUMAX]={0,2,4,9,11,15,16,25,33,42,55,72};//sec
 
@@ -166,7 +167,7 @@ void setLED_OIL(uint8_t level)
 	else
 		PinTo0(PORTWxLED_OIL, PINx_LED_OIL);
 }
-void setPUMPpairA1(uint8_t level)
+void setPumpPairRSW0(uint8_t level)
 {
 	if (level)
 	{
@@ -180,7 +181,7 @@ void setPUMPpairA1(uint8_t level)
 	}
 
 }
-void setPUMPpairA2(uint8_t level)
+void setPumpPairRSW1(uint8_t level)
 {
 	if (level)
 	{
@@ -194,7 +195,7 @@ void setPUMPpairA2(uint8_t level)
 	}
 
 }
-void setPUMPpairA3(uint8_t level)
+void setPumpPairRSW2(uint8_t level)
 {
 	if (level)
 	{
@@ -207,69 +208,68 @@ void setPUMPpairA3(uint8_t level)
 		PinTo0(PORTWxPUMP6, PINx_PUMP6);
 	}
 }
-void pumpStart_A1(uint8_t tick)
+void pumpStartRSW0(uint8_t tick)
 {
-	rsw[RSW13_A1].pump.ticks = tick;
+	rsw[RSW0].pump.ticks = tick;
 }
-void pumpStart_A2(uint8_t tick)
+void pumpStartRSW1(uint8_t tick)
 {
-	rsw[RSW13_A2].pump.ticks = tick;
+	rsw[RSW1].pump.ticks = tick;
 }
-void pumpStart_A3(uint8_t tick)
+void pumpStartRSW2(uint8_t tick)
 {
-	rsw[RSW13_A3].pump.ticks = tick;
+	rsw[RSW2].pump.ticks = tick;
 }
 
 //////////////////////////////////////////////
-void pumpStop_A1(void)
+void pumpStopRSW0(void)
 {
-	rsw[RSW13_A1].pump.ticks = 0;
-	rsw[RSW13_A1].pump.sm0 = 0;
-	rsw[RSW13_A1].setPUMPpairAx(0);
+	rsw[RSW0].pump.ticks = 0;
+	rsw[RSW0].pump.sm0 = 0;
+	rsw[RSW0].setPumpPair(0);
 	//
-	rsw[RSW13_A1].setLEDx(0);
+	rsw[RSW0].setLED(0);
 }
-void pumpStop_A2(void)
+void pumpStopRSW1(void)
 {
-	rsw[RSW13_A2].pump.ticks = 0;
-	rsw[RSW13_A2].pump.sm0 = 0;
-	rsw[RSW13_A2].setPUMPpairAx(0);
+	rsw[RSW1].pump.ticks = 0;
+	rsw[RSW1].pump.sm0 = 0;
+	rsw[RSW1].setPumpPair(0);
 	//
-	rsw[RSW13_A2].setLEDx(0);
+	rsw[RSW1].setLED(0);
 }
-void pumpStop_A3(void)
+void pumpStopRSW2(void)
 {
-	rsw[RSW13_A3].pump.ticks = 0;
-	rsw[RSW13_A3].pump.sm0 = 0;
-	rsw[RSW13_A3].setPUMPpairAx(0);
+	rsw[RSW2].pump.ticks = 0;
+	rsw[RSW2].pump.sm0 = 0;
+	rsw[RSW2].setPumpPair(0);
 	//
-	rsw[RSW13_A3].setLEDx(0);
+	rsw[RSW2].setLED(0);
 }
 
 struct _rsw rsw[RSW_NUM_ROTARYSW_IN_PCB];
 
 void rsw_getSwPositions(struct _rsw *rsw)
 {
-	//muxing
-	for (int8_t sw=0; sw<RSW_INTERNAL_SWITCHES_NUMAX; sw++)
+	for (int8_t sw=0; sw<RSW_INTERNAL_SWITCHES_NUMAX; sw++)//muxing
 	{
 		if (sw == 0)
 		{
-			rsw_setRSWx[RSW_INTERNAL_SWITCHES_NUMAX-1](1);//restore the 11th to 1
+			rsw_setInternalSwitchRSWx[RSW_INTERNAL_SWITCHES_NUMAX-1](1);//restore the 11th to 1
 		}
 		else
 		{
-			rsw_setRSWx[sw-1](1);						//restore the previous sw-line to 1
+			rsw_setInternalSwitchRSWx[sw-1](1);						//restore the previous sw-line to 1
 		}
-		rsw_setRSWx[sw](0);								//Put to 0 sw-line
+		rsw_setInternalSwitchRSWx[sw](0);								//Put to 0 sw-line
 		//
-		__delay_us(10);
+		__delay_us(10);//settle time
 		//
 		for (int8_t A=0; A<RSW_NUM_ROTARYSW_IN_PCB; A++)
 		{
-			if (rsw[A].readRSW13_Ax() == 0)
+			if (rsw[A].readSwPosition() == 0)
 			{
-				rsw[A].swposition = sw;//save position
+				rsw[A].swposition = sw;					//save position
 			}
 		}
 		//
@@ -281,29 +281,29 @@ void rsw_getSwPositions(struct _rsw *rsw)
  */
 void rsw_mux_init(void)
 {
-	rsw[RSW13_A1].readRSW13_Ax =rsw_readRSW13_A1;
-	rsw[RSW13_A2].readRSW13_Ax =rsw_readRSW13_A2;
-	rsw[RSW13_A3].readRSW13_Ax =rsw_readRSW13_A3;
+	rsw[RSW0].readSwPosition =rsw_readSwPositionRSW0;
+	rsw[RSW1].readSwPosition =rsw_readSwPositionRSW1;
+	rsw[RSW2].readSwPosition =rsw_readSwPositionRSW2;
 	//
-	rsw[RSW13_A1].setLEDx = setLED1;
-	rsw[RSW13_A2].setLEDx = setLED2;
-	rsw[RSW13_A3].setLEDx = setLED3;
+	rsw[RSW0].setLED = setLED1;
+	rsw[RSW1].setLED = setLED2;
+	rsw[RSW2].setLED = setLED3;
 
-	rsw[RSW13_A1].setPUMPpairAx = setPUMPpairA1;
-	rsw[RSW13_A2].setPUMPpairAx = setPUMPpairA2;
-	rsw[RSW13_A3].setPUMPpairAx = setPUMPpairA3;
+	rsw[RSW0].setPumpPair = setPumpPairRSW0;
+	rsw[RSW1].setPumpPair = setPumpPairRSW1;
+	rsw[RSW2].setPumpPair = setPumpPairRSW2;
 
-	rsw[RSW13_A1].pumpStart = pumpStart_A1;
-	rsw[RSW13_A2].pumpStart = pumpStart_A2;
-	rsw[RSW13_A3].pumpStart = pumpStart_A3;
+	rsw[RSW0].pumpStart = pumpStartRSW0;
+	rsw[RSW1].pumpStart = pumpStartRSW1;
+	rsw[RSW2].pumpStart = pumpStartRSW2;
 
-	rsw[RSW13_A1].pumpStop = pumpStop_A1;
-	rsw[RSW13_A2].pumpStop = pumpStop_A2;
-	rsw[RSW13_A3].pumpStop = pumpStop_A3;
+	rsw[RSW0].pumpStop = pumpStopRSW0;
+	rsw[RSW1].pumpStop = pumpStopRSW1;
+	rsw[RSW2].pumpStop = pumpStopRSW2;
 
 	for (int8_t i=0; i<RSW_INTERNAL_SWITCHES_NUMAX; i++)
 	{
-		rsw_setRSWx[i](1);				//all sw-lines to 1
+		rsw_setInternalSwitchRSWx[i](1);				//all sw-lines to 1
 	}
 	//
 	rsw_getSwPositions(rsw);
@@ -313,6 +313,36 @@ void rsw_mux_init(void)
 	}
 	//
 }
+
+/////////////////////////////////////////////////////////
+//static
+int8_t pinGetLevel_swFlush(void)
+{
+	return PinRead(PORTRxSWFLUSH, PINx_SWFLUSH);
+}
+//static
+int8_t pinGetLevel_oilLevel(void)
+{
+	return PinRead(PORTRxOIL_LEVEL, PINx_OIL_LEVEL);
+}
+//static
+int8_t pinGetLevel_start(void)
+{
+	return PinRead(PORTRxSTART, PINx_START);
+}
+
+/////////////////////////////////////////////////////////
+#define PINGETLEVEL_NUMMAX 3
+PTRFX_retINT8_T pinReadLevel[PINGETLEVEL_NUMMAX]=
+{
+	pinGetLevel_swFlush,
+	pinGetLevel_oilLevel,
+	pinGetLevel_start
+};
+//static
+struct _pinGetLevel pinGetLevel[PINGETLEVEL_NUMMAX];
+//struct _pinGetLevel pinGetLevel[PINGETLEVEL_NUMMAX] = { {.readPinLevel = pinGetLevel_0},  {.readPinLevel = pinGetLevel_1}};
+
 
 int main(void)
 {
@@ -347,6 +377,14 @@ int main(void)
 	//
 	ConfigOutputPin(CONFIGIOxLED_OIL, PINx_LED_OIL);
 	//
+	ConfigOutputPin(CONFIGIOxPUMP1, PINx_PUMP1);
+	ConfigOutputPin(CONFIGIOxPUMP2, PINx_PUMP2);
+	ConfigOutputPin(CONFIGIOxPUMP3, PINx_PUMP3);
+	ConfigOutputPin(CONFIGIOxPUMP4, PINx_PUMP4);
+	ConfigOutputPin(CONFIGIOxPUMP5, PINx_PUMP5);
+	ConfigOutputPin(CONFIGIOxPUMP6, PINx_PUMP6);
+	//
+	//
 	PinTo1(PORTWxSWFLUSH, PINx_SWFLUSH);//pullup
 	ConfigInputPin(CONFIGIOxSWFLUSH, PINx_SWFLUSH);
 	//
@@ -356,13 +394,7 @@ int main(void)
 	PinTo1(PORTWxSTART, PINx_START);//pullup
 	ConfigInputPin(CONFIGIOxSTART, PINx_START);
 	//
-	ConfigOutputPin(CONFIGIOxPUMP1, PINx_PUMP1);
-	ConfigOutputPin(CONFIGIOxPUMP2, PINx_PUMP2);
-	ConfigOutputPin(CONFIGIOxPUMP3, PINx_PUMP3);
-	ConfigOutputPin(CONFIGIOxPUMP4, PINx_PUMP4);
-	ConfigOutputPin(CONFIGIOxPUMP5, PINx_PUMP5);
-	ConfigOutputPin(CONFIGIOxPUMP6, PINx_PUMP6);
-	//
+	pinGetLevel_init(pinGetLevel, pinReadLevel, PINGETLEVEL_NUMMAX);
 
 	//Config to 10ms, antes de generar la onda senoidal
 	TCNT0 = 0x00;
@@ -381,6 +413,9 @@ int main(void)
 		}
 		//----------------------------------
 		rsw_getSwPositions(rsw);
+
+//poner dentro de un tiempo razonable,,, 20 ms
+		pinGetLevel_job(pinGetLevel, pinReadLevel, PINGETLEVEL_NUMMAX);
 
 		for (int A=0; A<RSW_NUM_ROTARYSW_IN_PCB; A++)
 		{

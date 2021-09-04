@@ -21,8 +21,8 @@ void pump_job(void)
 			if (rsw[A].pump.sm0 == 0)
 			{
 				//PUMP_ENABLE();
-				rsw[A].setPUMPpairAx(1);
-				rsw[A].setLEDx(1);
+				rsw[A].setPumpPair(1);
+				rsw[A].setLED(1);
 				//
 				rsw[A].pump.counter0 = 0x00;
 				rsw[A].pump.sm0++;
@@ -37,8 +37,8 @@ void pump_job(void)
 						rsw[A].pump.sm0++;
 
 						//PUMP_DISABLE();
-						rsw[A].setPUMPpairAx(0);
-						rsw[A].setLEDx(0);
+						rsw[A].setPumpPair(0);
+						rsw[A].setLED(0);
 					}
 				}
 			}
