@@ -315,17 +315,17 @@ void rsw_mux_init(void)
 }
 
 /////////////////////////////////////////////////////////
-//static
+static
 int8_t pinGetLevel_swFlush(void)
 {
 	return PinRead(PORTRxSWFLUSH, PINx_SWFLUSH);
 }
-//static
+static
 int8_t pinGetLevel_oilLevel(void)
 {
 	return PinRead(PORTRxOIL_LEVEL, PINx_OIL_LEVEL);
 }
-//static
+static
 int8_t pinGetLevel_start(void)
 {
 	return PinRead(PORTRxSTART, PINx_START);
@@ -339,13 +339,41 @@ PTRFX_retINT8_T pinReadLevel[PINGETLEVEL_NUMMAX]=
 	pinGetLevel_oilLevel,
 	pinGetLevel_start
 };
-//static
+enum _PINGETLEVEL_FX_INDEX
+{
+	PGLIDX_SWFLUSH,
+	PGLIDX_OILLEVEL,
+	PGLIDX_START,
+};
+static
 struct _pinGetLevel pinGetLevel[PINGETLEVEL_NUMMAX];
 //struct _pinGetLevel pinGetLevel[PINGETLEVEL_NUMMAX] = { {.readPinLevel = pinGetLevel_0},  {.readPinLevel = pinGetLevel_1}};
 
+/////////////////////////////////////////////////////////
+void pulsonic_deliverOil_reset(void);
+void pulsonic_deliverOil(void);
+struct _flush
+{
+	int8_t sm0;
+	int8_t R;
+
+}flush;
+
+void pulsonic_flush_reset(void);
+void pulsonic_flush(void);
+//
+	enum _MACHINE_MODE
+	{
+		MODE_EMPTY_OIL = -1,
+		MODE_IDLE,
+		MODE_DELIVER_OIL,
+		MODE_FLUSH,
+	};
 
 int main(void)
 {
+	int8_t counter0=0;
+
 	//Active pull-up
 	PinTo1(PORTWxRSW13_A1, PINx_RSW13_A1);
 	PinTo1(PORTWxRSW13_A2, PINx_RSW13_A2);
@@ -394,7 +422,8 @@ int main(void)
 	PinTo1(PORTWxSTART, PINx_START);//pullup
 	ConfigInputPin(CONFIGIOxSTART, PINx_START);
 	//
-	pinGetLevel_init(pinGetLevel, pinReadLevel, PINGETLEVEL_NUMMAX);
+	__delay_ms(10);
+	pinGetLevel_init(pinGetLevel, pinReadLevel, PINGETLEVEL_NUMMAX, PGL_START_WITH_CHANGED_FLAG_ON);
 
 	//Config to 10ms, antes de generar la onda senoidal
 	TCNT0 = 0x00;
@@ -403,6 +432,11 @@ int main(void)
 	TIMSK |= (1 << OCIE0);
 	//
 	sei();
+
+	int8_t mode = MODE_IDLE;
+	//int8_t mode = MODE_DELIVER_OIL;
+
+	PinTo1(PORTWxRELAY, PINx_RELAY);
 
 	while (1)
 	{
@@ -414,55 +448,191 @@ int main(void)
 		//----------------------------------
 		rsw_getSwPositions(rsw);
 
-//poner dentro de un tiempo razonable,,, 20 ms
-		pinGetLevel_job(pinGetLevel, pinReadLevel, PINGETLEVEL_NUMMAX);
 
-		for (int A=0; A<RSW_NUM_ROTARYSW_IN_PCB; A++)
+		if (mainflag.sysTickMs)
 		{
-			if (rsw[A].swposition_old != rsw[A].swposition)
+			if (++counter0 >= (20/SYSTICK_MS) )
 			{
-				rsw[A].swposition_old = rsw[A].swposition;
+				counter0 = 0;
 				//
-				rsw[A].sm0 = 0x00;								//ante cualquier cambio, reiniciar el contador
-			}
-			//
-			if (rsw[A].sm0 == 0)
-			{
-				rsw[A].counter_sec = 0x00;
+				pinGetLevel_job(pinGetLevel, pinReadLevel, PINGETLEVEL_NUMMAX);
 				//
-				//
-				if (rsw[A].swposition ==  RSW_POS0)
+
+				//-------------------------------------------------
+				if (pinGetLevel[PGLIDX_OILLEVEL].bf.changed)
 				{
-					//off all
-					rsw[A].pumpStop();
-				}
-				else
-				{
-					rsw[A].sm0++;
-					//arrancar de una vez
-					rsw[A].pumpStart(1);//1 tick
-				}
-			}
-			else if (rsw[A].sm0 == 1)
-			{
-				if (mainflag.sysTickMs)
-				{
-					if (++rsw[A].counter_sec >= (KTIME_SEC[rsw[A].swposition]*1000.0/SYSTICK_MS) )
+					pinGetLevel[PGLIDX_OILLEVEL].bf.changed = 0;
+
+					if (pinGetLevel[PGLIDX_OILLEVEL].bf.level == 0)
 					{
-						rsw[A].counter_sec = 0;
+						mode = MODE_EMPTY_OIL;
+
+						PinTo0(PORTWxRELAY, PINx_RELAY);
+
+						pulsonic_deliverOil_reset();
 						//
-						rsw[A].pumpStart(1);//1 tick
+						PinTo1(PORTWxLED_OIL, PINx_LED_OIL);
+					}
+					else
+					{
+						mode = MODE_IDLE;//REPONE
+						//
+						PinTo0(PORTWxLED_OIL, PINx_LED_OIL);
+						PinTo1(PORTWxRELAY, PINx_RELAY);
+						//forzar a revisar los otros switches
+						pinGetLevel[PGLIDX_START].bf.changed = 1;	//force
+						pinGetLevel[PGLIDX_SWFLUSH].bf.changed = 1;	//force
+					}
+				}
+				//-------------------------------------------------
+				if (pinGetLevel[PGLIDX_SWFLUSH].bf.changed)
+				{
+					pinGetLevel[PGLIDX_SWFLUSH].bf.changed = 0;
+					//
+					if (mode != MODE_EMPTY_OIL)
+					{
+						if (pinGetLevel[PGLIDX_SWFLUSH].bf.level == 0)
+						{
+							pulsonic_flush_reset();
+							mode = MODE_FLUSH;
+						}
+						else
+						{
+							mode = MODE_IDLE;
+							pulsonic_deliverOil_reset();
+							pinGetLevel[PGLIDX_START].bf.changed = 1;//force
+						}
+					}
+				}
+				//-------------------------------------------------
+			if (pinGetLevel[PGLIDX_START].bf.changed)
+				{
+					pinGetLevel[PGLIDX_START].bf.changed = 0;
+					//
+
+					if ( (mode != MODE_FLUSH) && (mode != MODE_EMPTY_OIL))
+					{
+						if (pinGetLevel[PGLIDX_START].bf.level == 0)
+						{
+							pulsonic_deliverOil_reset();
+
+							PinTo1(PORTWxRELAY, PINx_RELAY);
+
+							mode = MODE_DELIVER_OIL;
+						}
+						else
+						{
+							mode = MODE_IDLE;
+							PinTo0(PORTWxRELAY, PINx_RELAY);
+							pulsonic_deliverOil_reset();
+						}
 					}
 				}
 			}
 		}
+		//
+		if (mode == MODE_DELIVER_OIL)
+		{
+			pulsonic_deliverOil();
+		}
+		else if (mode == MODE_FLUSH)
+		{
+
+			pulsonic_flush();
+		}
+		//
 
 		pump_job();
 
+		//
 		mainflag.sysTickMs = 0;
 
 	}//End while
 	return 0;
+}
+
+
+void pulsonic_flush_reset(void)
+{
+	flush.sm0 = 0;
+	flush.R = 0;
+}
+void pulsonic_flush(void)
+{
+	if (flush.sm0 == 0)
+	{
+		rsw[flush.R].pumpStart(1);
+		flush.sm0 ++;
+	}
+	else
+	{
+		if (pump_getTick(flush.R) <= 0)
+		{
+			flush.sm0 = 0;
+			if (++flush.R >= RSW_NUM_ROTARYSW_IN_PCB)
+			{
+				flush.R = 0;
+			}
+		}
+	}
+
+}
+
+void pulsonic_deliverOil_reset(void)
+{
+	for (int R=0; R<RSW_NUM_ROTARYSW_IN_PCB; R++)
+	{
+		rsw[R].sm0 = 0x00;
+	}
+}
+void pulsonic_deliverOil(void)
+{
+	///////////////////////////////////////////////////////////////
+	for (int R=0; R<RSW_NUM_ROTARYSW_IN_PCB; R++)
+	{
+		if (rsw[R].swposition_old != rsw[R].swposition)
+		{
+			rsw[R].swposition_old = rsw[R].swposition;
+			//
+			rsw[R].sm0 = 0x00;								//ante cualquier cambio, reiniciar el contador
+		}
+		//
+		if (rsw[R].sm0 >= 0)
+		{
+			if (rsw[R].sm0 == 0)
+			{
+				rsw[R].counter_sec = 0x00;
+				//
+				//
+				if (rsw[R].swposition ==  RSW_POS0)
+				{
+					//off all
+					rsw[R].pumpStop();
+					rsw[R].sm0 = -1;	//inhabilita
+				}
+				else
+				{
+					rsw[R].sm0++;
+										//arrancar de una vez con ticks
+					rsw[R].pumpStart(1);//1 tick
+				}
+			}
+			else if (rsw[R].sm0 == 1)
+			{
+				if (mainflag.sysTickMs)
+				{
+					if (++rsw[R].counter_sec >= ( (KTIME_SEC[rsw[R].swposition]*1000.0)/SYSTICK_MS ) )
+					{
+						rsw[R].counter_sec = 0;
+						//
+						rsw[R].pumpStart(1);//1 tick
+					}
+				}
+			}
+		}
+	}
+	////////////////////////////////////////////////////////////////
+
 }
 
 ISR(TIMER0_COMP_vect)

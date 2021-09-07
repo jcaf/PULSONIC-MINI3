@@ -20,7 +20,7 @@ void pump_job(void)
 		{
 			if (rsw[A].pump.sm0 == 0)
 			{
-				//PUMP_ENABLE();
+											//PUMP_ENABLE();
 				rsw[A].setPumpPair(1);
 				rsw[A].setLED(1);
 				//
@@ -31,7 +31,7 @@ void pump_job(void)
 			{
 				if (mainflag.sysTickMs)
 				{
-					if (++rsw[A].pump.counter0 == PUMP_TICK_TIME_ON)
+					if (++rsw[A].pump.counter0 >= PUMP_TICK_TIME_ON)
 					{
 						rsw[A].pump.counter0 = 0x00;
 						rsw[A].pump.sm0++;
@@ -46,19 +46,24 @@ void pump_job(void)
 			{
 				if (mainflag.sysTickMs)
 				{
-					if (++rsw[A].pump.counter0 == PUMP_TICK_TIME_OFF)
+					if (++rsw[A].pump.counter0 >= PUMP_TICK_TIME_OFF)
 					{
 						rsw[A].pump.counter0 = 0x00;
 						rsw[A].pump.sm0 = 0x00;
 						//
-						if (--rsw[A].pump.ticks <= 0)
-						{
-							//cod_ret = 1;
-						}
+						--rsw[A].pump.ticks;
+//						if (--rsw[A].pump.ticks <= 0)
+//						{
+//							//cod_ret = 1;
+//						}
 					}
 				}
 			}
 		}
 	}
+}
 
+int8_t pump_getTick(int8_t A)
+{
+	return rsw[A].pump.ticks;
 }
