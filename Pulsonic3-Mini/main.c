@@ -425,7 +425,7 @@ int main(void)
 	__delay_ms(10);
 	pinGetLevel_init(pinGetLevel, pinReadLevel, PINGETLEVEL_NUMMAX, PGL_START_WITH_CHANGED_FLAG_ON);
 
-	//Config to 10ms, antes de generar la onda senoidal
+	//Config to 10ms
 	TCNT0 = 0x00;
 	TCCR0 = (1 << WGM01) | (1 << CS02) | (0 << CS01) | (1 << CS00); //CTC, PRES=1024
 	OCR0 = CTC_SET_OCR_BYTIME(10e-3, 1024); //TMR8-BIT @16MHz @PRES=1024-> BYTIME maximum = 16ms
@@ -523,7 +523,9 @@ int main(void)
 						else
 						{
 							mode = MODE_IDLE;
-							PinTo0(PORTWxRELAY, PINx_RELAY);
+
+							//PinTo0(PORTWxRELAY, PINx_RELAY);	//Bug... no deberia de deshabilitar.. dejar q las otras condiciones lo hagan.. START no limita el RELAY
+
 							pulsonic_deliverOil_reset();
 						}
 					}
@@ -561,8 +563,14 @@ void pulsonic_flush(void)
 {
 	if (flush.sm0 == 0)
 	{
-		rsw[flush.R].pumpStart(1);
+		//add
+		if (rsw[flush.R].swposition != RSW_POS0)
+		{
+			rsw[flush.R].pumpStart(1);
+		}
+
 		flush.sm0 ++;
+
 	}
 	else
 	{
@@ -585,6 +593,7 @@ void pulsonic_deliverOil_reset(void)
 		rsw[R].sm0 = 0x00;
 	}
 }
+#define NUM_OF_TICKS 2
 void pulsonic_deliverOil(void)
 {
 	///////////////////////////////////////////////////////////////
@@ -613,19 +622,21 @@ void pulsonic_deliverOil(void)
 				else
 				{
 					rsw[R].sm0++;
+
 										//arrancar de una vez con ticks
-					rsw[R].pumpStart(1);//1 tick
+					rsw[R].pumpStart(NUM_OF_TICKS);//1 tick
 				}
 			}
 			else if (rsw[R].sm0 == 1)
 			{
 				if (mainflag.sysTickMs)
 				{
-					if (++rsw[R].counter_sec >= ( (KTIME_SEC[rsw[R].swposition]*1000.0)/SYSTICK_MS ) )
+					//counter_sec es ahora de UINT32_T
+					if (++rsw[R].counter_sec >= ( (KTIME_SEC[rsw[R].swposition]*1*1000.0)/SYSTICK_MS ) ) // x1 add 1 dec
 					{
 						rsw[R].counter_sec = 0;
 						//
-						rsw[R].pumpStart(1);//1 tick
+						rsw[R].pumpStart(NUM_OF_TICKS);//1 tick
 					}
 				}
 			}

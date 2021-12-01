@@ -54,7 +54,8 @@ struct _rsw
 	PTRFX_retUINT8_T readSwPosition;
 	int8_t swposition, swposition_old;
 	//
-	uint16_t counter_sec;
+	//uint16_t counter_sec;
+	uint32_t counter_sec;
 	int8_t sm0;
 	PTRFX_retVOID_arg1_UINT8_T setLED;
 	PTRFX_retVOID_arg1_UINT8_T setPumpPair;
